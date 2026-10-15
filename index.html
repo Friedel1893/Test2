@@ -1,0 +1,1552 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Pool Positionscoach</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180"%3E%3Cdefs%3E%3CradialGradient id="b" cx="38%25" cy="32%25" r="70%25"%3E%3Cstop offset="0" stop-color="#4a4f57"/%3E%3Cstop offset=".45" stop-color="#16181c"/%3E%3Cstop offset="1" stop-color="#050607"/%3E%3C/radialGradient%3E%3CradialGradient id="c" cx="50%25" cy="45%25" r="65%25"%3E%3Cstop offset="0" stop-color="#3596d6"/%3E%3Cstop offset="1" stop-color="#1f6aa3"/%3E%3C/radialGradient%3E%3C/defs%3E%3Crect width="180" height="180" rx="40" fill="#1b2026"/%3E%3Crect x="14" y="14" width="152" height="152" rx="28" fill="url(#c)"/%3E%3Ccircle cx="30" cy="30" r="13" fill="#07090b"/%3E%3Ccircle cx="150" cy="150" r="13" fill="#07090b"/%3E%3Ccircle cx="150" cy="30" r="13" fill="#07090b"/%3E%3Ccircle cx="30" cy="150" r="13" fill="#07090b"/%3E%3Cellipse cx="94" cy="128" rx="44" ry="10" fill="#0b2c47" opacity=".45"/%3E%3Ccircle cx="90" cy="88" r="48" fill="url(#b)"/%3E%3Ccircle cx="90" cy="84" r="22" fill="#f6f2e4"/%3E%3Ctext x="90" y="95.5" font-family="Arial Black,Arial,Helvetica,sans-serif" font-weight="900" font-size="31" text-anchor="middle" fill="#111"%3E8%3C/text%3E%3Cellipse cx="72" cy="62" rx="12" ry="7" fill="#fff" opacity=".22" transform="rotate(-30 72 62)"/%3E%3C/svg%3E">
+<link rel="icon" type="image/png" sizes="32x32" href="data:image/png;base64,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">
+<link rel="apple-touch-icon" sizes="180x180" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAIAAACyr5FlAAAQAElEQVR4nOx9B7geR3X2mf3q7UX3qlwVZBVbslzAVTK2AVeKHTomCQQCJBAIxD+Q4AA/PwECCQGCQ0ycOJQfQkJIKKbbWMYWLuBuLFuyuq16Jd3evrqT2Z12Znb2u7u3+HnyPPcgxntnZ2dnZ8685z1nZvfLLl99KizIgrgkCwuyIDGyoBwLEisLyrEgsbKgHAsSKwvKsSCxsqAcCxIrC8qxILGyoBwLEisLyrEgsbKgHAsSKwvKsSCxsqAcCxIrC8qxILHy3CkHae31lp5GWrpJsZUU26DQ6hXbaCZHCKGUsjQsRIBCkAM0zA+OIfxPeFKUdJ4Vd1FlREkgoMo3SiEsKioTx9NdBaK8yuF/BO0Ij42SrA3Ay4RngZ8Nr0XHshGyzmoZyuN+aYyltDROJwf9I0/RiUF4ToTM95I9ae3xVpyV6TuDtPXKUSTh//ghQUWJOBf+Jxwhc9TtbHwtSK2SZVSd1CjobKO8wkrjRRQJxxiofQ2NXBvmyDJU1KD+IxJnPo3W6Q8f8Y9s9w9vn28tmUfl8JZtzG64DNqXyHmpZj8Qz0ILOcuNeRz0pEIIjBbq2mkRgj+jGhc8v1FJPPtBgZHKx+XVse9TN8b41MQSOdC6DIRlDLSIQREwUYrf11c5/tDh+u67/aM7YH5kLpWjXquWS1OVSpmCV/d91o+Z5s5s66LCyjOKzzs719UnsQEAQQdYWXH5ItvGEllaQEcEJzQO8ZMqF6GEGECtYSjF5QFkPXp+RzCGgsKS8E/jApGDUYSiK0Hqh8injjoprY30T+59oHzoqfrEYH1yhOV4npcBmisU8oViNpuDOZK5UY5arToxNlytVBqUYSrScdHv5buXR+a9Z3CIGLRQtsJAiyhOOFEhlnlEccKBHC62oea3yTksxmAigSyDGAmY+cBRxI9jIbWhI8P3/nv50PYG/ZzL51vaOudERWarHH69PjkxNjU5TgiZtjAlXuumy9vPe2WmqU0xDz7GvDEoITHcgkADPoFyiEYCzTFduEKnS1Xr7WyEMQZVMK/COKFzrLOgIcTNQupTo6MP/WD8yTuZ3YLphKlRsbm1paXNy2RgFpJp71wEM5VavTY2PFSplJJoBoRToHp8X6V/X3HVWV6uKGe/J7GBex+AUAHlo1Trk06JutYqg+sBT2khEWjkqN9TNeO7EM+4I0V3kbbJ0VrVNqWWRl8RgsiYo35+ojZ+cvD2m0r7HiSWCYvrZ0KYia9WK7l8kVkcmKnMXDmo748NDzCDAimlPn6ycmxP8/otkMnGjboz3zorIaJRDfYYY14MiY+pke/SJ3drHS0EVz3KGTdaKPwvv1o6+dMvVvt3Q0rx/XqtUi4UmxJO3ajMXDlGRwZr1QrMSBiTqo4ca1m/OfhD9ymNooKtGdQ9Nva1znlM7fJ6Thv3AjD0jAS+FcYG6tA/wPzGxhKK8ICi9lCn1qr6eZ0Dd3y5cnA7zEiYa1Ov1wrFZpiRzBBzmFfCPBOYhZT2PjC596GgDynqTd0vYeLIV72Mx9iNKDSqWzG6AkoPnGVoPDbE6ysk0ukIisjn4g8xte/h0t4HYRZSKZfYYMGMZIbKMTkxCrOW0Ye+j/2OsDlqVIjkkoZOgN3vXkjpzH4nBoZbaETFOBEwMEb3gzxWPIOCfa2pbR7WHk+TXqyXnhtvIvpEAekTS0ce/C7MWthgUZqIrFgyE+WoVsv1Wg1mLdWTz1SO7wUAy+LKIaANNCPa1zaeRywLuGwBmDM47hic9SBcoQ2RwC6DuQjY+eqq0rFdtYGDMGthg1WrzYQAzEQ5ZgxTUQksS0O85fMJ8QCqSD/OB6uXQ/yABnMUx1pAVelFjomwNS6/CRCuEMvvmFZ3DdzCbRD/paFNgTmSSrkM6WUmylFP76HESW3gmfC/RhQc4vqUGn0a1+NWGQBj1hI3nk+fWgxG4Ry+i7M8NMyH+PIMWWGu+rn6XCmH781ZgLY2ORLpNWEdxfyz8CA49CDS141xwjGuIeegenR5bAPEMZrIiqPEaBgx7+XZWOLGCWrxDGd51jkwR+J7M1l+T68cXpa5RzBHUh89yUeLNhxRlA+W1xrBCUoS4AREjjHSoJSQeJ1ztZaaiKWjtODkK3o9CNlQWZ51DsyR+HUfSOqxTn1BZu0WWp8DNqpE21rkd0S9DEd+1E8J526CMuZcpwJ7XMeybabPrDSAr9O6+YSJN6B1AuS1UV3h80Tci9ZmGEZydnPmlAshpaRUjnxLZv2lmaYOmCPxmoOqHBpgMQx3LET1pqENUYQAaU2oS/Oi40rAbY9IA3/Eqo0Ye5SwbtGYa4380J6yNW2YI2H9nNlwGRu+dFelK93ZB9mC19IOcyRZ9vzEjmqjcTX8FBI/KmLkNKhHysSMN462aZ6h8xUOEVuHhBYSG0t0/R7yiTyMMUbLKVd+iOJHpnXOlIPNZ8IWs9p6U12VTjnI4nXsSXKL18IcSW7x6rBejbcEDC/A7E3qyAeMFvwkodEyMbMcAGsbAXd+I4SIx5J49gPRfMCxEF4yv3Q9zJFke1YybfOWpKswnXJklgTr+83rUluvOGnd+CIwcDXMjcFbiPgpkVEhKD6B6iQQbws8cI+9h6o39JKnioGafMLQLcRFQOcbsY2Y8mFGy6kXwRxJ86kXs3t5SzemuiqFcpDWHmhdxO5RWLw2v2QOlDq/9NTC4lNM3qd6X+yWMJmHHV1G5RvhBCgPgoqSEMMnSAKeAYmxhMRqOUHNCfNBII3y3tmJ4rL1hWWnwawlt3hdoXcVq9Nr6w0GMbGkUA5v2UbV7rYLXg2zlq5L3wQmZlhzN7aXKUXlI/FTGydisYGaIxQdY8U5wsSpE4SQCGcCh15G8iFS3ouurXRc9AaYtXRseYPqHzaIyS9Mgxwdy0A+W3H56c1nXgmzkNbnv6y47DQDM8BkZ4iBOi13bD7CCeIsE7OHSFwFsWcFVwA3TkCkZCTfXC2y66Fgsl32d/PKM1hHwSyEDVMh4C6iVXwQE0oazpErgnpCSrs2X5dfOkPQK/Rt7L74TRozqD0qxlqr2HPrGj8gjeIZHjGwQd5F7AcTlcXhii6jx5JobdCcw45t6LNg6iJInwUiz4J0DjB+sOKLLnkT6y6YkeSXnda5+TqFVUGduabkl6cxK8U2uQM21I9Mtvvq93hNqd3aTOuinpdf72WzhndKcZ/amKFzrJhHzKhYvMTGhojnHM8ziHOuR1MaqRmlIGszV/uI3pVu14Pbn8n2vOJ6L31sKdPS3X3le7xMzqiTzfDEkmKDcf6lHwreVMM9yIa3Xhn8+ZdKB3+bsJLiqrN6r/lAJt9EFf/y1F5zXqerB9G4ivmqR4Ja+bHvtsjUHz1eHTzsDx+pDhz2x0/6pQmoTvnlqeDFMmaVmbqzWE6hmeSbM+29ma6+XPcKlmY7l1r1hA+kZovcie4bx2Dnh6ig3m0BwO/Jme/G+bpmn9Ja6fiPv1B65vGk/bzyjO6r3+fliuFedrnH3ffp1Ejl9s8lrCSFchR+5+NsYcVAxbAG9v+p/Q+PPfrTSsN9jsw3aT/3mua158str3LfBRgTUlSqPUDjDRcD7QFZByD6TsQ+9idHav17av17WVo9vi94xxCNhyqrxpj/BWAcM43JLV6TW7o+v2x9btmpgQ6hd5bEHh+xm1y++ajygb+JIt6g1NvTVRtUPbIGUMVEwkrRqT0Pjjz8o8qxXdCgn5esb2N8bs25xNI5XmG9Vv7RxyGZpFGOV31KzBvP4++bhDjpqXlcHT4yue/h8sHttfHB+sQQBMjWlW3raVp9dtOac/NdfWCiDkIIymOIFmaguxhvsgCqocFbtVArl/f+prJjW7V/jyxjvCci5zGfoz6A+V4afhfN12+a+GFOdsm6ljOvKK7f4uUK8io01yNvwKJ8uw3xOepa400WBnsTex4oPftE0M+TQ6znRT+vOrN4yjm5zmVUv1cHVp3suPyDjyYc8XTKAWDbeBA8DQAMhiWrJwoKjPI6xyiEyuiC5lW6JEIXGy3qA8+Wt2+t7P0N0w9xVk7gUAxUEJ1Hed9RNeM1pshXkQAsXKFevrm44ZKWMy7L9j5PZuuSAjFwvoEf8kRS/KDW3YlumiyvmmiVp/pscuVIt8xPrHiAwQ2pXolQGADgLk8IRp14nkEbooiDW9T790w99pP6wScExjBGw9El3MUJHu/TAKWYcfOpevM9fPfVC1CEhMe8T8VsDtsTYpuv7hi+K0v8yuTkb2+bePznbMq2nvfKwvKN4h01QG+8gcYVnS8ekWhMIujdWvNa30fleT36vVy5MqyxylUefM45jFk0l8qBfAQAw0uUZx17wdFZV3kVGcRIgJimuCPa/UC1DgGuv/Ls4+XHf1o/FlgQIezCkN544KnyOPbq8bBZiL1ehoYWMyOOg/6l1HzXEnnOlBA80qS0/xH2L9+3ofWCVxef93zFkZUfDohBa/0AnQOImYriBrM2NBWHfKXuErO1VnnJ2dPsNE6jHIptQDiDgc970LNZ+B0ABgaod+olO7HKA/IpBJsxapDsxMYM1Uf+8NHJbV/3T+xl2ZztRnHIk7ooWqIsugdo/lFfHPs0o7mIxAAVL/FBjrpvjkrlyM6B73+60Hdax+XvzLO1LjWn0UjreS/0xlf4ASZ+8Hupq2jEV+IzR7bHd5QHA5MoRRY/gaR4qSm38XIwOQdRkzGCE2DwBkKQPYot76iBoEMXGlWmyg/fOnn3V2ByiASK4RHxv+AwyOEQIv7rhXYmCIGFRyR880BATFgnz7GRj8r9rbINEe03n6g2dnJy+x1+tVRYvoFBESE6NmOwKKLZNMrRgAB6V5i4I155AW2dOd5oO26QOmJEFNlhfeedkExSBMF4m6g0D5G7otgfxlINqHYrzfIKY42+Q2VwvwR/1E8emLj1k+Unfu6FBaQ6ZELN8KSusIwMEX+EZ51lRH5YQ8YDfGyiEQAYo6KtobIjYY5fH3/o1v7///7q8f0g+82wg0bsHCDCvVAZkN3Arapej+RjgWadNshKCxW6KyyBxJIGOU6/AvTAEQBj4LDPYuCEwgBizUjQM8LCFQLR6KdZBsq/vW3qrltoeUKgBR5dhBqexA5+LG5GCCEOhAjTSDTddKhEC4VQqfdIswFUeVoen9h+p5cvstCIAz9Ef2HrCWDOHDCuUjNNx9nAMdNEamIPkeyeJkeOFJwD+QuAuGfYSg8M9gAYk9Hc0lgaXsCXIaMeDcgyUZ7BLiuNT/7ylvqRHQHd9PTMFpYirMcL+Y3neZYv43kolkCkz6K+lRNwjSA/ZB6McvgMQ3z2vyDHiIIoDaAOv4BzEckkGCO6++ulA491vfRPM82dUf5BTf8FMMshtieCuEikvHgKHwxeIutHnCbxgKdalZUAZ/gsCEt5IYwBSLuBK4LyUIBY6ylWeYJ9E5kD9aGjY9/7K6YZGCdEqi0Fsxokk5EWREOJQpegjBeUiavByAeE/pEluwAAEABJREFUQ4Dbg7gCYK5teh/seUvPPHb8Wx+qDhwkBFtVAIRPludCVHDEuiPElFdsFygqiKwSgqy5Vw6wbD+ovlAAglsJ6KzzWowW1KwtUj58uOrh7eM//DSURohpNayUj7I6DjVAaAzXFZbjYUsUaErGrodozQiOQR5j/mGiHUTmCU/5XKqNDRz/9kfKh550zAEwLYK+CnT/IOwEvBYdNydBTkDuHulrU0gKzpENvBWDmKN54/YmeCFQtts4y0tEuYh4Qqt8Zdf9k3fe7Pn1UDO4dsTqB09yuVxTU3NLS2tHR3tTsSmXy1ZrtdDwEMwtPOJoAwXFBgDlAFW2XOWbnMDQe0DXshGqVSd33pNp7covWYP0XhRSYAq4DYqlUowHVCuVxhLntXiOCX2r7dgKCUcc0ohWVgqCMRBXbMPsNWIyr/AysTMb74fQs8HTmMH7pbzzrql7vhl8FY37ooJtAEZ7nPYs6uld3FMoFDBvZ/UwMjE8PHzsWH8t1BJuuTk/ABEbFSmrJ0jD7CBY5tdZJM0nnKMElaqICE7Dm/mCc2h77wc394V+DN7+ZbZ+2XL6i+QKCG8a5hYyjuJgHoivEIUNMuZBZAzUinnomIocqnlQDu2zAcJAEwnFvSkFDHsG2wAjwmhcS5UCqmtp9dnfTt3zbyRAdQjRIkyRZhApmUy2p6e7t6eXYQYHHtFAqdpMu3oWLWpra9uzZ2+tXg9DoCzclQnGMgyLhjpBhWYwPhvoh+eDSMM4nkr15CUGrzRG1LK2PB287Sav0Ny09nw1Q5RVlSVlj4MRA7W5BegQb/xZABnxIzoAm0hScg6tffKpbA6lLKgcaIl+AnsRTgDiWSbDAtkhUD3y9PgdN0n8F2wACGaIwsy0t7dtOO3Uvr6+XD5HNG+wYh5BfrFYXLpsaQbpFuccuE6hc5yNEsE8kHYSYUzNOaORHAzbCrKv5PyuDfz485Wju/GMEjqhIx/hHJPYietRlte6L1jMQ803o22QXFJ5KwBo9stojIiuAGZMlpdhMjVlv0F4YlyTqJrgqr/8oSPjt91I/DofldCmEEBsUQ4o6Vu27JRTTskX8uhshqDQKPD4KPAs6GhvJyE15axVaBso/QiBSegikSdlG7h2RjiK5g3YL6CAOJSMAjC7U6sc/96nqiefJShCqHrJnDkqBirqobJSPANFxwu+D6C1E0C3jcwXcijdBMQhwOojZXGAIO5m4g3FUWEVR9IGgJ+l5amxn/09YWvuYlTCuQtE8kfOKL18Pn/q+nWLFy82vQzCrY8cY8/waQM/N6O8FcBMVhgrnh+2SmqVh/CDwwbRe1ComhXyKeRYEk0cCRAdDWL6MTV24gef8afGCcaDiO9j4gEg+4vqN2y3PEa8RMcR0kBHSuSguB0m+oHypykCVBzxFRiDehPAGTUJ+2J829fpxIDQBulT8EiXJzkpG+J169c1tzQTuYgicAKEnmSEBxuOsjAdQX69Vicxno60WYjtEtSGMOXKErZF23hl6QFbCjsF5KFAbfjY4NZ/MfiBmiHKIrvmIa7Iig7QCFpTo2QK6Ei7toI5BER4E4DGDwDDj9LPxo81xmhGBgpjSju3Vfc9IPuCyPUwjOcBKqxataqQy0u9EAoCmjEE68dE2SDwFHsdGx/3MrZmaKYC0hQpjzc8q9tD8LEc6jClMlUYqdkioHiURPuJHfeMb/+lGlFwzD0i8ACv2SqsUvZd0niiuDDvZ4OjpFtbSYMc4OYQ9uwH9fzEjMAAKFTEOCTqoRIsA7yduPffADSKhMogxkMiBPT29nR2dIhBlHpDEJcMKQqObgnkYHcZGh4hhBgrMqJiqVVEYYNckQEQ+RhFPN3XGC8JkbF20D6L4iXK8vKTg1tvoaUxoC48ULZYaRux4haG1Za+iZq4FialQ440aysgd3KInRme3uHBc8Q+D81MNZZSsReLAKDYhp4fhChmChP3/wetlmUkQ2OpJ3WF/Zd5rcuWLRP5IKZwWF6ssYBYnEc4LB6D9vcfD1dVMr09XRdvOXflimWLe7sXL160pDd4VbD/+Ilj/Sf6+0/uP3Dwzm33HznSz+qp1/l8IOGT1mVr+Z4xbk0g3GoepkTu0fLtdQ2190JxgiCplgZ/+bWel/8ZoHiJ3qVMglAMIa7VFtCW2t4VRtDaCqgVJT1L51g5HH6Kag1iZBSXpBH7BxG8kRjDz9aO7Cw/fY/ECVM/BCcNjnt6FmUQZ+RlPKkZSgAhP2/T8MhIz6LO177yys3nn736ecujj7nmlFXsHz9+/5+9Y+++Z+761W9u/8W2HTt3k0gkIy7F9pfPZq6X3DATvBMn7M+JJ3/ZuunFxVVnobiFEf+W80qOhWnfDSs/Xcl5UQ416gQ85F9gxPMUh+Ab9MSxHFG+1ysoY+wN02jEoo+jd31VPpW4FyjMAI3qzKAor0HyRE/qgdINHjPVHK27s+21177khVtekHwCrV3zPPbvbX/w+l9svefGm7564JlDNLQ4tK7RUa7rqtVRtOVPWlhAMTG5dhpGY/l7JQCDd9yy7A9vVB6Qj99/EUqlR13k+1r/nCUD0PGFcorjFMCRCjkMfiQ5hLKCsqcAwEYRjC6id8DAG1lnafd9/sgxPuXVLbn+eZh/EK9QLKJ7Qcg8xScaOG0A4XlyfSFdne1XXLb5/Bds9Gb0oXhWx1VXXHLZi7d879bbbvrnbzDDhNBb78zTaApyIuN5TI3f8yIK88MeqAwemnjqrpZNl8mZBg5uQY14KFZAbYNobMQWcZFEkjLOwXvKjLQ09FNA+ynm3jCnlzX5yI8A6RYAskqIl4SN8flVRNepLQj/Q2nJaetPef9733zhuZtmphlKstnsG177ih9/9ysXbzlftdOaD9qPIKKz9GgQ05cB/IscQTry6+8SHA8k0k9B3MLQDGt2SV2hEU2iZiQmoaSNkILhZSHnC0DH6cDwU+RZAIQ3gJsa9ghU9j9SGzoq72XoBGgLJY5HhkdxswQvkQxEha7YiS0Xnv22P3hlUzEPcyRtba3/fNNnXnXt1YD4HUILlUq/THSVShF+KP4eptWhI1P7HiF4R0Tcvg2EEBDxWUgEXSQnTUc60u7nkFMijvsAgBmbM2Mh1CoJyBwz2JB9TbDfL/QP7+kC2n/8eKVcUZgkGydq5wBSKlWuvuxCRjIyXhpLm0BYgPWzn/7w9e99O8JCgjpIWdXQRxBdJVKC1gcUcoDk+CO/+Z7B6EU/oLiFEUGgKH6I95ZKm47tu5y4kFhSKYde3dFtVf2CY8PEjoUQswe1nyLrrBzaUe3fK2+kdotJDQNtj/hd2Jrqvv37p6amiFytAInGbDl+ZGTkmWcPbjh11ZWXbYF5k/e86y1vfP3vgPAS0ehTMyqF8UPqOo89UIQNHAOmDm6vHH0aoQXis6Dmm5xjkRiGVCS1vq/aAwpjILGkWrLX1kvGLai5vuA5YiEgy6g3bF1+SunpX6nbCISE8EvC4bstiiqoY3bDaq22d+8+trZSbGoqFgqZbLZUKler1SCGkcls2rjuXW+/DuZZPv7R9+/es/+BBx8lOI4uYhUgIntU4AdRsZBwXOWeD/4erK+Yx+ijP+9ddpqKoyB+JuMihKA6jRiGuafVHRdJ/nSpkUNhFxgeB0Y57X3g9RSlQxDxU6BaKe/5DUjfhypNJ5LhK9tkePOhna7VJsYnBoeGBwYGGJDUwyXcnu7Oj33oT7LZWf3CWRLJ5bL/9KVP9y1bImYkxg9kOwAUkgA1OYfCDIkfMLn7ft+va/YtukH2gMuOAzJo7miH6s80kko5IrF9ZOdArbVGmBSgWAgQZBdl35UOPMK/1kt0XE/aHRV91/NDcBeEnKD5fHh4/Xv+oKOjDZ4TWdTd9ZlP3mAMEZohoLVBttLiHFRxDjET/PJUad9Dsp9VD4jb4bkvh0LqRANfQdvxFJISOYR+AOg9HBI5pc1DyAHIBgNoT0z6usLuQnn3r6nhf2PkAKEB0vunyvvX6KqtPkvPPvO08845A55DedGlWy684AW85QDECI5SpQ2A4hxOzgEKP8Z+uxXDghEFiKxiKoyRPSMaYkYcNMYkl5ScAyyuIFvmKTyQ3BPPD8RbZXkZ52cn/Gr52ceVTyjuJPWJax7XD/keSniMYj6ivLDu5K1vSvelQ2aM7t52367d+3bv3jsyOsaQoLu7a8uW86+47NLklXzw+ne97nf/iPOKsFUOzgHEWO/gnCPYfci/+aH0htKpA4/SWtnLFsRXQ0DuLUVleDeFt8KxVPXuIDqWGEPThTlS7yE1VlUsf9pcYaGGPyYaSKwIBztRObYH+Jf2NYdS/ptnxlVxvE/2hRGpzLzokgs2bUz6jVR24X9/70ef+8JNhw4dsU7d/C9fv/SSLZ/4+A3r161JUtX555191RUvvu0Xd2nkwHEFCnjsMeew4qQcBf1apXJkV2HVGchGo4iWBgqUA3Y8w7zKYLIJZcZ7SAUGqGOgiiUQhGmai2lfFIyuqx55ChCPUZwGEA8HZDV4SnnCc6jK9y/efA4klr/65N9d//6PRDWDy7Zf3f+mt/zJiZMDkEyuuvJSqccg1AE0jVRWg2gGSs04B8jj4NLJZ5/QMQyL3QMAXuFDMVnE9GVtlg+cBjnSKIeKKEhLr3xuyYYoMrU0nkMR0PgRRDgA8RjEPadNKRX/8flhJuNdcN7ZyR4GfvyT22/5yjfVn5dfdukXv/DXt9z8hTe+4dXKxjG9+cuPfDJhhZe+8ELJjUCpg8R/8fAKMwCvrfBnVz5FWLx0cLv0LxAGiGgCGAiq0EKxMWTNQfqSgIAsoaT6PofJHlAcU3AID1sNvQ5CkH4Qrd3BMcPPav8eCKMmVL7LSjT3lLaWZBC3oIEFoZngxdYMDU1uhh0yPnLG6etbWpJ+Z5MZFHV8ycWbv/G1m/jxy192ZWdnBzMr/M9773sgYYVLlvSe8/wzHnn0Cc4DJP0g4piCjH8EsQ0VC+GziHMOEf8IZ3z5yNNQq0ImqzGGou+F+Mb7MjzldRLE0CWXF7wEUq7KpjMryAdRnFFyH5NJSIMT8ak03AbaUz/5LGVdoA2otovqC24g7IhlQcLUD3P8EDl8//xzk8IGk4cffkwdX33lS/Cpl7/sCnU8Ojq2Z+9+SCZXXfliRDmokYICWI0coHgiGkuesm4pH98n2INAZYEc0/EMw5dBsQPJBBLLDDgHmKgFoPkHQDRuY0VjNOcITlSHDhPNKniKbYepH8Fb8EFOuP+KUnEcvsoeFlq/ZhXMSNrajaAIQw78Zy3x76SevnG9ehYZzRNjox9SaYzwZdRcImZKqwOHw1qNemTUABx+AJh2H6/RK29uPjkHKI5jHBtzRT8tv45KnxYinMMfO6kZmeIoEWzwJauAUBuC7FAdxJcRwj/YcXd3il+v2bBBOzW7du3Bp5599pA6LhYLp6xOqnMd7W3qWShVK6WgRhTbfoW7YGKGTEl1pF/zdJXnHQ0AABAASURBVFyntheauzg5B2jTrn2F5JJGOajpd5g+CGDUUpGrUJQVlI2kEm+gOngYlBenymvLIvGDSgbqKyzhKEJD5KDcsqRSjj977zvV8Tf+7TsPSSvzzDMH/+4LN6lT737X24J3bpNJb88iavhZ9qgr3wGwq4tWQAD5ILWR48r+ErXqScGxFgGRY9WfCKvwDEwi6V6ktu4tV1iARqIXMZwDx8WD56TlSUB0A7HR4FtsnuBZ8jew/OADgPotZ/RGK4TfV2lrbU78KHDxCy+88e8//Rc3/FW5XB4bG3/la968+nkrmX3Zvn2HUtN3/fFbr3/fO5PX2dvbDYh0oL082rYiLJFjRo2IhbJHtYlBfgVBJYksH885jNqMmmHe4xzg4hyQjHMYK2os9csTmJIh35hyjklDd4RjA5U8g+OHsiyci7C0XEn3a8ive821d2+99aJwWxeTA88cfOKJp3gD1q095Qff/cb//cgHMpkUq3flckVTbgLKL8UpwRwCMBdBeBn2Ay1N8l6Pcg4AzD/iOQdgzkHmm3PQNJxDXOfkHMLYVCatayP8ww8Trh+hznAGGjIPnuWHNoWlA4PDkEbuuvveN/7+H913/4PRU8xD+cO3v/cfv/wVSCPHWcRM+ya8/XLsQXIL0DMYr8eqXpXQDPXSOKA4R5RzkOk4h4pYgo6oQnKZTZxDsk53nAORIW2PInGO0jjR3F7RNSM6HnwTIROEBoKoRviBhOCjGcqmBDs8+P5vb2BgcPWq5Qmf5o47t73tHe+ryx9QfvWrXnH5Sy5paio++tgT3/7P758cGBwaHvnM335xYmLiQ3/+voR1njgxwLWfr5uI+eqrd1V0bANEFAd8vFYCBuIGsEq59vhxcQ4Z29CxE8XwqCPO8VxzDs0VpJpKX0tfpZm50h5+7FcmAdXpYB6SVRDOLZhOUD/4jorSD8K1JOiXgYGhhA8yOTn10Y99WmnGO//oLR/76Af58UuvvvyqK1/yO69+E//zH/7xlpe99Iqzzjw9SbVMOTQ2gMkxDS4C1IhwhL2ksUSkbObIOIfBHqbnHDH84zlZW1GoRQHZP/6EIPFNAxhRaAk4zhGeEwCs6QlFuzSQ78q5hfZslYfi+/XQpATHO5/eC8nk3vsfOHjwsPrzA//n3fjsueecffbZetH/1h/+DJLJUzuexqNLsTWh2HcQlhfsOIfEV8xfNedAo+tcWwEwopSYA8x7nCPCdwDzR9FK0C3TvEHGUtExL0myOWybpWVB9Uj9oFwnQkWwUhXnuPf+hxM+CPNX1fGKFX0tLbabswbFNg6gwo3ll3ffD2BwDszPbD8FNHRIXxf78IQUWiwMkLETaLi2AobHEApB8ZXkknInmLkCBBg/lC8udV8BmDOWKkp6Od6PVr9I9BPzIxTBOsPDED+Qn8Lwgx3s2Lm7v/9EkifJ53LqmAXIowUmp0rqOJdLZHyP9Z946qldyNqKh6fIj6BG7Fx3hOWn8BniZfPg9kEQJsnyAnej6xu8H6W+zt/aCkHeEZEYoDzvCHJYrYw8P/vLKzRTUF6frhlMSxz+V8S73Pjhi+NfP/hYkifZuFH/ygxTDmvVntXz9NP6V6c2bkj0kzR3bN2mPRGE/2D0mJjl0k+h0lvhHYy4PPszk4vxQcCKexrWXM9PZNkta55MZraHFLEkRTIpRchBEb5R9Twa/eQxKTQD0gDEOcDIB4kfmGdwLakL/GD5dd+/595Ei6inbzR+1/LDH/0Uo6jqz7+/8WZsSk7fmEg5fnn3fQARTwEAk09tWeT8kcxAPqh+dsgUW2LxgJqcRlkrADQ/kU8ggy+pJOVOMNOb0BEYORskM3L6MijiS4WH4rV02h4KkKhPRE1+yr0YEnouRL7HXA++Q01+8rM73/7WN244bW3jJ2Ek40/f/XYVxtj6y19d+dLXrlwZuMEsWvrY49tVyQvOP+fSS6Z/+eWhhx+/7Rd3UYz8gDxJcyxNnqF1BYz5EPw4F/Zu5KwDgRwU7w7UeKOgFiEHJRozUihIWuRAegr6CcVZiyuAintKLJVIo3Ay29mnLFS0j4w+RfxDWJO6ZV/8EFHo52+8JcnDsOjFtddcrf5kUPGre37N/mHNWLtm9c1f/lyStZW//fxNFMWmtO1Ax4g5UjzTAM8Kov2UXM+KWDxQ/B0hDY4tmdEEQrWbkoJ0pH9vRcQzCGqBaI7kTYDsK4AjyquxIdu1XK0+QJSXAcZPGz+osC/am+XH2+759QMPTc88WPjk5ps+9+1v3cKwIXq2r2/pX3/iw3fc9t0li3unrequu++7P3SU5GgptMCxDa0BgNcaXWsffLzz3SsIiTBQOX8Ar0Wg9ZeYeauvgsSS/o03FFERTyVHWus+FT+RZZeUlkXZjkx7D+jZoL7bgVK+Q4zH/vTvKIgdxWH/1j38daHwPbw/v+FT3//OvyZZpL3k4s3s3/j4xNDQ8ODgULVW6+rq7O7q7OzsIMmY/eDg8Adv+ETYPcBjkWLtVO4pF2zDd7ONKEZyhWHkKrdoBZ+NMsYa1sxjo0LDfM1w9S9IEv07EOpY9LmfCjlSRkgpIJRTHULUWexPo5gpQjkqjnn5/LL1wU64eo0aER5Mc9Fs0xbN4CKyL8K3xMJvox8+2v/u9334m1/7h4ReaGtrC/vHOUcqqVarb33H9UePHQ+fEbSlwHwiyjnieYbCAObHFhafIvGAYOOBsIEYNl0xenP9hWq8SRfoSP99Dsx6VGyHH6sYHAXUIyCfRHhTACgO5uVyPatN5FTXUtescqQO5uH7Dz78+Cc+/UWYZ/mLD//1I48+Ib0MrRNA7XgXNfaCIy4i0Zd3k2Jmhb5TSTava8OMzREbjexQJ1GbBWB4MNNL6i8YT+NZaf1IVJLVmV+6jrjZBoBr5iXWEvqt//jev3/7BzBvctM/ff2//vuH2DvFnEDPEzBmVJgQ1EtqlgNoG0GbVp0pIhxiSimO74yNmqsqSDO0PeL10HlEDtUOUMYjzDYjuPgYR29EW0GvNVNaWLHJ6FkxzyBGJ8BiptGUawZbVGMHH/7Y31z/wf9XSbnPY1phFb7rT2/4zGe/JGFR4QHGCctKSr9Do4juVmqUCeZMoe80sOKK1MAetFaSLhaSXNIjB4qNKi8cdAwDUJQCImsxBCGBQML88tN0jDl+1PHTWk8eV54f/+CHt73xze9OGFZPIv3HT7z2unf86Ce3W6trMA22NdRpgkY97Mdi36kIUZBdDv9QbhB2QSTGgI6FgAqiEoqoS0JJhRzUwjewI1QEYnytKDaos16xLd+3ASL7LmUnEDUXw3qM/RCoTr73B/W49gXow4/89qprfv+Wr/57pVKBWQi7/JavfOslV73+0ce2WzzDvG8EMyDCOcDACdUnPL9p5SbWLTIWAIrF23ELVZkAcVmDIxYij+cLOTDfsWI4ACg2CjLaAdIuKp9Fe62A2t2y6cW6p8z5NC2iJGQkw8PDn/rMjS+5+vU//NHtNNX0Ad5U+sMf3XbpFa/9+Kc+PzIyiu8LBs8Ao38QKhBbh3i9ip5htYG2My9X8wqfjt4RGkc4nCUTS5qf8Tr9coFO/J16T8bEAAhBO8RcZYyzkTKZjiUTj/2c1qtE/4KTLm/kULnvgaiInDoLsj3U5DpixrCUhcZ/+vOtd9yxbWhktKOjrWdR97RP/fSuPd/+zq0f+/hnv/7N7zC14D0OMvZAsb8qMEPGHqRm2xZHx3sAtMXR3jvJFZdccz14maglldELsFcYlJmhAHr9CwDtEVElazvugGSS6gvGEruojvOI9ikc0yvyYvwAILpWAtRYefFyTcV1F0zu2EaRd67OEtynoFkLAXNs1Ky1PCZkj/kIbX/q6e07nv7s529avnzp1Ve8ZP3a1cv6lizvW8r+sbOHjxw7fOTokSP9T+/ae/vWbYcPH6XaF8AWAccPIpiB5jEAIgZyCSTKRVTNbRte6GWLVFpJQByCqvWUGD8FonGRaCwksaT6XVk0O6lkOogBKdYj5reOh5rfCnPFWJllmXjqbo8YcVVX6ivMkBbNqC2c09GreMuN32tlLT906OhXv/4faDYrnaZYz8T+TYemGpjhG5qqsJ3g33r1o156uK/T13GIwKYAyD70kY9jcQit/Yb/TMyawdfWBKFIIkm/+9zlWaEZD2D7LNgGI46CdQ6gsHxTccXplDbiDdEUzPclAY2NmU8b1WOMpZ7xxFk+ngMR51mIIA3Kh8jdiyvPaBZfQHe0DfB6ioRl5NEojBEYT4WVUWcViiSSVG+8UWMvq/RLtS2UcwUisSA1C0H1u6xV5bee9yrAfUfwsfJZAEz/CI+Eb+kBhWl1Qo2rb56lhj7J7uV1gjXGxNIG5eerNhPXfcFmJEH57otej/0aiuKhYqaZq5uAEN3J95UOwbzGOSASo5UMA/eCjHBQi6MYbY2MVlBz0+qzc0vWADQc0ZjRFf3YGCEapta1EKkftDa48qfDGGKWl1epw+B8cem6plNeYCIB8opxz4dZ5nqKfRfsp0gQV1UnkrR7SAEjHhiIB6g1JiXCWIKchwhaQtu515o9omMVEI1n+JHYBnXP0WlTqrsU5av3csUKsKEHWHv0vLT1w5wPBmZY8z447nrhdQE/o3osZdwT8H0J0ZpqWnbpp1CK/BSkTxRSBTpS7j6P4kHj1RN9FnlcuvVgsDOApvWb80vWJpjlcWdniBwQfy1JXo+eLRB7F2KeVf3G1piWrG1dv5lKRYvMPTwzlWuigQC/pQJodUJwACDUuiCBpP72ObXxQKyzyBmm+YE8K58tgtKKPYlnCPoo03n5OyDcn4F6FvA8w7YcLI8R6yWdjnO49Aki817yGDDaQ6arM45nmM+FuAtZ8vL3yuiEqZ3Ke9JxSNUGTewtFJHXai3U/COxpEUOdCeNBxzrjMhEKCQyxg6kodRYdw4m0NlXm2gZGXtwzPVomXBvSxL9aKQ3pCGWuI9lXxEbMygorw2U5xykneddyx4c2ynDKzZ9Y0D+KkSeHZR9xzCtFCONeqRdWwEAd0TWxgN51vSgNJZE+xTkWmXHRb9Lim2gnzDkFuKqKM8QKQXMASkaiUZjb/ks0bku00bfA6UQqzEmZhD1rSJcJtve033pmw0fR0ZcsN+htYFEfSIUVwTpGRjXSoxJQTnS/zqkXD1BKqs8qEbMAzNttNoSLc9O54s917xfOjcYCRqMNK6BGiPaSD8SaMm0qatVEcwAUPPemlHEW3LtB7x80Zh71LLOYMZF1OOCnm/IpjuZinVZEkn1u7J4NqD1X6r8lGA4Y9dprTiHbKRZHriGFVac0bH5dTIfhFZRwDhEo9rgR+Y6KuPWHsVL0LW+Q/MUz6BopCMpMdbbIlob8W8J6X7hdc3Bvh60vg04PqHjYGDYccT/7LiIxBig5lnFT5NKKuQIx5WYLUZ6YM4nHPPQz4NbHCkPylyzP9o3v56FC11z1B519zjJ+6bKF3d31EkoHxnsAAAQAElEQVQblrdwIqY9kadmD9h98e8p7TdWiwDhhNAD5QE4uYgYHQlPvCcVZCCfJbGk3s8RxQP+DBAX86B2TBNkH9nlzdnGZlLPK96f61pm8gy5nwPNaWJrj4UBBmaAzjfuqK6lGsJj9NgZ80DtAaM9KJ5h1pPr6lv2mr9UD2/dCyhi96pOEsEJkc/JnVVeVQMGiiSWVGsrVlxFznWRYeAhRleFaeauMPs5o33hNbf3vurDXlN77FycPqUp8+OQI1oGpi1jaK2JKJmm9r43fNwrtquohjVbQK/5CRAgdv0aIEDPWLM8RK05hcSSdm3F8lNkw/BZQlytwSwMGnIRo38ZcvS+6gaSycaPUCPWKfUMl/FRvoUf1K6faC6CRhpdi7EK4tpjYwZ4mb7Xf4whB4myYJOnK9sBYPB6yYE0g9D1OMrruTefEVKI9Klep9XYYO37ssvLmtAQgPEMaGWZ5RT6Tuu64p0QMzvBGF1zFJ3jHcknDi1xpw2YCoVp6sGztv0F11RKpan+A+XRk9SvUez/yy7GHM7mFqBXMFw4Aeaej7A43o+eWNL+3goJ2yp/142aeyn0+2rKCIZP5ZnlRT0iBi93djnLiJzW019UL02MbPsGFb9vRe33MtBvm/lmRA7QXhAw8/mxL1le0Bzf3NVBiBp1/bYI3uulWKSOcYHan8Gv8tGOCnau/Zxri6ufD/VqdeREdfQEy88UWjLNbdnm9kyxRfQD8J7BuiXuyF9aszRV7Q2TbwECQh1w2Kxkkmab4IbL+eOB8IeIOCZcNXkpIv4nS5rlVapKSe8X9F/WVbXSWOnEId/LZTuWVI/uEmNs+2RSGY2/dcqFRvKN3or0HY3ka5at/oOOZUGTaxNtTTov+t3Cik2oiWHJetUvjVfHBvxKiRnQTK6gbDeAxADT/YjUDzqcbvkKYJev77wTkkn6CKnCQMQh5L2JQpcG5UH5Y6Dnh2QzBF9VK0+NH9wxeXBnbWKYlcotWdey+Q0kV3TuNRfHFPsmesbQiF0w/AJdj3hSqktG/SP3cSQ1+oFkC12XvDm/dJ26ytLF4HnHh6YO7xo/uNOvVgA0DmlrYqAFwf2v6zSiDCRaPrmkjHPwNiLcE/bP3ucBztVaawVZITMg5FTPWR0fnjy0M/yinu7HXM/z2i59S7ZtMW00KnOQQvLyMP1xtr23+4p3ssbrvoyOk5xFfnmCPXhtcgwiGgwqfmjsd4Tovg2lT3JmkhnoR+oIKRg6i1uM/Q7Qu15j+hEoxfs2ABB+EFKdGJk6ugf8Ou47XnOmpbvt0rcWVp5ljpPae4G1bfpjmSq8icZVw9v68ddSjFsAGMNCaVp7fvdlfxx+iUVpOTX6VfcPn4GU1muTR3bXpkbFbAEDjfR+DoulGv1JZIcZfN+0xdNIurWVsPeJ8SSiMVaUVz+J0zcD7d2ALGPgR2XomHNuCRqSyba84Br2L/xqVuNRn31KLZ2DCHKYI6SOmSnJd2y5ru35Lw9/UweQJ2L2K/JWqHxSllNmnWDMN1ekAKiuU/dAaN+j8VNTK6eVVLvPkW8iw3rhJzMAYrwMYw+6ue+car8GlyH8OxzhWyGg7oUbobyMwqqz8r2rx7ffUT2yk5f0zf3lkqQS132x98H9C/l9C8Bl0HzFXon2jwwcxbhdXLGp9ayrWARPtzzSo3qG6Jiy4hnBW78SA+SeezwTiPStQJYxOYqlGXw/W6rd52lcWcwtTC8RFK/WTkPYYvX8Zg+Cvgr5hOidgHxHT+n4BNGV4i7VT0ua2tvOf031xIGJx39anxgiCHtkSeKa8b7B1CIRhUh5x84EiMebTFtP+znXIIYRpxmyHv23mv3h2LRxR1IiroUBVBlte80FVHk9dgT3RkJJ9e1zKn+D3oUNNPzxeZ0TvqVizELptVI7OhKd39nWrkK9Vho8ElapNQmspw3vm+td3XnZu8qHn5zafb8/dkKOJaDdNE780GUkDOKYh4ETMm6hyhNtBxFaZDsWN6/fUlx5FnieGHtX3Em3gT9KFDMIyXcuybV1i5IQwQyh02DmgIFh4ps+soxoD8yPcmjOAZJbREYa2RRQmGxqCWiMoWBcpexIoFusd1hoqNR/ACol+VRIPxA2hHrpFVaeyf5Vj++b2n0fwxLQe0ei+OFb+Zo5gdAVGzmkLY9DDmbgmk+9KL8U/aQtKmkIjUTiwcADL18s9q7KFJql+iHEAo0rZg5GNZsdAo14PckkHXIgbgEWKlCDN2g+oXXIw/gB0Ws53iDdIpl8U8uq05lTxyKJzLP1iMvKKJ8ovCq3eA37Vx85NrnrvgrjIvrrWBg/1GwzOYrytH0LV5QmWeVZnte06symdZuznUutXop0nolYUtN9quKYJNvUnutcnA0+P+rgGbxm+R0wAMQ5VGxUzEmfRpmHiBHPH+fAaAHC7wh9aABiYCx6w0WOKKVR/IjnH+jabBBabitUy5WRgdroicC/deiHwUUyHUsZF2F/1QYPM3NTObqLMRLQ0WUaw0UsbhGLE15zZ2H5RhbrZItnugkkHi3UfFBFxEVhHzKYbO/NdSzysgUwUMRilBZCxJex4xyRa5NJam8lgg0A0Xlv2BGw2AmN4R9YVyTSgEIR1nFNPcvpoj62vFKdHPWnxmoTI+DXnA1VjCTbtTzbvbzlzKvqk8OVY3uY0akc3w/1iv3erAM/bFzxcoVcz+rC0rW5peszzZ3Re7l0AltMHLNnT5fLsMWU5rZMU1smk7P00uWbaH8kBjMAHMxDlUHWfD6Ug5iQ6fBc5A5hUGiM8EPSA/MqA281y1NIo7FH4grJZAqMqbV1s+x6texXp/zSVL0y6ZenaK2ixwwUIwmxpLmzac157B/Lro8P1sdO1sZOsLQ+MUyrJb9aJrVK+OMvwQ5WFupm/5jt95o7sm29mfaeIG3tNgfdxIkYzeDzO/h55FzRyzcF/wpFZi5DkADqYAyRHL3bAXEIQw+4i2hjgxgvcDGPZDKDt+wVNjjfl0dlaDzGeInxo0E+0Ey+wCY0YcHH8AZ+veZXppiWsLRenvArZUArsSplw8zCrPllpxpTieIFAnyMJ0RjnOBFeNtIphCoAtMDUmjK5lsCp0yvHlh72ZHvoxUP8Qz9jVFQa7zua8O7y2+PQtTipAGOGcU5NAIrJAifqDp8bHLfg+VDT/njA7XJEXYFm6/Ztp4io2yrn5/rWq7xg7r5h2g9xRyQCq0C0wOixnziZbxM1mtqhSb0C8KhR+fXyrRWZTFpZpIYZfFZWg8OaL3uQz34SAHlPzAYruexU8FkD5lN8M8Lfics8MxJ8HuUJEjZkzEAC/Iz2eCUl/G8THCczQW/g0E8IrkDIDOlUJCAI64q84WG4REFbCnYqtPQ0cm9D5QPPskgsDY5rPq5sHJTcdXZag+RUT+JB7gGA758daKfBGCSvfqGcAd99Js+tDZ8dOS+b5cPbW9weXHlmR0X/36+ewWg7/KESCMDZyjHgSs4nwMUrsdRRqKCqN7FMADzgJg0BsPQuGorSSJ6TyLaTCAuHyKzRZfnjk116PDQPd8qH3yiQT8XVpzRvuWN+a4+qi0yqqdWqv78byCZpNjP4a18PuSb5F4K3u+kXhofe+C/hu7+Wn20v/HltdHj40/eWZ8ayy9eQ0KLG9YiLJHGcfmH1BuYJh9MDVAVyaJgRc+wRCyOK4X4BQmKE+EXgFVe5ETORvPRZQhF+H/qU6Mj9//nwJ3/Wh+Zpp/ro8cndtxVL4/lek/xsjl9F36TyWH/QKJfHYFUykGWbSTNXWK+hiNUHRsc2npzaf/DBBKhFStWPb63fGxvcdVZXr6A0IISPZY2EugxxuUh8h0wyWyoXcbAEsR8td4QpAGEREdXcQULP5Sh0DlArfIGWoCJKPiqSM0SI5kdGT05cNuXpvY9mKaf9zPXLL/iTJLLG2su4yf8Q4l+rwjS7SEtj0vuA9xTGN56c7V/N6SUytGdAz+7kTkIoK2p8NAAeythYYyNgK2v9IyIlR+x0Ib1pZFYoekpyGO14G6UtGqT/NG+r6O8WcbgBGSafL9aGrz9HyvHdkHafj62a+iOLwdkS7FRlpbGkteQZj+H2HcTJpQO3/WV6ol9MCOp9O8e2PovgDxVYveveDeEuEZd5st3aM3IlR4b0dfUGNEGO4H1Ma8GvQ8X0TbdBl4rWNca5Xn/xdWDr43mD2z950r/HpiRVI/vGbr7KwQxD6iMJ788DXKMHhPzmOnJgcfKBx6BWUhp7wOTex/EjAmMfiEunKBxOGH0KWmEJa7U1B5TkyBOk8xRBxeu6DK0URmAaD7wHpja91Bp74MwCynvf3hq/yO8mUH9I8eSX5tCOfyT+1Xrxx69FWYtow993/f1zitAERsXTsjRIro81qFYPABijaKoU1srkDiEMQmwzTJSCycMDSb6fTinNcRrJSCvpQjPtG0N6hl58Hswaxl77Me+3B/jn0wB9mmQozTqjwZ6V+7fy9YsYNZSPflstX+vC13jUNfUA9mPzmsB1UAisxzMOZ3kGKbjHxDBCTAjm1hrDbwBJ8aQ0rHdtYGkP2nbQFgltRP7A3gcPgLzxDmY0BN7WbvLzzwKcyST+x4iFh6AjuWZOOEaFepA+IhOUD0vKbisg4+qjx7L8m7+4Yt7CZxQbqmjTOgwKKRE8QwzRKXyp/Yl/Q3laaV06MmgJSfScZeUynFsJ0urA4dgjqQ68KxCZgvDHTgRRRHHO9kOpMHlwYVP06bRayEeM2gctwh1AhrgDfKN2X+qA8/AHAlzHQLkmF/lGD7MlqnqpRGYI6mHUXZw96Pd1xApg8YA3FjCx8PX5SH2Wj/m2HEtqh+MVol1EEtfVRmK9RLhjVIbKpcsgyzROXPVz2wNYTgdGUinHEzovvvqY4MwR8LWRfVcJ2h2OvlEA5+FgBtL0CBDZH5Pl1Lq0AZDt/Ax0foRVx4shqFa7tT+sHPmqJ/HB/2990JKSa0c/v7f0PqsfrUkKlEuRtV8cq04O3avmHERnfpyjEkDPXDxjLiUSL0B7deg0aUurbW/AwaNYh5at1j8CuZMKBs4SCmplQP8WiaThzkSr6mD2ohNpu0119kYPHCtasakFJLzj5gUXDYL0A63mDKoBoR8meYOmCNhi8bujVGNr4L0QiD1beKEPT9xzGNznEDPP0sP0LVg9b7GG+IeDwdfQccNNCOs09jPgdpPItaN8jaY3yszyvA6ovneHCqHPxMQmolyZHNzhhzZnlV4VED4dQAxcz0msuQaP7C1BCBmxhMacxyLDUkwwEaseG4BMTHW3JK1MEeSyeUgvcxEOYrFJpgjaV7/Qn5AEKOMYoCc3ySuZ6M+QnLPU/gyEHPcSKvA+iapjGdgDXZbSWO9I6Ll/NrmtRfAHEmx2AzpZSbKkcsVstk5AI/c4rWFnlWN+kj6LE401mwjTg8gZI4NbASJjGXMceRan0yrc9S9pmiVNM7iPUQE8ovX5pesh1lL0SFEtQAABBlJREFUNpvLzQjsZ6IcTJrb2mDW0rH5Dc4YKODxo+7ejPiE4FhDoaDWa4ilJaB8mWnQJaqRFPlTIGMSuOWgcMXX2hmjxwRhSfgD9mY+/w2aWUpz2wy5S4rNPsZlmWw9eEdg5r5W8xlXtGx4Edq2pbb6El0IbRFTHwQyzlK1EUyUpGDtvhd5oIri7EgRorbTUFcZW3QhSuWGJKVJ4ipqX0yNNoHZWEpRPoVsW0+9Mlk9PsOtEUwKzS3Nza0wI5khcjBpbe2YsXHJLz21/fzXBUdOdHXmg7nfwi7jYwsSXQdxr82CbQWowJv4MqI2xVtRDMN38AZw8CRl0LRuqOdCFlOc6LjgdbklSff5WsIGiA0TzFRmrhwMBts6u8Jt2Slv2dLdedkfe5msE40tTufkIrEoTeKsgNAhoPZIR8deDQs4yzu5i3X3+PJWyUZleBtYlpftvvyd/JcC0vUz8cIBIjBTmaFZEbf3vGJTS61W8ev1hJcUlp++6BV/ni220un3mnOsRhbBfm/F2o+ujIp6c4IIS0GVCdLvvMg3IRIf42utN7+17YjsDwXje4SCW+j3WgniQMaOdl1P8OJeofn0F9cGnqmPJv3R9Vw+39Hdm8lkYBYyK+WAcHgKxWbGh4MXikI+FSe53jXtm69rO+9VXiaHLwe9X5zgfGpzCBK9NWITiDLEcQ6kQ4S46YT7mEaoC4enqFicQ9VDrcJKJ/hVJtGw6gkziJcprr0w17UyWCWZHIJ4YWPR0trR3NrheTM3C6KVyd9bmVZqtWqlVKpUSj6LyIU/2Myi49nW7sKKTYVVZ+c6lsTghPrmB6D3TfC7LdR6PyVsuIkiESzBKX9SU0uouwYz33hHweKRVK6j4hrA/m6pfsNF4YRCC30XzU6c77Yo68nz6yNHpw48Wj6ysz4x5E+NMBxi0fEM0FyBSTGTnUm8yylzqRx21X2bvFO2kI5lOofI36ICwH6K8jhMnKCOs7KimFsScE1y0+7ADMWoNBxLiRDEghEaARWEDbK8/EP9RyQaLYxaKQIrdXrkiL/nXtq/E+ZH5lE5hBTbvN51hP3rWQPZPIl5d818h8XGicjbKM4y9rzXdkeZlJh311KkgLkLuPFGCroW40EMtyCR74KAPlZIE7ztfXK/f2JPsHOnPAHzKfOvHPhmXSugpYe0dJHmLtLSDc3dJI8j8QZOoGxiFeEjrsoIbHDf0rQgqBrrOC61yytFc3IOo4woFMEJ1WqMFoSKUoYdgWoJJgfpxBCdHITJITp2Iu2GndlIqs8+zVbo0CEYOkRhQf53yHOqHAvyv0sWlGNBYmVBORYkVhaUY0FiZUE5FiRWFpRjQWJlQTkWJFYWlGNBYmVBORYkVhaUY0FiZUE5FiRWFpRjQWJlQTkWJFb+BwAA//87JfYFAAAABklEQVQDANmVD50fwBRQAAAAAElFTkSuQmCC">
+<meta name="apple-mobile-web-app-title" content="Poolcoach">
+<meta name="application-name" content="Poolcoach">
+<meta name="theme-color" content="#1b2026">
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600&display=swap">
+<style>
+/* Layout: one-column phone app, table diagram on top, big result buttons, bottom tab bar */
+:root{
+  --bg:#eef1f3; --surface:#ffffff; --ink:#13202a; --muted:#5a6a76; --line:#d4dce1;
+  --accent:#1c62c4; --accent-ink:#ffffff;
+  --good:#1d8649; --warn:#b97c06; --bad:#bf3a30;
+  --cloth:#2c87c8; --cloth-edge:#226fa6; --rail:#1b2026; --pocket:#07090b; --diamond:#e9eef2;
+  --f-display:"Barlow Condensed","Arial Narrow",system-ui,sans-serif;
+  --f-body:"Barlow",system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0d1317; --surface:#162027; --ink:#e5ecf0; --muted:#92a2ad; --line:#26333c;
+  --accent:#5b9ff5; --accent-ink:#06121f; --good:#3fb874; --warn:#e2a93a; --bad:#ec6a5f; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0d1317; --surface:#162027; --ink:#e5ecf0; --muted:#92a2ad; --line:#26333c;
+  --accent:#5b9ff5; --accent-ink:#06121f; --good:#3fb874; --warn:#e2a93a; --bad:#ec6a5f; color-scheme:dark}
+html,body{height:100%}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:15px;line-height:1.45}
+*{box-sizing:border-box}
+.wrap{max-width:720px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:12px 96px;display:flex;flex-direction:column;gap:14px}
+h1,h2,h3{font-family:var(--f-display);font-weight:700;letter-spacing:.01em;margin:0;text-wrap:balance}
+h1{font-size:1.5rem}
+h2{font-size:1.3rem}
+h3{font-size:1.05rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
+.muted{color:var(--muted)}
+.small{font-size:.85rem}
+.num{font-variant-numeric:tabular-nums}
+.top{display:flex;justify-content:space-between;align-items:baseline;gap:12px}
+.brand{font-family:var(--f-display);font-weight:700;font-size:1.15rem;letter-spacing:.04em;text-transform:uppercase}
+.brand b{color:var(--accent)}
+.status{font-size:.8rem;color:var(--muted);text-align:right}
+.status.off{color:var(--warn)}
+.picker{display:flex;gap:8px;align-items:center}
+.picker select{flex:1;min-width:0;font:inherit;font-weight:600;padding:10px 12px;border-radius:10px;border:1px solid var(--line);background:var(--surface);color:var(--ink)}
+.iconbtn{font:inherit;font-weight:700;font-size:1.1rem;width:44px;height:44px;border-radius:10px;border:1px solid var(--line);background:var(--surface);color:var(--ink);cursor:pointer}
+.iconbtn:focus-visible,.res:focus-visible,.tab:focus-visible,.shot:focus-visible,.linkbtn:focus-visible,.picker select:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.principle{display:flex;gap:10px;align-items:flex-start}
+.pnum{font-family:var(--f-display);font-weight:700;font-size:1.6rem;line-height:1;min-width:2.1ch;color:var(--accent)}
+.principle p{margin:2px 0 0;color:var(--muted);font-size:.88rem}
+.plabel{font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.07em;color:var(--muted)}
+.principle h2{font-size:1.45rem;line-height:1.15}
+.table{width:100%;max-width:100%;display:block;border-radius:12px}
+.shots{display:flex;gap:6px;flex-wrap:wrap}
+.shot{font:inherit;font-weight:600;padding:8px 14px;border-radius:999px;border:1px solid var(--line);background:var(--surface);color:var(--ink);cursor:pointer;display:flex;gap:6px;align-items:center}
+.shot[aria-pressed="true"]{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--line);display:inline-block}
+.dot.l1{background:var(--bad)}.dot.l2{background:var(--warn)}.dot.l3{background:var(--good)}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:14px;display:flex;flex-direction:column;gap:10px}
+.howto{display:grid;grid-template-columns:auto 1fr 1fr;gap:12px;align-items:center}
+.howto>div{min-width:0}
+.howto .lbl{font-size:.72rem;text-transform:uppercase;letter-spacing:.07em;color:var(--muted);margin-bottom:2px}
+.howto .val{font-weight:600;font-size:.9rem}
+.speed{display:flex;gap:2px}
+.speed i{width:12px;height:12px;border-radius:2px;background:var(--line)}
+.speed i.on{background:var(--accent)}
+.instr{margin:0}
+.instr-note{margin:0;font-size:.85rem;color:var(--muted)}
+.results{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.res{font:inherit;font-weight:700;font-size:1.05rem;min-height:64px;border-radius:14px;border:0;cursor:pointer;color:#fff;padding:10px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;touch-action:manipulation}
+.res small{font-weight:500;font-size:.78rem;opacity:.9}
+.res.ok{grid-column:1 / -1;background:var(--good);min-height:76px;font-size:1.2rem}
+.res.pot{background:var(--warn)}
+.res.miss{background:var(--bad)}
+.res:active{transform:scale(.98)}
+.today{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
+.chips{display:flex;gap:4px;flex-wrap:wrap}
+.chip{width:14px;height:14px;border-radius:3px}
+.chip.ok{background:var(--good)}.chip.pot{background:var(--warn)}.chip.miss{background:var(--bad)}
+.linkbtn{font:inherit;background:none;border:0;color:var(--accent);font-weight:600;cursor:pointer;padding:6px 0}
+.linkbtn[disabled]{color:var(--muted);cursor:default}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.stat{display:flex;flex-direction:column;gap:2px}
+.stat .v{font-family:var(--f-display);font-weight:700;font-size:1.6rem;line-height:1.05}
+.stat .k{font-size:.75rem;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
+.level{display:inline-block;font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;padding:3px 8px;border-radius:999px;border:1px solid currentColor}
+.level.l0{color:var(--muted)}.level.l1{color:var(--bad)}.level.l2{color:var(--warn)}.level.l3{color:var(--good)}
+.tabs{position:fixed;left:0;right:0;bottom:0;background:var(--surface);border-top:1px solid var(--line);display:flex;justify-content:center;padding-bottom:env(safe-area-inset-bottom,0px);padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));z-index:5}
+.tab{flex:1;max-width:240px;font:inherit;font-family:var(--f-display);font-weight:700;font-size:1.05rem;letter-spacing:.04em;text-transform:uppercase;background:none;border:0;color:var(--muted);padding:14px 4px;cursor:pointer;border-top:3px solid transparent}
+.tab[aria-selected="true"]{color:var(--ink);border-top-color:var(--accent)}
+.legend{display:flex;flex-wrap:wrap;gap:4px 14px;font-size:.78rem;color:var(--muted);margin-top:6px}
+.legend i{display:inline-block;width:14px;height:3px;border-radius:2px;margin-right:5px;vertical-align:middle;outline:1px solid var(--line)}
+[hidden]{display:none!important}
+.dfilter{display:flex;flex-wrap:wrap;gap:6px}
+.dfbtn{font-size:.9rem;padding:7px 12px}
+.diff.d1{color:var(--good)}.diff.d2{color:var(--warn)}.diff.d3{color:var(--bad)}
+.shot[aria-pressed="true"] .diff{color:inherit}
+.diffline{margin-top:4px}
+.dchip{display:inline-block;font-size:.8rem;font-weight:700;letter-spacing:.03em;padding:3px 10px;border-radius:999px;border:1.5px solid currentColor}
+.dchip.d1{color:var(--good)}.dchip.d2{color:var(--warn)}.dchip.d3{color:var(--bad)}
+.randbtn{font:inherit;font-weight:600;width:100%;padding:10px 12px;border-radius:10px;border:1px dashed var(--accent);background:transparent;color:var(--accent);cursor:pointer}
+.randbtn:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.sessbar{position:sticky;top:env(safe-area-inset-top,0px);z-index:4;background:var(--accent);color:var(--accent-ink);border-radius:12px;padding:10px 14px;display:flex;justify-content:space-between;align-items:center;gap:10px}
+.sessbar .muted{color:inherit;opacity:.75}
+.sessbar .linkbtn{color:inherit;text-decoration:underline}
+.sbtns{display:flex;gap:12px;flex-wrap:wrap;justify-content:flex-end}
+.sgrid{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.sbtn{font:inherit;text-align:left;border:1px solid var(--line);background:var(--bg);color:var(--ink);border-radius:12px;padding:10px 12px;display:flex;flex-direction:column;gap:3px;cursor:pointer;min-width:0}
+.sbtn b{font-family:var(--f-display);font-size:1.15rem;letter-spacing:.02em}
+.sbtn span{font-size:.78rem;color:var(--muted);line-height:1.3}
+.sbtn:focus-visible,.sgo:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.sopts{display:grid;grid-template-columns:auto 1fr;gap:8px 10px;align-items:center}
+.sopts select{font:inherit;padding:8px 10px;border-radius:10px;border:1px solid var(--line);background:var(--surface);color:var(--ink);min-width:0}
+.sopts .sgo{grid-column:1/-1}
+.sgo{font:inherit;font-weight:700;font-size:1.05rem;min-height:56px;border:0;border-radius:14px;background:var(--accent);color:var(--accent-ink);cursor:pointer}
+.wclock{font-family:var(--f-display);font-weight:700;font-size:4rem;line-height:1;text-align:center;padding:10px 0}
+.wclock.over{color:var(--good)}
+.diff{font-size:.7rem;letter-spacing:1px;color:var(--warn);margin-left:2px}
+.shot[aria-pressed="true"] .diff{color:inherit}
+.up{color:var(--good)}.down{color:var(--bad)}
+@media (max-width:380px){.sgrid{grid-template-columns:1fr}}
+.chart{width:100%;max-width:100%;display:block}
+.row{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:10px 0;border-top:1px solid var(--line)}
+.row:first-of-type{border-top:0}
+.row .t{min-width:0}
+.row .t b{display:block}
+.bar{height:8px;border-radius:4px;background:var(--line);overflow:hidden;margin-top:4px}
+.bar span{display:block;height:100%;background:var(--accent)}
+.diag{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.empty{color:var(--muted);font-size:.9rem;margin:0}
+.flag{font-size:.8rem}
+.toast{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(76px + env(safe-area-inset-bottom,0px));background:var(--ink);color:var(--bg);padding:8px 14px;border-radius:999px;font-weight:600;font-size:.9rem;z-index:6}
+.ex-list .row{cursor:pointer}
+.lres .res{min-height:84px;font-size:1.25rem}.lres .res.ok{grid-column:auto}
+.lbig{font-family:var(--f-display);font-weight:700;font-size:2rem;line-height:1}
+.tipnav{display:flex;justify-content:space-between;gap:14px}
+.lvgrid{display:grid;grid-template-columns:repeat(5,1fr);gap:6px}.lvbtn{flex-direction:column;gap:0;padding:7px 2px;justify-content:center;border-radius:12px}.lvbtn b{font-family:var(--f-display);font-size:1.02rem;letter-spacing:.01em}
+.lhow{display:grid;grid-template-columns:auto 1fr auto;gap:12px;align-items:center}.lhow .lbl{font-size:.72rem;text-transform:uppercase;letter-spacing:.07em;color:var(--muted)}.lhow .val{font-weight:700;font-size:1.15rem}.tipnav .linkbtn{padding:4px 0}
+.lrule{gap:6px}.ltoggle{display:flex;gap:8px;align-items:center;font-weight:600;cursor:pointer}.ltoggle input{width:20px;height:20px;accent-color:var(--accent);margin:0}
+.tab{font-size:.95rem;letter-spacing:.02em}
+@media (prefers-reduced-motion: reduce){*{transition:none!important}.res:active{transform:none}}
+</style>
+
+<div class="wrap" id="app">
+  <div class="top">
+    <div class="brand">Positions<b>coach</b></div>
+    <div class="status" id="sync">Verbinde …</div>
+  </div>
+  <div class="sessbar" id="sessbar" hidden></div>
+
+  <section id="view-warm" aria-label="Warm-up" hidden style="flex-direction:column;gap:14px"></section>
+  <section id="view-sum" aria-label="Auswertung" hidden style="flex-direction:column;gap:14px"></section>
+  <section id="view-train" aria-label="Training" style="display:flex;flex-direction:column;gap:14px">
+    <div class="card" id="sessstart"></div>
+    <div class="picker">
+      <button class="iconbtn" id="prev" aria-label="Vorherige Übung">‹</button>
+      <select id="exsel" aria-label="Übung wählen"></select>
+      <button class="iconbtn" id="next" aria-label="Nächste Übung">›</button>
+    </div>
+    <div>
+      <button class="randbtn" id="randex">Zufällige Übung</button>
+    </div>
+    <div class="principle">
+      <div class="pnum" id="pnum"></div>
+      <div style="min-width:0"><div class="plabel" id="plabel"></div><h2 id="ptitle"></h2><div class="diffline" id="diffline"></div><p id="pquote"></p></div>
+    </div>
+    <div><div id="tablewrap"></div><div class="legend" id="legend"></div></div>
+    <div class="shots" id="shots" role="group" aria-label="Stöße / Varianten"></div>
+    <div class="card">
+      <div class="howto" id="howto"></div>
+      <p class="instr" id="instr"></p>
+      <p class="instr-note" id="instrnote"></p>
+    </div>
+    <div class="results" id="resultsbox">
+      <button class="res ok" data-r="ok" id="r-ok">Gelocht + Position<small>Weiße in der Zielzone</small></button>
+      <button class="res pot" data-r="pot" id="r-pot">Gelocht<small>Position verfehlt</small></button>
+      <button class="res miss" data-r="miss" id="r-miss">Nicht gelocht<small>Fehlschuss</small></button>
+    </div>
+    <div class="card" id="statscard">
+      <div class="today">
+        <div><b id="shotstat-title">Dieser Teil</b> <span class="level l0" id="lvl">Neu</span></div>
+        <button class="linkbtn" id="undo" disabled>Letzten Versuch löschen</button>
+      </div>
+      <div class="stats" id="shotstats"></div>
+      <div class="chips" id="chips" aria-label="Letzte Versuche"></div>
+      <div class="small muted" id="todayline"></div>
+    </div>
+    <div class="small muted" id="source"></div>
+  </section>
+
+  <section id="view-prog" aria-label="Fortschritt" hidden style="flex-direction:column;gap:14px">
+    <h1>Fortschritt</h1>
+    <div class="card"><div class="stats" id="kpis"></div><div class="small muted" id="kpinote"></div></div>
+    <div class="card"><h3>Erfolgsquote pro Woche</h3><div id="weekchart"></div></div>
+    <div class="card"><h3>Wo liegt das Problem?</h3><div class="diag" id="diag"></div><p class="small muted" id="diagtext"></p></div>
+    <div class="card"><h3>Lochen</h3><div id="lochprog"></div></div>
+    <div class="card"><h3>Heute trainieren</h3><div id="reco"></div></div>
+    <div class="card"><h3>Nach Prinzip</h3><div id="byprinciple"></div></div>
+  </section>
+
+  <section id="view-list" aria-label="Übungen" hidden style="flex-direction:column;gap:14px">
+    <h1>Übungen</h1>
+    <p class="small muted">Schwierigkeit: ● Grundlage · ●● Fortgeschritten · ●●● Anspruchsvoll – berechnet aus Anzahl Banden, Laufweglänge, Effet, Tempo, Größe der Zielzone, Distanz und Schnittwinkel.</p>
+    <p class="small muted">Stufen je Stoß bzw. Variante (S1/S2 = Stoßfolge, A/B/C = Alternativen) aus den letzten 20 Versuchen: <b>Neu</b> unter 10 Versuche · <b>Aufbau</b> unter 50 % · <b>Solide</b> 50–79 % · <b>Sicher</b> ab 80 % bei mindestens 20 Versuchen.</p>
+    <div class="dfilter" id="dfilter" role="group" aria-label="Nach Schwierigkeit filtern"></div>
+    <div class="card ex-list" id="exlist"></div>
+  </section>
+
+  <section id="view-loch" aria-label="Lochen" hidden style="flex-direction:column;gap:14px"></section>
+</div>
+
+<nav class="tabs" role="tablist">
+  <button class="tab" role="tab" aria-selected="true" data-v="train" id="tab-train">Training</button>
+  <button class="tab" role="tab" aria-selected="false" data-v="loch" id="tab-loch">Lochen</button>
+  <button class="tab" role="tab" aria-selected="false" data-v="prog" id="tab-prog">Fortschritt</button>
+  <button class="tab" role="tab" aria-selected="false" data-v="list" id="tab-list">Übungen</button>
+</nav>
+
+<script>
+/* ---------- Übungsdaten (übertragen aus "Principles of Position", Koordinaten in Diamanten: x 0–8 links→rechts, y 0–4 oben→unten) ---------- */
+const PRINCIPLES={
+ 1:{t:"Lass die Winkel arbeiten",q:"Schaffe Winkel, die die Weiße zur nächsten Positionszone tragen."},
+ 2:{t:"Im richtigen Winkel zur nächsten Kugel",q:"Die Weiße soll im richtigen Winkel auf die nächste Kugel zulaufen."},
+ 3:{t:"Gefahrenzonen beachten",q:"Achte darauf, wo der Laufweg der Weißen durch Gefahrenzonen führt."},
+ 4:{t:"Bandennummern nutzen",q:"Schicke die Weiße präzise an einen Punkt an der Bande. Die Zahlen an der Bande = Diamant × 10."},
+ 5:{t:"Weiße in die Tischmitte",q:"Bring die Weiße aus allen Lagen in die Tischmitte. Zone A zählt, Zone B ist noch ordentlich."},
+ 6:{t:"Linie des dritten Diamanten",q:"Liegt die nächste Kugel in der anderen Tischhälfte, muss die Weiße bis über die Linie des dritten Diamanten."},
+ 7:{t:"Taschenlinien visualisieren",q:"„Lege fest, welchen Abstand du zu jeder Taschenlinie brauchst.“"},
+ 8:{t:"Strategie für Hänger",q:"„Nimm dir Zeit, wenn du Position auf einen Hänger spielst.“"},
+ 9:{t:"Mitteltasche oder Ecke",q:"„Bevor du dich für Mitteltasche oder Ecke entscheidest, schau auf die Position für die nächste Objektkugel.“"},
+ 10:{t:"Nimm den Winkel, den du hast",q:"„Erzwinge keinen Winkel, der nicht da ist.“"},
+ 11:{t:"Position auf der kurzen Seite",q:"„Sei vorsichtig, wenn du auf die kurze Seite spielst.“"},
+ 13:{t:"Auf zwei Taschen spielen",q:"„Spiele, wenn möglich, Position auf die Seite der Kugel, die mehr als eine Tasche bietet.“"},
+ 14:{t:"Vier Kugeln vorausplanen",q:"„Schau in der frühen Phase von 9-Ball und 10-Ball vier Kugeln voraus.“"},
+ 15:{t:"Muster rückwärts planen",q:"„Beginne mit der letzten Kugel und arbeite dich rückwärts zu einem Spielplan.“"},
+ 16:{t:"Mehr Distanz, weniger Präzision",q:"„Schaffe größere Positionszonen, wenn die Weiße weit laufen muss.“"},
+ 17:{t:"Falsche Winkel nutzbar machen",q:"„Schaffe einen brauchbaren Winkel, auch wenn du auf der falschen Seite der Taschenlinie bist.“"},
+ 18:{t:"Position über die Tangentenlinie",q:"„Studiere vor jedem Stoß die Tangentenlinie der Objektkugel.“"},
+ 19:{t:"Winkel tauschen",q:"„Hast du einen Winkel, der funktioniert, sei vorsichtig, ihn gegen einen anderen einzutauschen.“"},
+ 20:{t:"Offene Fläche oder Bande",q:"„Spiele, wenn möglich, auf die Seite der Kugel, die mehr Taschen bietet.“"}
+};
+const CENTER={tgt:{r:[3.5,1.5,4.5,2.5]},zoneB:[3,1,5,3]};
+const CALC_NOTE="Laufweg berechnet, nicht aus dem Buch: Beim Stoppball verlässt die Weiße die Objektkugel auf der Tangentenlinie (90°-Regel). Der Weg nach der Bande ist wie im Buch als Spiegelwinkel angenähert; mit Lauf springt die Weiße real etwas länger ab.";
+const STUN="Stoppball (Mitte bis leicht darunter)";
+const STUN_EXPL="Stoppball heißt: Die Weiße hat beim Treffen der Objektkugel weder Vor- noch Rückwärtsdrall. Je weiter die Distanz, desto tiefer musst du anspielen.";
+const EX=[
+ {id:"p1-1",p:1,page:1,name:"40° an die kurze Bande",balls:[[2,7.67,1.88],[3,0.28,1.15]],shots:[
+  {tag:"Winkel 40°",cue:[5.92,0.42],obj:2,pk:"BR",path:[[7.96,1.81],[0,2.79],[0.34,3.07]],tgt:{r:[0,2.45,1,3.65]},spin:[0,-0.6],spd:3,ang:40,
+   txt:"Schneide die 2 aus 40° rechts unten ein. Diesen Winkel solltest du sicher beherrschen. Mit weichem bis mittlerem Stoß läuft die Weiße über die rechte kurze Bande quer über den Tisch an die linke kurze Bande.",note:"Erfolg: Die Weiße liegt höchstens einen Diamanten von der linken kurzen Bande entfernt."},
+  {tag:"flacher Winkel",cue:[7.03,0.63],obj:2,pk:"BR",path:null,tgt:{r:[0,2.45,1,3.65]},spin:null,spd:null,
+   txt:"Die Weiße liegt weiter vorn: Der Winkel ist flacher, die 2 ist leichter zu lochen – aber die Weiße muss genauso weit. Die Position wird schwerer.",note:"Gleiche Zielzone wie bei A. Kein Laufweg eingezeichnet: Das Buch zeigt ihn nicht, und die 2 liegt so nah an der Bande, dass die Weiße die Bande trifft, bevor sich ihr Laufweg stabilisiert. Das lässt sich nicht sicher berechnen."}]},
+ {id:"p1-2",p:1,page:1,name:"Zum ersten Diamanten",balls:[[2,0.56,2.91],[8,7.85,2.31]],shots:[
+  {tag:"Rollwinkel",cue:[0.22,1.47],obj:2,pk:"BL",path:[[1.98,3.97],[7.97,1.0],[7.71,0.78]],tgt:{c:[7.71,0.8,0.38]},spin:[-0.45,-0.2],spd:3,ang:40,
+   txt:"Loche die 2 links unten (40°). Die Weiße geht an die untere lange Bande und weiter zum ersten Diamanten an der rechten kurzen Bande. Bei diesem Winkel reicht ein weicher Stoß.",note:""},
+  {tag:"Stoppball",cue:[0.75,1.41],obj:2,pk:"BL",path:[[2.78,3.96],[7.96,1.12],[7.71,0.82]],calc:true,tgt:{c:[7.71,0.8,0.38]},spin:[0,0],spinNote:STUN,spd:null,
+   txt:"Die Weiße liegt weiter rechts: Bei diesem Winkel brauchst du einen Stoppball, um dieselbe Position zu erreichen.",note:CALC_NOTE}]},
+ {id:"p1-3",p:1,page:1,name:"An die untere lange Bande",balls:[[2,0.77,0.74],[3,4.46,3.84],[8,7.63,3.83]],shots:[
+  {tag:"Rollwinkel",cue:[0.98,3.03],obj:2,pk:"TL",path:[[1.68,0],[5.31,3.97],[5.5,3.75]],tgt:{c:[5.5,3.72,0.38]},spin:[0.41,-0.36],spd:3,ang:40,
+   txt:"Schneide die 2 links oben ein. Die Weiße geht an die obere Bande und quer über den Tisch an die untere lange Bande – Position auf die 3. Bei 40° genügt ein weicher Stoß.",note:""},
+  {tag:"Stoppball",cue:[1.73,2.36],obj:2,pk:"TL",path:[[1.65,0.03],[5.33,3.96],[5.5,3.75]],calc:true,tgt:{c:[5.5,3.72,0.38]},spin:[0,0],spinNote:STUN,spd:null,
+   txt:"Die Weiße liegt weiter rechts: Jetzt brauchst du einen Stoppball – mehr Arbeit für dieselbe Position auf die 3.",note:CALC_NOTE}]},
+ {id:"p1-4",p:1,page:2,seq:true,name:"Zwei Stöße: die 2, dann die 3",balls:[[2,3.1,3.39],[3,3.85,0.12],[11,6.23,1.25],[14,5.58,1.88],[8,7.8,1.65]],shots:[
+  {tag:"die 2",cue:[4.19,3.38],obj:2,pk:"BL",path:[[0.02,2.05],[2.38,0.01],[2.66,0.18]],tgt:{c:[2.66,0.2,0.3]},spin:null,spd:null,
+   txt:"Loche die 2 links unten. Die Weiße geht über die linke kurze und die obere lange Bande in die Zielzone – von dort hast du einen Rollwinkel auf die 3.",note:"Wenn gelocht und Position erreicht, geht es automatisch mit Stoß 2 weiter."},
+  {tag:"die 3",cue:[2.66,0.2],obj:3,pk:"TM",path:[[7.98,2.77],[7.82,2.93]],tgt:{r:[7.24,2.21,8,3.46]},spin:[0,-0.55],spd:2,
+   txt:"Die Weiße liegt dort, wo Stoß 1 endet. Rolle die 3 weich in die obere Mitteltasche. Die Weiße läuft bis in die Zielzone an der rechten kurzen Bande.",note:"Weicher Stoß – achte darauf, welchen Teil der Tasche die 3 trifft. Dieser Rollstoß ist etwas leichter zu kontrollieren, als wenn die Weiße weiter unten (Position B im Buch) gelandet wäre."}]},
+ {id:"p1-5",p:1,page:2,name:"30° Rollwinkel",balls:[[3,4.26,2.11],[8,7.84,2.49]],shots:[
+  {tag:"Rollwinkel 30°",cue:[5.52,3.49],obj:3,pk:"TM",path:[[0,1.83],[7.38,1.06]],tgt:{r:[7.21,0.51,8,1.48]},spin:[0,0],spd:4,ang:30,
+   txt:"30° auf die 3: Rolle sie in die obere Mitteltasche. Die Weiße läuft über die linke kurze Bande zurück in die Zielzone an der rechten kurzen Bande nahe der 8.",note:""},
+  {tag:"Stoppball",cue:[5.01,3.49],obj:3,pk:"TM",path:null,tgt:{r:[7.21,0.51,8,1.48]},spin:[0,0],spinNote:STUN,spd:null,
+   txt:"Die Weiße liegt weiter links: Jetzt brauchst du einen Stoppball. Tempo und Laufweg sind schwerer zu kontrollieren.",note:"Gleiche Zielzone wie bei A. Kein Laufweg eingezeichnet: Ein reiner Stoppball führt laut Berechnung (Tangentenlinie) nicht in diese Zielzone. Das Buch zeigt nicht, wie der Stoß genau gemeint ist."}]},
+ {id:"p1-6",p:1,page:2,name:"Einrollen, zurück an die lange Bande",balls:[[3,0.49,0.46],[11,0.48,3.87],[8,2.14,3.88],[1,3.8,1.92]],shots:[
+  {tag:"Einrollen",cue:[0.98,2.48],obj:3,pk:"TL",path:[[0.81,0],[1.12,3.82]],tgt:{c:[1.15,3.72,0.36]},spin:[-0.3,-0.3],spd:3,
+   txt:"Rolle die 3 weich links oben ein. Die Weiße geht an die obere Bande und läuft fast gerade zurück zur Zielzone an der unteren langen Bande.",note:"Diese Lage zeigt, wie der Winkel die Weiße in die Positionszone trägt."},
+  {tag:"Stoppball",cue:[1.83,2.35],obj:3,pk:"TL",path:null,tgt:{c:[1.15,3.72,0.36]},spin:[0,0],spinNote:STUN,spd:null,
+   txt:"Die Weiße liegt weiter rechts: Aus diesem Winkel kannst du die 3 nicht mehr einrollen – Stoppball nötig.",note:"Gleiche Zielzone wie bei A. Kein Laufweg eingezeichnet: Ein reiner Stoppball führt laut Berechnung (Tangentenlinie) nicht in diese Zielzone. Das Buch zeigt nicht, wie der Stoß genau gemeint ist."}]},
+
+ {id:"p4-1",p:4,page:7,seq:true,name:"Zwei Stöße: Richtung 25, dann 20",balls:[[5,5.75,0.21],[6,6.97,2.07],[3,0.22,2.62]],marks:[[2,0,"20"],[5.5,4,"25"]],shots:[
+  {tag:"die 5",cue:[4.19,1.51],obj:5,pk:"TR",path:[[5.54,3.97],[5.43,3.15]],tgt:{c:[5.43,3.12,0.35]},spin:null,spd:null,
+   txt:"Loche die 5 rechts oben und schicke die Weiße Richtung 25 an der unteren langen Bande.",note:"Wenn gelocht und Position erreicht, geht es automatisch mit Stoß 2 weiter."},
+  {tag:"die 6",cue:[5.43,3.12],obj:6,pk:"TR",path:[[7.19,3.97],[7.98,3.19],[2.22,0.02],[1.61,0.47]],tgt:{c:[1.61,0.47,0.35]},spin:[-0.24,-0.33],spd:3,
+   txt:"Die Weiße liegt dort, wo Stoß 1 endet. Loche die 6 rechts oben. Die Weiße geht über zwei Banden (unten, rechts) Richtung zweiter Diamant (20) an der oberen langen Bande.",note:"Ziel aus dem Buch: 3× in Folge."}]},
+ {id:"p4-2",p:4,page:7,seq:true,name:"Zwei Stöße: Ziehen auf 15, dann 10",balls:[[4,4.34,1.3],[3,6.5,2.17],[8,0.13,1.9]],marks:[[1,4,"10"],[6.5,4,"15"]],shots:[
+  {tag:"die 4",cue:[4.6,2.4],obj:4,pk:"TM",path:[[6.16,3.97],[6.33,3.38]],tgt:{c:[6.33,3.35,0.35]},spin:[0.05,0.6],spd:3,
+   txt:"Loche die 4 in die obere Mitteltasche und ziehe die Weiße zurück Richtung 15 an der unteren Bande.",note:"Markiere die 15 mit Kreide. Die Weiße soll auf die Zahl zulaufen, nicht auf die Bande davor."},
+  {tag:"die 3",cue:[6.33,3.35],obj:3,pk:"TR",path:[[4.55,0.02],[1.11,3.97],[0.49,3.56]],tgt:{c:[0.49,3.54,0.35]},spin:null,spd:null,
+   txt:"Die Weiße liegt dort, wo Stoß 1 endet. Loche die 3 rechts oben. Die Weiße geht über eine Bande (oben) Richtung 10 an der unteren Bande – Position auf die 8.",note:""}]},
+ {id:"p4-3",p:4,page:7,name:"Auf 20, 30 und 10",balls:[[3,0.71,1.1],[8,6.81,1.89]],marks:[[5,4,"30"],[6,4,"20"],[7,4,"10"]],shots:[
+  {tag:"auf 20",cue:[0.75,2.47],obj:3,pk:"TL",path:[[1.89,0.02],[5.94,3.97],[6.26,3.65]],tgt:{c:[6.26,3.62,0.35]},spin:[0.2,-0.59],spd:3,
+   txt:"Loche die 3 links oben. Die Weiße geht an die obere Bande und Richtung 20 an der unteren langen Bande.",note:"Erst wenn das sicher sitzt: weiter mit 30 und 10."},
+  {tag:"auf 30",cue:[0.75,2.47],obj:3,pk:"TL",path:[[1.89,0.02],[4.9,3.97],[5.25,3.6]],tgt:{c:[5.25,3.58,0.35]},spin:null,spd:null,
+   txt:"Gleicher Stoß, aber die Weiße soll Richtung 30 an der unteren Bande.",note:""},
+  {tag:"auf 10",cue:[0.75,2.47],obj:3,pk:"TL",path:[[1.89,0.02],[6.67,3.97],[7.09,3.65]],tgt:{c:[7.09,3.62,0.35]},spin:null,spd:null,
+   txt:"Gleicher Stoß, aber die Weiße soll Richtung 10 an der unteren Bande.",note:""}]},
+
+ {id:"p5-1",p:5,page:8,name:"Mitte aus vier Ecken I",center:true,shots:[
+  {tag:"die 11",balls:[[11,7.52,0.94]],cue:[7.51,1.96],obj:11,pk:"TR",path:[[6.45,0.02],[4.15,1.75]],...CENTER,spin:null,spd:null,
+   txt:"Loche die 11 rechts oben. Die Weiße geht an die obere Bande und zurück in die Tischmitte.",note:"Ziel: 3× in Folge in Zone A, bevor du zur nächsten Lage wechselst."},
+  {tag:"die 10",balls:[[10,6.99,3.62]],cue:[6.0,2.95],obj:10,pk:"BR",path:[[6.58,3.97],[4.2,2.25]],...CENTER,spin:null,spd:null,
+   txt:"Loche die 10 rechts unten. Die Weiße geht an die untere Bande und in die Tischmitte.",note:"Ziel: 3× in Folge in Zone A, bevor du zur nächsten Lage wechselst."},
+  {tag:"die 5",balls:[[5,0.17,0.23]],cue:[0.28,1.46],obj:5,pk:"TL",path:[[0.57,0.02],[3.8,1.85]],...CENTER,spin:null,spd:null,
+   txt:"Loche die 5 links oben. Die Weiße geht an die obere Bande und diagonal in die Tischmitte.",note:"Ziel: 3× in Folge in Zone A, bevor du zur nächsten Lage wechselst."},
+  {tag:"die 12",balls:[[12,0.97,3.77]],cue:[2.04,3.8],obj:12,pk:"BL",path:[[3.75,2.2]],...CENTER,spin:null,spd:null,
+   txt:"Loche die 12 links unten. Die Weiße läuft ohne Bande direkt in die Tischmitte.",note:"Ziel: 3× in Folge in Zone A, bevor du zur nächsten Lage wechselst."}]},
+ {id:"p5-2",p:5,page:8,name:"Mitte aus vier Ecken II",center:true,shots:[
+  {tag:"die 11",balls:[[11,6.98,0.4]],cue:[6.5,1.31],obj:11,pk:"TR",path:[[6.68,0.02],[4.97,3.97],[4.05,2.2]],...CENTER,spin:null,spd:null,
+   txt:"Loche die 11 rechts oben. Die Weiße geht über die obere und die untere lange Bande in die Mitte.",note:"Achte darauf, in welchen Teil der Tasche du die Objektkugel schickst. Bleib an jeder Lage, bis du sie mindestens 3× in Folge schaffst."},
+  {tag:"die 10",balls:[[10,7.75,2.11]],cue:[7.33,3.06],obj:10,pk:"TR",path:[[7.98,2.49],[6.48,3.95],[4.2,2.2]],...CENTER,spin:null,spd:null,
+   txt:"Loche die 10 lang rechts oben. Die Weiße geht über die rechte kurze und die untere Bande in die Mitte.",note:"Achte darauf, in welchen Teil der Tasche du die Objektkugel schickst. Bleib an jeder Lage, bis du sie mindestens 3× in Folge schaffst."},
+  {tag:"die 5",balls:[[5,0.25,0.98]],cue:[1.01,2.01],obj:5,pk:"TL",path:[[0.02,0.95],[0.97,0.02],[3.8,1.85]],...CENTER,spin:null,spd:null,
+   txt:"Loche die 5 links oben. Die Weiße geht über die linke kurze und die obere Bande in die Mitte.",note:"Achte darauf, in welchen Teil der Tasche du die Objektkugel schickst. Bleib an jeder Lage, bis du sie mindestens 3× in Folge schaffst."},
+  {tag:"die 12",balls:[[12,0.12,2.01]],cue:[0.97,2.99],obj:12,pk:"TL",path:[[3.75,2.1]],...CENTER,spin:null,spd:null,
+   txt:"Loche die 12 lang links oben an der Bande entlang. Die Weiße läuft quer in die Tischmitte.",note:"Achte darauf, in welchen Teil der Tasche du die Objektkugel schickst. Bleib an jeder Lage, bis du sie mindestens 3× in Folge schaffst."}]},
+ {id:"p5-3",p:5,page:8,name:"Mitte – eigene Lagen",center:true,shots:[
+  {tag:"die 11",balls:[[11,4.4,0.72]],cue:[4.5,3.23],obj:11,pk:"TM",path:[[5.16,0.02],[7.97,2.15],[6.99,3.97],[4.2,2.15]],...CENTER,spin:null,spd:null,
+   txt:"Loche die 11 in die obere Mitteltasche. Die Weiße geht über drei Banden (oben, rechts, unten) zurück in die Mitte.",note:""},
+  {tag:"die 5",balls:[[5,2.57,1.38]],cue:[1.92,2.24],obj:5,pk:"TM",path:[[2.52,0.02],[3.8,1.7]],...CENTER,spin:null,spd:null,
+   txt:"Loche die 5 in die obere Mitteltasche. Die Weiße geht an die obere Bande und zurück in die Mitte.",note:""},
+  {tag:"die 10",balls:[[10,3.48,3.65]],cue:[2.63,3.61],obj:10,pk:"BM",path:[[3.9,2.3]],...CENTER,spin:null,spd:null,
+   txt:"Loche die 10 in die untere Mitteltasche. Die Weiße läuft direkt in die Mitte.",note:"Danach: Stell dir eigene Lagen rund um den Tisch und spiele immer auf Zone A."}]},
+
+ {id:"p6-1",p:6,page:9,name:"Über die Linie – Mitteltasche",balls:[[1,3.85,1.62],[2,2.37,0.36],[10,2.37,3.36]],lines:[5],shots:[
+  {tag:"zur unteren Bande",cue:[3.2,0.67],obj:1,pk:"BM",path:[[7.98,2.58],[5.28,3.97],[4.3,3.55]],tgt:{c:[4.3,3.53,0.35]},spin:[0.32,-0.34],spd:3,
+   txt:"Loche die 1 in die untere Mitteltasche. Die Weiße geht an die rechte kurze Bande und zurück an die untere lange Bande – sie muss die Linie des dritten Diamanten überqueren.",note:""},
+  {tag:"zur oberen Bande",cue:[3.2,0.67],obj:1,pk:"BM",path:[[7.98,1.09],[5.88,0.02],[4.53,0.67]],tgt:{c:[4.53,0.67,0.35]},spin:null,spd:null,
+   txt:"Gleicher Stoß, aber die Weiße geht über die kurze Bande an die obere lange Bande, ebenfalls über die Linie des dritten Diamanten.",note:""}]},
+ {id:"p6-2",p:6,page:9,name:"Dritter Diamant – zwei Lagen",lines:[3],shots:[
+  {tag:"die 5",balls:[[5,6.76,1.4],[11,0.51,3.26],[6,2.95,3.76]],cue:[5.87,0.4],obj:5,pk:"BR",path:[[7.97,1.51],[4.65,3.97],[4.15,3.6]],tgt:{c:[4.15,3.58,0.35]},spin:[0.26,-0.45],spd:3,
+   txt:"Loche die 5 rechts unten. Die Weiße geht über die rechte kurze Bande an die untere lange Bande, etwas oberhalb des dritten Diamanten.",note:"Wenn das sicher sitzt, weiter mit B."},
+  {tag:"die 11",balls:[[11,0.51,3.26],[6,2.95,3.76]],cue:[3.99,2.49],obj:11,pk:"BL",path:[[0.02,2.83],[3.0,0.02],[3.47,0.3]],tgt:{c:[3.47,0.28,0.32]},spin:[0.5,0],spd:null,
+   txt:"Rolle die 11 mit Rechtseffet links unten ein. Die Weiße geht über die linke kurze Bande zur Zielzone oberhalb des dritten Diamanten an der oberen Bande.",note:""}]},
+ {id:"p6-3",p:6,page:9,name:"Genug Tempo bis zur Linie",lines:[3,5],shots:[
+  {tag:"die 3",balls:[[3,2.64,0.48],[13,7.52,1.52]],cue:[4.31,0.45],obj:3,pk:"TL",path:[[0.02,2.2],[3.16,3.97],[4.05,3.57]],tgt:{c:[4.05,3.55,0.35]},spin:[0,-0.6],spd:4,
+   txt:"Loche die 3 links oben. Die Weiße geht über die linke kurze Bande an die untere lange Bande und muss über die Linie des dritten Diamanten.",note:"Viele bleiben hier vor dem dritten Diamanten liegen, weil es viel Energie braucht, die Weiße bis an die kurze Bande zu bringen. Leg das nötige Tempo fest, bevor du dich an den Stoß stellst."},
+  {tag:"die 13",balls:[[13,7.52,1.52]],cue:[6.51,2.98],obj:13,pk:"TR",path:[[7.96,1.86],[5.1,3.97],[4.47,3.59]],tgt:{c:[4.47,3.57,0.35]},spin:[0.45,0.45],spd:null,
+   txt:"Loche die 13 rechts oben mit tiefem Rechtseffet. Die Weiße geht über die rechte kurze Bande zum dritten Diamanten an der unteren Bande.",note:""}]},
+ {id:"p2-1",p:2,page:3,name:"8-Ball: über die Taschenlinie der 2",balls:[[2,1.37,1.10],[11,3.55,1.64],[12,4.58,0.39],[5,5.72,0.86],[10,5.97,2.47],[7,6.21,2.27],[9,6.26,3.62],[14,6.27,3.10],[1,6.38,1.26],[15,7.59,0.41],[8,7.82,2.26]],guides:[[[0,0],[5.22,4]]],shots:[
+  {tag:"maximal hoch",cue:[6.92,0.67],obj:1,pk:"BM",path:[[3.49,3.97],[2.78,3.27]],tgt:{c:[2.74,3.24,0.3]},tgtLabel:"A",spin:[0,-0.85],spinNote:"maximal hoch",spd:5,
+   txt:"8-Ball: Mit maximal hohem Effet schickst du die Weiße Richtung dritter Diamant an der langen Bande (A). Ziel ist, auf der anderen Seite der Taschenlinie der 2 zu landen – so entsteht ein Winkel, um auf die 7 zu kommen.",note:"Gestrichelte dunkle Linie = Taschenlinie der 2."}]},
+ {id:"p2-2",p:2,page:3,name:"Zwei Banden für den Winkel auf die 7",balls:[[6,3.82,0.10],[7,3.24,3.28],[8,7.81,2.12],[9,7.88,0.52]],guides:[[[4,4],[0.4,0]]],shots:[
+  {tag:"zwei Banden",cue:[2.82,2.04],obj:6,pk:"TM",path:[[3.5,0.03],[0.02,1.79],[0.65,2.3]],tgt:{c:[0.89,2.51,0.3]},tgtLabel:"A",spin:[-0.27,0.32],spd:4,
+   txt:"Corey Deuel spielte hier zwei Banden für seinen Winkel auf die 7 (A). Sobald die Weiße die kurze Bande verlässt, läuft sie im richtigen Winkel auf die 7 zu.",note:"Der Stoß braucht vielleicht ein paar Versuche, bis du das Gefühl dafür hast. Achte darauf, in welchen Teil der Tasche die 6 läuft."}]},
+ {id:"p2-3",p:2,page:3,name:"Zwei Banden: größeres Positionsfenster",balls:[[12,3.48,2.47],[6,4.30,3.50],[11,6.26,2.60],[5,6.40,2.27],[13,6.61,1.67],[8,7.80,1.13],[14,7.88,2.95]],guides:[[[8.07,4.07],[4.21,0]]],shots:[
+  {tag:"zwei Banden",cue:[6.08,2.90],obj:6,pk:"BM",path:[[0.02,2.32],[3.34,0.02],[4.53,0.85]],tgt:{c:[4.78,1.12,0.3]},tgtLabel:"A",alts:[{path:[[0.02,2.32],[5.16,1.65]],tgt:[5.42,1.57,0.28],label:"B"}],spin:[0.44,-0.06],spd:4,
+   txt:"8-Ball: Du spielst die 6 und brauchst Position auf die 5. Die Weiße soll nahe der Taschenlinie der 5 landen, damit du leicht auf die 8 kommst. Mit zwei Banden (A) hast du ein größeres Positionsfenster.",note:"Rot gestrichelt (B): Mit nur einer Bande müsste das Tempo fast perfekt sein."}]},
+ {id:"p2-4",p:2,page:4,name:"Maximal hoch zum dritten Diamanten",balls:[[2,2.18,2.0],[1,7.72,2.51]],guides:[[[0,0],[4.45,4]]],shots:[
+  {tag:"maximal hoch",cue:[7.82,1.96],obj:1,pk:"BR",path:[[5.16,3.96],[4.0,3.52]],tgt:{c:[3.84,3.44,0.3]},tgtLabel:"A",spin:[0,-0.85],spinNote:"maximal hoch",spd:2,
+   txt:"Mit maximal hohem Effet schickst du die Weiße Richtung dritter Diamant an der langen Bande. Ziel: auf oder sehr nahe der Taschenlinie der 2 landen (A).",note:""},
+  {tag:"mit Rechtseffet",cue:[6.49,1.49],obj:1,pk:"BR",path:null,tgt:{c:[3.84,3.44,0.3]},tgtLabel:"A",spin:[0.5,0],spinNote:"Rechtseffet",spd:null,
+   txt:"Weiße auf B: Triff auch von hier den dritten Diamanten. Mit Rechtseffet schickst du die Weiße Richtung lange Bande.",note:"Gleiche Zielzone wie bei A. Kein Laufweg eingezeichnet: Das Buch zeigt ihn nicht, und mit Seiteneffet lässt er sich nicht sicher berechnen."}]},
+ {id:"p2-5",p:2,page:4,name:"Stoppball unterhalb der Taschenlinie",balls:[[7,2.47,0.20],[6,2.85,0.71],[1,3.21,2.37],[8,4.81,0.13],[5,7.53,1.89]],guides:[[[0,0],[8.03,1.81]]],shots:[
+  {tag:"Stoppball",cue:[7.60,2.75],obj:5,pk:"TR",path:[[4.62,1.44]],tgt:{c:[4.48,1.38,0.27]},tgtLabel:"A",alts:[{path:[[6.18,0.02],[4.9,1.57]],label:"C"}],spin:[0,0],spinNote:"Stoppball (Mitte)",spd:4,
+   txt:"Spiele die Weiße mit Stoppball Richtung 6. Sie muss unterhalb der Taschenlinie der 6 bleiben (A), damit du einen Winkel auf die 7 hast.",note:"Rot gestrichelt (C): Dieser Weg liegt fast vollständig in der Gefahrenzone."},
+  {tag:"Stoppball von weiter hinten",cue:[7.57,3.39],obj:5,pk:"TR",path:[[4.62,1.44]],calc:true,tgt:{c:[4.48,1.38,0.27]},tgtLabel:"A",spin:[0,0.3],spinNote:"Stoppball – etwas tiefer anspielen",spd:null,
+   txt:"Lege die Weiße zurück auf B und spiele denselben Stoß. Aus dieser Distanz musst du die Weiße etwas tiefer anspielen.",note:"Laufweg berechnet: B liegt auf derselben Stoßlinie wie A. Beim Stoppball läuft die Weiße auf der Tangentenlinie, also auf demselben Weg wie bei A."}]},
+ {id:"p2-6",p:2,page:4,name:"Zwei Banden zur 3",balls:[[15,0.19,3.61],[8,0.38,2.24],[12,0.78,1.39],[3,1.72,0.82],[11,1.78,1.83],[10,2.40,2.23],[4,2.88,3.83],[13,4.67,0.27],[9,7.36,3.73],[2,7.60,1.96]],guides:[[[0,0],[8,3.59]]],shots:[
+  {tag:"zwei Banden",cue:[6.94,2.80],obj:2,pk:"TR",path:[[7.97,2.25],[5.98,3.96],[3.81,2.71]],tgt:{c:[3.57,2.48,0.3]},tgtLabel:"A",alts:[{path:[[7.98,2.07],[3.2,1.81]],tgt:[2.9,1.79,0.28],label:"B"}],spin:[0.32,0.38],spd:5,
+   txt:"8-Ball: Du brauchst einen Winkel auf die 3, um auf die 4 zu kommen. Mit zwei Banden (A) läuft die Weiße im richtigen Winkel auf die 3 zu.",note:"Rot gestrichelt (B): Mit einer Bande muss die Tempokontrolle viel besser sein, weil du deine Position erst ganz am Ende des Laufwegs hast."}]},
+
+ {id:"p3-1",p:3,page:5,name:"Zwei Banden statt Gefahrenzone",balls:[[8,0.19,2.02],[1,0.84,0.70],[14,1.49,2.03],[2,3.89,1.28],[12,4.66,1.69],[13,4.74,0.90],[11,6.65,2.81]],guides:[[[4,0],[3.64,3.98]]],shots:[
+  {tag:"zwei Banden",cue:[1.08,2.15],obj:1,pk:"TL",path:[[1.47,0.02],[4.69,3.97],[4.95,3.55]],tgt:{c:[4.98,3.51,0.3]},tgtLabel:"A",alts:[{path:[[1.47,0.02],[4.26,2.48]],tgt:[4.26,2.48,0.28],label:"B"}],spin:[0.29,-0.46],spd:3,
+   txt:"8-Ball: Du brauchst einen Winkel auf die 2, um auf die 8 zu kommen. Du könntest die 1 lochen und bei B landen – aber der größte Teil des Laufwegs liegt in der Gefahrenzone. Stattdessen spielst du zwei Banden nach A. So ist die Gefahrenzone aus dem Spiel.",note:""}]},
+ {id:"p3-2",p:3,page:5,name:"Zur Taschenlinie der 7",balls:[[8,0.09,1.71],[2,0.50,2.98],[11,2.32,0.44],[7,4.27,3.10],[12,4.54,3.80],[13,5.42,3.75],[14,7.46,2.23]],guides:[[[4,4.14],[5.25,0]]],shots:[
+  {tag:"an die obere Bande",cue:[0.47,1.99],obj:2,pk:"BL",path:[[1.47,3.95],[5.29,0.02],[5.88,0.71]],tgt:{c:[6.11,0.95,0.3]},tgtLabel:"A",alts:[{path:[[1.47,3.95],[5.12,1.56]],tgt:[5.40,1.39,0.28],label:"B"}],spin:[0,-0.65],spd:4,
+   txt:"8-Ball mit zwei Vollen: Loche die 2 und schaffe einen Winkel auf die 7, um auf die 8 zu kommen. Etwas sicherer als B ist es, die Weiße an die obere lange Bande zu schicken – dorthin, wo die Taschenlinie der 7 die Bande trifft (A).",note:"Rot gestrichelt (B): eine Bande."}]},
+ {id:"p3-3",p:3,page:5,name:"Drei Banden statt präzisem Tempo",balls:[[8,0.12,2.01],[5,0.51,3.43],[13,1.65,2.08],[14,2.90,3.82],[2,5.34,2.26],[12,6.20,3.26],[11,7.59,2.90]],guides:[[[4,4.14],[7.09,0]]],shots:[
+  {tag:"drei Banden",cue:[0.53,1.61],obj:5,pk:"BL",path:[[0.99,3.97],[6.75,0.02],[7.98,0.8],[7.62,0.93]],tgt:{c:[7.43,0.97,0.3]},tgtLabel:"A",alts:[{path:[[0.99,3.97],[6.63,0.86]],tgt:[6.93,0.75,0.28],label:"B"}],spin:[-0.36,0.44],spd:3,
+   txt:"8-Ball: Du brauchst einen Winkel auf die 2, um auf die 8 zu kommen. Du kannst die 5 lochen und über eine Bande nach B gehen – dann muss das Tempo sehr präzise sein. Stattdessen spielst du drei Banden nach A. So ist die Gefahrenzone aus dem Spiel.",note:""}]},
+ {id:"p3-4",p:3,page:6,name:"Zurückziehen hinter die Taschenlinie",balls:[[14,0.91,1.35],[13,1.64,2.76],[3,3.05,1.87],[2,4.98,0.24],[11,5.52,0.63],[12,7.03,2.03],[8,7.74,1.92]],guides:[[[4,4.14],[2.22,0]]],shots:[
+  {tag:"Rückläufer",cue:[3.51,0.35],obj:2,pk:"TR",path:[[1.38,0.28]],tgt:{c:[1.33,0.27,0.3]},tgtLabel:"A",alts:[{tgt:[2.73,0.52,0.22],label:"B"},{tgt:[2.09,0.58,0.22],label:"C"}],spin:[0,0.62],spd:3,
+   txt:"8-Ball: Du brauchst einen Winkel auf die 3, um auf die 8 zu kommen. Lochst du die 2 und landest auf dieser Seite der Taschenlinie der 3 (B), hast du ein Problem. Du könntest bis C zurückziehen, aber das verlangt eine exzellente Tempokontrolle. Stattdessen ziehst du bis in den Bereich A zurück – so bleibst du nicht zu kurz und landest nicht in der Gefahrenzone.",note:""}]},
+ {id:"p3-5",p:3,page:6,name:"Über die obere Bande zur 1",balls:[[5,0.22,3.78],[12,1.05,0.67],[14,2.98,2.34],[11,3.96,3.96],[13,4.69,0.88],[8,5.09,3.86],[1,5.25,2.82]],guides:[[[0,0.66],[8.07,4.07]]],shots:[
+  {tag:"über die obere Bande",cue:[0.51,2.34],obj:5,pk:"BL",path:[[0.48,3.94],[2.70,0.02],[3.48,1.25]],tgt:{c:[3.66,1.51,0.3]},tgtLabel:"A",alts:[{path:[[0.48,3.94],[4.29,2.21]],tgt:[4.49,2.11,0.28],label:"B"}],spin:[-0.15,-0.53],spd:4,
+   txt:"8-Ball: Du brauchst einen Winkel auf die 1, um auf die 8 zu kommen. Mit einer Bande nach B läge der größte Teil des Laufwegs in der Gefahrenzone. Stattdessen spielst du über die obere Bande Richtung 1 (A) und vermeidest die Gefahrenzone.",note:""}]},
+
+ {id:"p7-1",p:7,page:10,name:"Abstand zur Taschenlinie der 4",seq:true,balls:[[3,0.36,3.63],[4,2.89,1.91],[8,7.63,1.94]],guides:[[[4,-0.14],[1.73,4]]],shots:[
+  {tag:"die 3",cue:[0.44,2.71],obj:3,pk:"BL",path:[[0.71,3.97],[1.45,3.0]],tgt:{c:[1.51,2.88,0.28]},tgtLabel:"A",alts:[{tgt:[2.1,2.82,0.22],label:"B"}],spin:[0.24,-0.4],spd:2,
+   txt:"Loche die 3 und schaffe etwas Abstand zwischen Weißer und Taschenlinie der 4 (A).",note:"Rot (B): näher an der Taschenlinie der 4 – von dort brauchst du für die 4 einen viel festeren Stoß."},
+  {tag:"die 4",cue:[1.51,2.88],obj:4,pk:"TM",path:[[5.88,3.97],[6.85,3.42]],tgt:{c:[6.93,3.37,0.3]},spin:[0,0],spinNote:"Stoppball",spd:null,
+   txt:"Aus diesem Winkel kannst du die Weiße mit Stoppball Richtung lange Bande spielen – Position auf die 8.",note:"Die Effet-/Tempo-Angabe im Buch gehört zu Stoß 1."}]},
+ {id:"p7-2",p:7,page:10,name:"Herüberdriften zur 4",balls:[[4,2.22,1.41],[3,4.76,3.27],[8,7.63,1.93],[11,7.89,3.86]],guides:[[[0,0],[6.56,4]]],shots:[
+  {tag:"Rollstoß",cue:[5.69,2.82],obj:3,pk:"BM",path:[[3.1,2.71]],tgt:{c:[2.78,2.57,0.3]},tgtLabel:"A",alts:[{tgt:[3.14,2.29,0.22],label:"B"}],spin:[0,-0.53],spd:2,
+   txt:"8-Ball: Loche die 3 und drifte für einen Winkel auf die 4 herüber, um auf die 8 zu kommen. Du brauchst etwas Abstand zwischen Weißer und Taschenlinie der 4 (A) – bei diesem Winkel bringt dich ein Rollstoß in die Positionszone.",note:"Rot (B): Landest du zu nah an der Taschenlinie, brauchst du einen Kraftstoß, um die Weiße über zwei Banden in Position auf die 8 zu schicken."}]},
+ {id:"p7-3",p:7,page:10,name:"Nahe der Taschenlinie der 6",balls:[[5,0.22,2.21],[7,1.18,2.12],[9,1.78,0.52],[6,3.54,0.94],[8,5.45,2.61]],guides:[[[4,-0.14],[2.21,4]]],labels:[[2.74,0.42,"C"]],shots:[
+  {tag:"die 5",cue:[1.26,0.32],obj:5,pk:"BL",path:[[2.82,3.97],[2.95,3.8]],tgt:{c:[2.99,3.75,0.28]},tgtLabel:"A",alts:[{tgt:[3.47,3.6,0.22],label:"B"}],spin:[-0.36,-0.25],spd:3,
+   txt:"Loche die 5 und lande nahe der Taschenlinie der 6, denn danach willst du für die 7 bei C stehen. Von A aus kannst du die 6 einfach einrollen.",note:"Rot (B): Von dort kannst du die Weiße nicht mehr für einen hohen Winkel auf die 7 halten."}]},
+ {id:"p7-4",p:7,page:11,name:"Nahe der Taschenlinie der 8",balls:[[9,1.82,0.25],[7,1.20,2.13],[8,5.45,2.60]],guides:[[[8.07,4.07],[0.4,0]]],shots:[
+  {tag:"Nachläufer",cue:[2.34,0.85],obj:7,pk:"BL",path:[[0.02,2.08],[3.66,2.16]],tgt:{c:[4.0,2.16,0.3]},tgtLabel:"A",alts:[{tgt:[3.52,2.48,0.24],label:"B"}],spin:[0,-0.6],spd:4,
+   txt:"Du musst nahe der Taschenlinie der 8 landen (A). Bei diesem Winkel kannst du für die 9 zurückziehen oder bis an die kurze Bande nachlaufen und wieder zurück in Position.",note:"Rot (B): Landest du weiter weg von der Taschenlinie der 8, wird der Stoß viel schwerer."}]},
+ {id:"p7-5",p:7,page:11,name:"Rollwinkel auf die 4",seq:true,balls:[[4,0.62,2.62],[3,3.73,1.53],[10,5.61,1.76],[8,6.35,1.77],[11,7.08,1.91]],guides:[[[0,4],[1.79,0]]],shots:[
+  {tag:"die 3",cue:[3.95,2.48],obj:3,pk:"TM",path:[[1.07,0.02],[0.05,0.46],[0.18,0.58]],tgt:{c:[0.2,0.62,0.28]},tgtLabel:"A",alts:[{tgt:[0.75,0.92,0.24],label:"C"}],spin:[-0.18,-0.53],spd:3,
+   txt:"Loche die 3 und schaffe einen Rollwinkel auf die 4 (A).",note:"Rot (C): Landest du näher an der Taschenlinie der 4, kannst du die 4 nicht mehr einrollen und Position auf die 8 holen – dann brauchst du einen Stoppball."},
+  {tag:"die 4",cue:[0.2,0.62],obj:4,pk:"BL",path:[[2.9,3.97],[5.17,2.73]],tgt:{c:[5.4,2.55,0.3]},tgtLabel:"B",spin:null,spinNote:"weicher Rollstoß",spd:null,
+   txt:"Ein weicher Rollstoß schickt die Weiße Richtung 8 (B).",note:"Die Effet-/Tempo-Angabe im Buch gehört zu Stoß 1."}]},
+ {id:"p7-6",p:7,page:11,name:"Fünf Kugeln abräumen",seq:true,balls:[[4,0.16,2.25],[1,1.70,2.14],[5,3.54,0.98],[2,6.49,1.83],[3,7.49,2.53]],guides:[[[0,4],[3.69,0]],[[4,-0.14],[2.19,4]],[[5.25,0],[8.07,4.07]],[[6.77,0],[8.07,4.07]]],shots:[
+  {tag:"die 1",cue:[2.18,0.71],obj:1,pk:"BL",path:[[2.54,3.97],[4.6,0.03],[4.85,0.5]],tgt:{c:[4.91,0.57,0.3]},spin:null,spd:null,
+   txt:"Räume die fünf Kugeln ab und schaffe dabei jeweils den richtigen Abstand zwischen Weißer und Taschenlinie. Start: Weiße auf Position 1, die 1 links unten.",note:"Es kann helfen, die Taschenlinien mit Kreidestückchen an den Banden zu markieren."},
+  {tag:"die 2",cue:[4.91,0.57],obj:2,pk:"BR",path:[[7.99,0.89],[7.82,0.72]],tgt:{c:[7.76,0.68,0.3]},spin:null,spd:null,txt:"Die 2 rechts unten, Weiße über die rechte kurze Bande auf Position 3.",note:""},
+  {tag:"die 3",cue:[7.76,0.68],obj:3,pk:"BR",path:[[5.26,3.96],[0.03,0.78],[0.8,0.03],[1.05,0.25]],tgt:{c:[1.14,0.31,0.3]},spin:null,spd:null,txt:"Die 3 rechts unten, Weiße über drei Banden (unten, links, oben) auf Position 4.",note:""},
+  {tag:"die 4",cue:[1.14,0.31],obj:4,pk:"BL",path:[[2.54,3.96],[2.88,3.79]],tgt:{c:[2.97,3.76,0.3]},spin:null,spd:null,txt:"Die 4 links unten, Weiße an die untere Bande auf Position 5.",note:""},
+  {tag:"die 5",cue:[2.97,3.76],obj:5,pk:"TM",path:null,tgt:null,spin:null,spd:null,txt:"Zum Schluss die 5 in die obere Mitteltasche.",note:"Für den letzten Stoß zeigt das Buch keinen Laufweg."}]},
+
+ {id:"p8-1",p:8,page:12,name:"Hänger: über drei Banden zur 6",seq:true,balls:[[6,0.14,0.23],[9,5.68,1.84],[8,5.92,1.51],[7,6.47,1.71],[5,7.34,3.38]],shots:[
+  {tag:"die 5",cue:[7.50,1.81],obj:5,pk:"BR",path:[[6.58,3.96],[1.55,0.02],[0.02,0.97],[0.18,1.18]],tgt:{c:[0.2,1.25,0.28]},tgtLabel:"A",alts:[{path:[[6.58,3.96],[4.25,1.5]],tgt:[4.13,1.38,0.24],label:"C"}],spin:[0.35,0.3],spd:2,
+   txt:"Loche die 5 und schicke die Weiße an die kurze Bande nahe der 6 (A).",note:"Rot (C): Wärst du nach der 5 bei C gelandet, wäre die Position auf die 7 viel schwerer."},
+  {tag:"die 6",cue:[0.2,1.25],obj:6,pk:"TL",path:[[0.55,0.02],[4.77,3.96],[5.0,3.78]],tgt:{c:[5.26,3.6,0.3]},tgtLabel:"B",spin:[0.5,0],spinNote:"Rechtseffet",spd:null,
+   txt:"Von A rollst du die 6 mit Rechtseffet ein. Die Weiße läuft zum dritten Diamanten an der unteren langen Bande (B).",note:"Die Effet-/Tempo-Angabe im Buch gehört zu Stoß 1."}]},
+ {id:"p8-2",p:8,page:12,name:"Hänger: Winkel auf die 2",seq:true,balls:[[3,0.11,3.84],[7,1.02,2.76],[6,1.18,2.19],[5,2.96,3.65],[1,4.12,2.43],[4,5.66,0.53],[2,5.95,2.49],[9,7.42,1.47]],shots:[
+  {tag:"die 1",cue:[4.19,1.37],obj:1,pk:"BM",path:[[4.81,0.02],[5.1,1.0]],tgt:{c:[5.17,1.1,0.28]},spin:[0,0.65],spd:4,
+   txt:"Spiele auf einen Winkel an der 2, der die Weiße danach Richtung kurze Bande schickt – Position auf die 3 (den Hänger). Dafür ziehst du die Weiße von der 1 zurück an die obere Bande.",note:""},
+  {tag:"die 2",cue:[5.17,1.1],obj:2,pk:"BR",path:[[5.01,3.97],[1.99,0.02],[0.25,1.6]],tgt:{c:[0.21,1.69,0.28]},spin:null,spd:null,
+   txt:"Loche die 2. Die Weiße läuft über zwei Banden Richtung linke kurze Bande – Position auf die 3.",note:""},
+  {tag:"die 3",cue:[0.21,1.69],obj:3,pk:"BL",path:[[3.6,1.98]],tgt:{c:[3.68,1.93,0.3]},spin:null,spinNote:"weich einrollen",spd:null,
+   txt:"Bei diesem Winkel kannst du die 3 weich einrollen und landest in der Tischmitte – Position auf die 4.",note:""}]},
+ {id:"p8-3",p:8,page:12,name:"Hänger tief in der Tasche",seq:true,balls:[[11,0.95,0.72],[2,0.35,1.94],[8,1.72,1.32],[10,1.59,3.13],[15,2.56,3.65],[12,7.34,2.16],[5,7.96,3.94]],shots:[
+  {tag:"die 2",cue:[0.21,1.19],obj:2,pk:"BL",path:[[6.47,3.97],[7.5,3.55]],tgt:{c:[7.76,3.43,0.28]},spin:null,spd:null,
+   txt:"8-Ball: Die 5 liegt tief im Taschenmaul. Loche die 2 und lande so nah wie möglich an der 5.",note:"Liegt eine Kugel tief im Taschenmaul, spiel nahe Position auf sie."},
+  {tag:"die 5",cue:[7.76,3.43],obj:5,pk:"BR",path:[[2.54,0.02],[2.33,0.32]],tgt:{c:[2.27,0.4,0.3]},spin:[0,0.35],spd:4,
+   txt:"Von der 5 aus ziehst du die Weiße zurück an die obere lange Bande, nahe dem zweiten oder dritten Diamanten – Position auf die 8.",note:"Die Effet-/Tempo-Angabe im Buch gehört zu diesem Stoß."}]},
+ {id:"p8-4",p:8,page:13,name:"Hänger: drei Banden zur 8",seq:true,balls:[[8,0.72,2.07],[1,2.85,1.38],[13,4.72,0.35],[15,5.20,1.11],[12,6.17,2.50],[11,6.58,0.91],[2,6.57,3.49],[3,7.85,0.24]],shots:[
+  {tag:"die 1",cue:[1.34,2.20],obj:1,pk:"TM",path:[[2.98,3.97],[3.1,3.6]],tgt:{c:[3.16,3.52,0.28]},spin:[0,0.56],spd:3,
+   txt:"Loche die 1 und schaffe einen Winkel auf die 2, der die Weiße danach an die obere lange Bande schickt.",note:""},
+  {tag:"die 2",cue:[3.16,3.52],obj:2,pk:"BR",path:[[7.99,1.68],[6.70,0.02],[6.45,0.22]],tgt:{c:[6.38,0.33,0.28]},spin:null,spd:null,
+   txt:"Loche die 2. Die Weiße geht an die obere lange Bande – Position auf die 3 (den Hänger).",note:""},
+  {tag:"die 3",cue:[6.38,0.33],obj:3,pk:"TR",path:[[7.99,0.45],[6.06,3.96],[2.2,0.02],[2.0,0.25]],tgt:{c:[1.94,0.34,0.3]},spin:[0.5,0],spinNote:"Rechtseffet",spd:null,
+   txt:"Aus diesem Winkel rollst du die 3 mit Rechtseffet ein. Die Weiße läuft über drei Banden in Position auf die 8.",note:""}]},
+ {id:"p8-5",p:8,page:13,name:"Einrollen zu den drei Diamanten",balls:[[1,7.89,3.85]],shots:[
+  {tag:"1. Diamant",cue:[7.55,3.0],obj:1,pk:"BR",path:[[7.0,0.02]],tgt:{c:[7.0,0.15,0.2]},spin:null,spd:null,
+   txt:"Lege die Weiße in den Bereich A und rolle die 1 ein. Die Weiße soll die obere lange Bande am ersten Diamanten treffen.",note:"Für den ersten Diamanten muss die Weiße weiter von der kurzen Bande entfernt liegen. Je weiter das Ziel an der langen Bande hochrückt, desto näher legst du die Weiße an die kurze Bande. Die Lage der Weißen ist hier nur angenähert – das Buch zeigt nur den Bereich A."},
+  {tag:"2. Diamant",cue:[7.65,3.05],obj:1,pk:"BR",path:[[5.96,0.02]],tgt:{c:[6.0,0.15,0.2]},spin:null,spd:null,txt:"Gleiche Übung, Ziel: zweiter Diamant an der oberen langen Bande.",note:"Achte darauf, wie weit die Weiße von der kurzen Bande entfernt liegen muss."},
+  {tag:"3. Diamant",cue:[7.75,3.1],obj:1,pk:"BR",path:[[5.13,0.02]],tgt:{c:[5.0,0.15,0.2]},spin:null,spd:null,txt:"Gleiche Übung, Ziel: dritter Diamant an der oberen langen Bande.",note:"Achte darauf, wie weit die Weiße von der kurzen Bande entfernt liegen muss."}]},
+ {id:"p8-6",p:8,page:13,name:"Einrollen zwischen die Diamanten",balls:[[1,0.09,0.14]],shots:[
+  {tag:"½ Diamant",cue:[0.2,0.99],obj:1,pk:"TL",path:[[0.51,3.96]],tgt:{c:[0.5,3.85,0.2]},spin:null,spd:null,
+   txt:"Lege die Weiße in den Bereich B und rolle die 1 ein. Die Weiße soll die untere lange Bande zwischen den Diamanten treffen.",note:"Die Lage der Weißen ist nur angenähert – passe den Abstand zur kurzen Bande je nach Ziel an."},
+  {tag:"1½ Diamanten",cue:[0.2,0.99],obj:1,pk:"TL",path:[[1.47,3.96]],tgt:{c:[1.5,3.85,0.2]},spin:null,spd:null,txt:"Ziel: zwischen erstem und zweitem Diamanten.",note:""},
+  {tag:"2½ Diamanten",cue:[0.2,0.99],obj:1,pk:"TL",path:[[2.5,3.96]],tgt:{c:[2.5,3.85,0.2]},spin:null,spd:null,txt:"Ziel: zwischen zweitem und drittem Diamanten.",note:""},
+  {tag:"3½ Diamanten",cue:[0.2,0.99],obj:1,pk:"TL",path:[[3.3,3.96]],tgt:{c:[3.3,3.85,0.2]},spin:null,spd:null,txt:"Ziel: zwischen drittem Diamanten und Mitteltasche.",note:""}]},
+
+ {id:"p9-1",p:9,page:14,name:"Die 2 in die Ecke, Weiße stoppen",seq:true,balls:[[10,0.09,3.31],[8,0.45,1.88],[3,4.05,2.94],[2,4.32,0.71],[11,5.51,0.15],[12,6.55,0.42],[1,7.61,1.44]],shots:[
+  {tag:"die 1",cue:[7.61,2.17],obj:1,pk:"TR",path:[[5.94,1.15]],tgt:{c:[5.66,1.02,0.28]},spin:null,spd:null,
+   txt:"Loche die 1 und lege dir die Weiße für die 2 zurecht.",note:""},
+  {tag:"die 2",cue:[5.66,1.02],obj:2,pk:"TL",path:[[4.88,0.6]],tgt:{c:[4.90,0.57,0.28]},spin:[0,0],spinNote:"Stoppball",spd:3,
+   txt:"Die 2 kannst du in die Mitteltasche oder in die Ecke spielen. In die Ecke kostet es wenig Aufwand, die 2 zu lochen und die Weiße zu stoppen – so hast du deinen Winkel auf die 3.",note:"Die Effet-/Tempo-Angabe im Buch gehört zu diesem Stoß."},
+  {tag:"die 3",cue:[4.90,0.57],obj:3,pk:"BM",path:[[2.92,3.97],[2.35,3.62]],tgt:{c:[2.07,3.47,0.3]},spin:null,spd:null,
+   txt:"Loche die 3 in die untere Mitteltasche – Position auf die 8.",note:""}]},
+ {id:"p9-2",p:9,page:14,name:"Nahe der Taschenlinie für die Ecke",seq:true,balls:[[8,0.19,1.83],[3,4.24,2.54],[2,4.24,3.40],[15,7.18,3.62],[1,7.29,1.68],[14,7.57,0.29]],guides:[[[0,3.89],[7.98,2.98]]],shots:[
+  {tag:"die 1",cue:[6.58,0.78],obj:1,pk:"BR",path:[[7.98,1.74],[6.08,2.82]],tgt:{c:[5.76,3.04,0.3]},spin:[0.34,-0.35],spd:3,
+   txt:"Die 2 kann in die Mitteltasche oder die Ecke. Landest du nahe der Taschenlinie der 2 für die Ecke, kannst du die Weiße für deinen Winkel auf die 3 stoppen.",note:"Spielst du stattdessen auf die Mitteltasche, musst du bei jedem kleinen Winkel härter arbeiten, um einen guten Winkel auf die 3 zu bekommen."},
+  {tag:"die 2",cue:[5.76,3.04],obj:2,pk:"BL",path:[[4.7,3.55]],tgt:{c:[4.75,3.57,0.28]},spin:[0,0],spinNote:"Stoppball",spd:null,
+   txt:"Loche die 2 in die linke untere Ecke und stoppe die Weiße – Winkel von etwa 30° auf die 3.",note:""},
+  {tag:"die 3",cue:[4.75,3.57],obj:3,pk:"TM",path:[[0.05,0.75],[0.35,0.6]],tgt:{c:[0.43,0.55,0.3]},spin:null,spd:null,
+   txt:"Loche die 3 in die obere Mitteltasche. Die Weiße läuft an die linke kurze Bande.",note:"Diesen Laufweg zeigt das Buch nur als dünne Linie."}]},
+ {id:"p9-3",p:9,page:14,name:"Um die 2 herum statt Mitteltasche",balls:[[1,3.86,0.30],[2,6.44,2.34]],guides:[[[4,4.14],[7.98,1.23]]],shots:[
+  {tag:"einrollen",cue:[1.63,0.89],obj:1,pk:"TM",path:[[8.0,1.99],[5.24,3.98],[4.75,3.7]],tgt:{c:[4.59,3.62,0.3]},tgtLabel:"A",alts:[{path:[[7.98,1.36],[7.2,1.8]],tgt:[7.15,1.83,0.24],label:"B"}],spin:[0.4,-0.13],spd:3,
+   txt:"Rolle die 1 ein und schicke die Weiße um die 2 herum in Position A.",note:"Rot (B): Weniger erfahrene Spieler spielen manchmal auf die Mitteltasche – aber dann muss die Weiße extrem präzise auf der Taschenlinie der 2 landen."}]},
+
+ {id:"p10-1",p:10,page:15,name:"Flacher Winkel auf die 2",balls:[[1,3.98,1.74],[8,4.31,2.24],[6,6.17,0.86],[2,6.68,2.60],[5,5.85,3.85]],shots:[
+  {tag:"Nachläufer",cue:[5.84,1.44],obj:2,pk:"BR",path:[[7.13,3.37]],tgt:{c:[7.27,3.59,0.3]},tgtLabel:"A",spin:[0,-0.65],spd:2,
+   txt:"Du hast einen flachen Winkel auf die 2. Erzwingst du einen Winkel, um die Weiße an die lange Bande für die 5 zu schicken, verschießt du womöglich. Option 1: nachlaufen und den langen Stoß auf die 5 nehmen (A).",note:""},
+  {tag:"Rückläufer links",cue:[5.84,1.44],obj:2,pk:"BR",path:[[4.62,0.02],[2.0,2.57]],tgt:{c:[1.84,2.73,0.3]},tgtLabel:"B",spin:[-0.3,0.5],spinNote:"Rückläufer mit etwas Linkseffet",spd:null,
+   txt:"Option 2: Zieh die Weiße mit etwas Linkseffet zurück. Sie geht an die obere Bande und in Position B.",note:"Die Effet-/Tempo-Angabe im Buch gehört zu Option A."}]},
+ {id:"p10-2",p:10,page:15,name:"Fast gerade auf die 1",balls:[[13,0.36,0.43],[14,1.55,0.68],[3,1.95,1.84],[8,3.44,0.42],[1,4.02,2.62],[15,7.18,3.62]],guides:[[[-0.07,4.07],[7.98,1.26]]],shots:[
+  {tag:"Nachläufer",cue:[5.73,2.19],obj:1,pk:"BL",path:[[0.08,2.28],[0.6,2.1]],tgt:{c:[0.74,2.04,0.3]},tgtLabel:"A",spin:[0.2,-0.6],spd:4,
+   txt:"Du bist fast gerade auf die 1 – der Winkel reicht nicht, um die Weiße für die 3 in die linke untere Ecke herüberzubringen. Läuft die Weiße aber nach und kommt von der kurzen Bande zurück, kannst du die 3 in die rechte obere Ecke lochen (A).",note:""},
+  {tag:"Rückläufer links",cue:[5.73,2.19],obj:1,pk:"BL",path:[[7.98,1.26],[5.47,0.02],[3.7,0.9]],tgt:{c:[3.56,1.0,0.3]},tgtLabel:"B",spin:[-0.25,0.55],spinNote:"Rückläufer mit einem Hauch Linkseffet",spd:null,
+   txt:"Oder du ziehst die Weiße mit einem Hauch Linkseffet zurück (B) und holst dir so die Position auf die 3.",note:"Die Effet-/Tempo-Angabe im Buch gehört zu Option A."}]},
+ {id:"p10-3",p:10,page:15,name:"Einrollen und die 2 über die Bande",balls:[[8,0.22,2.06],[13,1.01,2.91],[1,3.15,3.73],[2,3.16,0.33]],shots:[
+  {tag:"einrollen",cue:[6.11,3.16],obj:1,pk:"BL",path:[[3.21,3.97],[2.9,3.52]],tgt:{c:[2.86,3.47,0.3]},tgtLabel:"A",spin:[0,0],spinNote:"Mitte",spd:3,
+   txt:"Flacher Winkel auf die 1: Statt einen Winkel auf die 2 zu erzwingen, rollst du die 1 ein und nimmst danach die 2 über die Bande.",note:""},
+  {tag:"Rückläufer links",cue:[6.11,3.16],obj:1,pk:"BL",path:[[3.49,3.97],[7.98,2.11],[5.95,1.11]],tgt:{c:[5.70,0.98,0.3]},tgtLabel:"B",spin:[-0.3,0.5],spinNote:"Rückläufer mit etwas Linkseffet",spd:null,
+   txt:"Die andere Option: Loche die 1 und zieh die Weiße mit etwas Linkseffet zurück an die kurze Bande (B).",note:"Die Effet-/Tempo-Angabe im Buch gehört zu Option A."}]},
+
+ {id:"p11-1",p:11,page:16,name:"9-Ball: Ecke statt kurze Seite",balls:[[3,0.37,2.10],[9,1.51,0.12],[5,2.17,1.29],[8,2.49,2.25],[2,5.27,3.77],[6,6.18,0.87],[1,6.95,1.10]],labels:[[4.11,0.3,"C"]],shots:[
+  {tag:"zur Ecke",cue:[3.11,2.91],obj:1,pk:"TR",path:[[7.98,1.64],[3.47,3.17]],tgt:{c:[3.23,3.39,0.3]},tgtLabel:"A",alts:[{path:[[7.99,2.29],[6.57,3.96],[6.35,3.8]],tgt:[6.24,3.72,0.24],label:"B"}],spin:[0.32,-0.6],spd:5,
+   txt:"9-Ball: Du könntest auf die kurze Seite der 2 spielen (B). Landest du dann aber in einem ungünstigen Winkel, wird die Position auf die 3 schwierig. Klüger ist hier, auf die rechte untere Ecke zu spielen (A).",note:"Läge die 3 bei C, käme die kurze Seite in Frage – dann ist die Position von der 2 auf die 3 recht einfach."}]},
+ {id:"p11-2",p:11,page:16,name:"Drei Banden auf die andere Seite der 2",balls:[[5,0.61,2.02],[3,1.61,1.82],[4,3.17,2.47],[1,4.26,0.76],[2,5.44,3.78]],labels:[[7.69,0.4,"C"]],shots:[
+  {tag:"drei Banden",cue:[3.77,3.35],obj:1,pk:"TM",path:[[5.79,0.02],[7.97,0.77],[4.49,3.97],[4.15,3.78]],tgt:{c:[4.06,3.73,0.3]},tgtLabel:"A",alts:[{path:[[5.25,0.02],[7.98,2.08],[6.52,3.93],[6.32,3.78]],tgt:[6.26,3.73,0.24],label:"B"}],spin:[0.44,0.27],spd:3,
+   txt:"Du könntest die 1 lochen und auf die kurze Seite der 2 spielen (B) – aber jeder ungünstige Winkel macht es schwer, auf die 3 zu kommen. Stattdessen spielst du drei Banden auf die andere Seite der 2 (A).",note:"Läge die 3 bei C, käme die kurze Seite in Frage, weil du für die Position auf die 3 dann nicht viel tun musst."}]},
+ {id:"p11-3",p:11,page:16,name:"Drei Banden für die Ecke",balls:[[2,2.37,3.82],[8,3.15,3.27],[3,4.0,2.65],[1,4.49,1.46]],labels:[[0.31,1.08,"C"]],shots:[
+  {tag:"drei Banden",cue:[5.2,1.92],obj:1,pk:"TL",path:[[5.48,0.02],[7.99,1.51],[5.04,3.96],[4.65,3.75]],tgt:{c:[4.51,3.7,0.3]},tgtLabel:"A",alts:[{tgt:[1.44,3.73,0.24],label:"B"}],spin:[0.38,0.2],spd:5,
+   txt:"Du spielst die 1 und gehst über drei Banden in Position auf die 2 für die Ecke (A).",note:"Rot (B): Du könntest die 1 in die Mitteltasche lochen und auf die kurze Seite der 2 spielen – aber ein ungünstiger Winkel auf die 2 erschwert dann die Position auf die 3. Läge die 3 bei C, wäre die kurze Seite keine schlechte Option. Den Laufweg für B zeigt das Buch nur angedeutet, deshalb ist nur die Zone eingezeichnet."}]},
+
+ {id:"p13-1",p:13,page:18,name:"Zwei Taschen für die 2",balls:[[1,0.31,3.30],[3,0.50,0.41],[2,3.96,1.99],[4,5.25,2.19],[5,5.69,3.25],[6,6.82,0.54],[9,7.74,1.43]],shots:[
+  {tag:"für die untere Mitte",cue:[4.44,1.11],obj:1,pk:"BL",path:[[0.02,3.07],[4.01,1.38]],tgt:{c:[4.19,1.3,0.28]},tgtLabel:"A",alts:[{tgt:[5.01,1.14,0.24],label:"B",ok:true},{path:[[0.02,3.07],[4.47,2.69]],tgt:[4.7,2.63,0.24],label:"C"}],spin:[0.4,-0.4],spd:3,
+   txt:"Loche die 1 und spiele auf Position für die 2. Spielst du für die 2 in die untere Mitteltasche (A), hast du zwei Taschen zur Auswahl: Läufst du zu weit (B), lochst du die 2 einfach in die Ecke.",note:"Grün (B) = noch gute Position. Rot (C): Spielst du für die 2 in die obere Mitteltasche, läufst du womöglich etwas zu weit und hast keinen Stoß mehr."}]},
+ {id:"p13-2",p:13,page:18,name:"Untere Mitte: Seite und Ecke",balls:[[14,1.14,0.69],[3,1.36,3.71],[8,3.01,0.25],[12,3.49,0.67],[1,4.16,2.79],[2,4.21,1.94],[11,6.52,1.50],[9,6.52,2.21],[13,7.83,3.08]],shots:[
+  {tag:"für die untere Mitte",cue:[5.45,2.21],obj:1,pk:"BM",path:[[4.14,2.63],[0.02,2.51],[4.0,1.38]],tgt:{c:[4.22,1.33,0.28]},tgtLabel:"A",alts:[{tgt:[5.09,1.06,0.24],label:"B",ok:true},{path:[[4.14,2.63],[0.02,2.51],[5.37,2.74]],tgt:[5.68,2.75,0.24],label:"C"}],spin:[0.3,-0.55],spd:3,
+   txt:"Wie im letzten Beispiel lochst du die 1 in die Mitteltasche und spielst auf Position für die 2 in eine der Mitteltaschen. Für die untere Mitteltasche hast du die Mitte (A) und die Ecke (B).",note:"Rot (C): Spielst du auf die obere Mitteltasche, bleibt dir nur eine Tasche – landest du bei C, hast du eine schwierige Situation."}]},
+ {id:"p13-3",p:13,page:18,name:"Mehr Tempo: zwei Taschen",balls:[[1,0.18,0.21],[2,5.23,2.50],[9,5.18,0.75],[11,4.47,1.63],[12,4.75,0.89],[13,4.58,2.17],[15,0.60,2.95],[8,6.83,1.08]],shots:[
+  {tag:"drei Banden",cue:[0.17,1.29],obj:1,pk:"TL",path:[[0.51,0.02],[5.92,3.97],[7.98,2.98],[6.5,2.11]],tgt:{c:[6.35,2.03,0.3]},tgtLabel:"A",alts:[{tgt:[5.64,1.55,0.26],label:"B",ok:true}],spin:[0.4,0.4],spd:4,
+   txt:"Diese Situation kommt in 8-Ball und 9-Ball öfter vor: Du lochst die 1 und gehst über drei Banden in Position auf die 2 für die linke untere Ecke. Spielst du die 1 etwas schneller, öffnet sich deine Positionszone – du kannst auf zwei Taschen spielen: Ecke (A) und Mitte (B).",note:""}]},
+
+ {id:"p14-1",p:14,page:19,name:"9-Ball: vier Kugeln vorausplanen",seq:true,balls:[[1,5.49,2.17],[2,2.64,0.27],[3,3.73,3.57],[4,7.54,3.53],[5,2.23,1.52],[6,5.28,1.07],[7,6.35,2.63],[8,7.11,2.77],[9,1.89,1.47]],shots:[
+  {tag:"die 1",cue:[5.99,2.76],obj:1,pk:"TM",path:null,tgt:{c:[3.74,1.1,0.3]},tgtLabel:"2",spin:[0,-0.6],spd:2,
+   txt:"9-Ball: Die 4 ist eine Problemkugel. Landest du für die 4 bei B, wird die Position auf die 5 sehr schwierig. Planst du aber vier Kugeln voraus, spielst du schon jetzt auf diesen Winkel an der 2 (Zone 2).",note:"Das Buch zeigt hier keine Laufwege, nur die Zielzonen. Die Effet-/Tempo-Angabe im Buch gilt für das ganze Muster."},
+  {tag:"die 2",cue:[3.74,1.1],obj:2,pk:"TL",path:null,tgt:{c:[2.3,3.05,0.3]},tgtLabel:"3",spin:[0,-0.5],spinNote:"Rollstoß",spd:null,
+   txt:"Von diesem Winkel schickt ein Rollstoß die Weiße in den Bereich für die 3 (Zone 3).",note:""},
+  {tag:"die 3",cue:[2.3,3.05],obj:3,pk:"BM",path:null,tgt:{c:[7.67,0.82,0.3]},tgtLabel:"4",alts:[{tgt:[4.18,3.23,0.24],label:"B"}],spin:[0,0],spinNote:"Stoppball",spd:null,
+   txt:"Ein Stoppball schickt die Weiße in Position 4 – mit dem idealen Winkel, um auf die 5 zu kommen.",note:"Rot (B): Die schlechte Position auf die 4, die du mit dieser Planung vermeidest."},
+  {tag:"die 4",cue:[7.67,0.82],obj:4,pk:"BR",path:null,tgt:{c:[2.62,0.9,0.3]},tgtLabel:"5",spin:null,spd:null,
+   txt:"Loche die 4 und hol dir die Position auf die 5 (Zone 5).",note:"Diesen Stoß beschreibt das Buch nicht im Detail – nur die Zielzone ist eingezeichnet."}]},
+ {id:"p14-2",p:14,page:19,name:"10-Ball: Problemkugel 5",seq:true,balls:[[1,7.58,1.87],[2,7.35,0.54],[3,4.98,1.59],[4,0.70,0.91],[5,4.41,3.81],[6,6.83,3.84],[7,6.97,0.20],[8,3.95,1.49],[9,4.48,1.71],[10,1.84,1.13]],shots:[
+  {tag:"die 1",cue:[6.42,3.45],obj:1,pk:"TR",path:null,tgt:{c:[5.69,0.47,0.3]},tgtLabel:"2",alts:[{tgt:[6.06,1.51,0.24],label:"B"}],spin:[-0.36,-0.25],spd:2,
+   txt:"10-Ball: Du bist auf der 1, aber die 5 liegt schwierig. Endest du hier auf der 2 (Zone 2), hast du deinen Winkel, um auf die 3 zu kommen.",note:"Rot (B): Landest du auf der 2 bei B, wird das Abräumen viel schwerer. Das Buch zeigt hier keine Laufwege, nur die Zielzonen."},
+  {tag:"die 2",cue:[5.69,0.47],obj:2,pk:"TR",path:null,tgt:{c:[6.41,2.41,0.3]},tgtLabel:"3",spin:null,spd:null,
+   txt:"Du brauchst diesen Winkel auf die 3 (Zone 3), damit du die Weiße danach in deine Position für die 4 schicken kannst.",note:""},
+  {tag:"die 3",cue:[6.41,2.41],obj:3,pk:"TL",path:null,tgt:{c:[0.31,2.57,0.3]},tgtLabel:"4",spin:null,spd:null,
+   txt:"Schicke die Weiße in Position 4.",note:""},
+  {tag:"die 4",cue:[0.31,2.57],obj:4,pk:"TL",path:null,tgt:{c:[5.32,3.76,0.3]},tgtLabel:"5",spin:null,spinNote:"einrollen",spd:null,
+   txt:"Von Position 4 rollst du die 4 ein und holst dir die Position auf die 5 (Zone 5).",note:""}]},
+ {id:"p14-3",p:14,page:19,name:"10-Ball: Winkel auf die 2",seq:true,balls:[[1,5.50,2.13],[2,1.59,0.21],[3,6.33,0.27],[4,7.07,1.77],[5,0.29,2.45],[6,2.14,0.69],[7,6.57,1.90],[9,7.61,1.59],[10,2.57,1.68]],shots:[
+  {tag:"die 1",cue:[6.01,2.80],obj:1,pk:"TM",path:null,tgt:{c:[3.77,0.98,0.3]},tgtLabel:"2",alts:[{tgt:[3.67,0.40,0.24],label:"B"}],spin:[0,-0.6],spd:2,
+   txt:"10-Ball: Schaffe einen Winkel auf die 2, der dir einen Winkel auf die 3 gibt. Landest du hier (Zone 2), kannst du danach drei Banden in die Tischmitte spielen.",note:"Rot (B): Landest du auf der 2 bei B, wird das Abräumen viel schwerer, weil du dann schwer einen Winkel auf die 3 bekommst. Das Buch zeigt hier keine Laufwege, nur die Zielzonen."},
+  {tag:"die 2",cue:[3.77,0.98],obj:2,pk:"TL",path:null,tgt:{c:[4.06,2.17,0.3]},tgtLabel:"3",spin:null,spinNote:"drei Banden",spd:null,
+   txt:"Loche die 2 und spiele drei Banden in die Tischmitte (Zone 3).",note:""},
+  {tag:"die 3",cue:[4.06,2.17],obj:3,pk:"TR",path:null,tgt:{c:[5.55,3.37,0.3]},tgtLabel:"4",spin:null,spinNote:"einrollen",spd:null,
+   txt:"Jetzt kannst du die 3 einrollen und dir die Position auf die 4 holen (Zone 4).",note:""},
+  {tag:"die 4",cue:[5.55,3.37],obj:4,pk:"TR",path:null,tgt:{c:[1.05,0.97,0.3]},tgtLabel:"5",spin:null,spd:null,
+   txt:"Loche die 4 und hol dir die Position auf die 5 (Zone 5).",note:"Diesen Stoß beschreibt das Buch nicht im Detail – nur die Zielzone ist eingezeichnet."}]},
+
+ {id:"p15-1",p:15,page:20,name:"Muster: 3, 4, 6, 1, 5, 2, 8",pattern:true,balls:[[11,0.12,0.82],[15,0.25,3.78],[10,1.48,1.87],[8,1.71,2.05],[6,2.13,1.78],[12,4.47,1.43],[2,4.80,1.36],[4,4.91,2.99],[1,5.13,0.16],[3,5.93,0.96],[9,7.07,3.10],[5,7.84,2.75]],
+  labels:[[6.79,1.06,"5"],[6.22,1.37,"4"],[6.17,2.3,"2"],[3.3,0.35,"1"],[3.03,2.95,"6"],[0.4,2.84,"8"]],
+  shots:[{tag:"Muster",cue:[6.13,0.39],spin:[0,0.35],spd:2,txt:"8-Ball, gewähltes Muster: 3, 4, 6, 1, 5, 2 und die 8. Die 8 lochst du in die obere Mitteltasche, sobald die 6 gefallen ist. Die 2 ist deine Schlüsselkugel, und mit der 5 kommst du auf die 2 – mit der 1 kommst du auf die 5. Die 6 ist eine gute Kugel, um auf die 1 zu kommen. Bleiben die 3 und die 4, die du zuerst lochen kannst.",note:"Die Zahlen auf den hellen Markierungen zeigen, wo die Weiße für die jeweilige Kugel liegen soll. Das Buch zeigt keine Laufwege – erfasse, ob du das ganze Muster abräumst."}]},
+ {id:"p15-2",p:15,page:20,name:"Muster: 2, 5, 3, 4, 1, 7, 6, 8",pattern:true,balls:[[11,0.07,0.82],[8,0.43,1.61],[15,2.04,0.97],[12,2.11,1.84],[10,2.74,0.24],[7,3.71,3.30],[6,3.75,1.46],[9,4.12,1.65],[2,4.34,3.18],[5,5.70,1.83],[1,6.62,3.44],[4,6.70,2.33],[3,6.82,0.65],[13,6.91,1.45]],
+  labels:[[4.39,2.48,"5"],[5.58,2.23,"3"],[6.4,0.85,"4"],[5.26,3.09,"1"],[5.79,2.92,"7"],[3.93,2.94,"6"],[0.75,0.99,"8"]],
+  shots:[{tag:"Muster",cue:[7.41,1.63],spin:[0,-0.6],spd:3,txt:"8-Ball, gewähltes Muster: 2, 5, 3, 4, 1, 7 und die 6. Landest du für die 7 auf die Ecke, hast du einen Winkel auf die 6, mit dem du auf die 8 kommst. Mit der 1 kommst du auf die 7, mit der 4 auf die 1. Bleiben die 2, die 5 und die 3. Du beginnst mit der 2 und spielst auf Position für die 5.",note:"Die Zahlen auf den hellen Markierungen zeigen, wo die Weiße für die jeweilige Kugel liegen soll. Das Buch zeigt keine Laufwege – erfasse, ob du das ganze Muster abräumst."}]},
+ {id:"p15-3",p:15,page:20,name:"Muster: 3, 7, 2, 6, 1, 4, 5, 8",pattern:true,balls:[[11,0.73,2.56],[2,1.98,2.06],[15,2.06,0.70],[12,2.13,1.79],[10,2.57,1.68],[7,3.29,3.18],[4,4.66,1.03],[5,5.47,0.09],[3,5.59,2.28],[8,6.39,0.85],[13,6.95,0.74],[6,7.43,1.40],[1,7.64,2.62]],
+  labels:[[5.41,1.98,"7"],[2.6,3.13,"2"],[6.31,2.87,"6"],[7.65,1.68,"1"],[5.98,2.29,"4"],[3.65,0.25,"5"],[5.9,0.35,"8"]],
+  shots:[{tag:"Muster",cue:[2.8,0.32],spin:[0,0.45],spd:4,txt:"8-Ball, gewähltes Muster: 3, 7, 2, 6, 1, 4 und die 5. Die 5 ist eine gute Schlüsselkugel – die 4 ist eine gute Kugel, um auf die 5 zu kommen. Mit der 1 kommst du auf die 4, mit der 6 auf die 1. Bleiben die 3, die 7 und die 2. Du lochst die 3 und bleibst dabei auf der 7. Dann schaffst du einen Winkel auf die 2, um auf die 6 zu kommen.",note:"Die Zahlen auf den hellen Markierungen zeigen, wo die Weiße für die jeweilige Kugel liegen soll. Das Buch zeigt keine Laufwege – erfasse, ob du das ganze Muster abräumst."}]},
+
+ {id:"p16-1",p:16,page:21,name:"9-Ball: Mitte statt idealem Winkel",seq:true,balls:[[2,0.26,1.64],[3,1.93,3.85],[8,3.77,0.66],[6,4.78,3.81],[9,5.07,3.28],[5,6.10,2.30]],shots:[
+  {tag:"die 2",cue:[1.30,0.38],obj:2,pk:"BL",path:[[0.02,1.5],[4.1,1.95]],tgt:{c:[4.27,1.97,0.3]},tgtLabel:"A",alts:[{tgt:[5.63,1.19,0.26],label:"B",ok:true}],spin:[0,-0.5],spd:2,
+   txt:"9-Ball: Du bist auf der 2 und musst auf einen Winkel an der 5 spielen. Der ideale Winkel liegt bei B – aber die Weiße müsste von der 2 einen weiten Weg zurücklegen, und wahrscheinlich landest du nicht dort, wo du denkst. Läufst du etwas zu weit, steckst du in einer schwierigen Lage. Spielst du stattdessen auf Position in der Tischmitte (A) …",note:"Grün (B) = idealer Winkel, aber über die lange Distanz schwer zu treffen."},
+  {tag:"die 5",cue:[4.27,1.97],obj:5,pk:"BR",path:[[7.98,0.54],[7.4,0.02],[3.0,3.6]],tgt:{c:[2.86,3.76,0.3]},spin:null,spinNote:"zwei Banden",spd:null,
+   txt:"… kannst du von der Mitte aus mit der 5 zwei Banden in Position auf die 6 spielen.",note:"Die Effet-/Tempo-Angabe im Buch gehört zu Stoß 1."}]},
+ {id:"p16-2",p:16,page:21,name:"9-Ball: andere Seite der 4",balls:[[6,0.19,3.59],[7,0.73,0.80],[4,1.51,1.89],[8,4.13,0.57],[3,4.21,3.45],[5,4.51,0.23],[9,6.71,0.50]],shots:[
+  {tag:"zur anderen Seite",cue:[6.01,2.62],obj:3,pk:"BM",path:[[0.03,2.32],[0.85,1.5]],tgt:{c:[1.02,1.37,0.3]},tgtLabel:"A",alts:[{tgt:[0.93,2.16,0.24],label:"B"}],spin:[0.36,-0.13],spd:2,
+   txt:"9-Ball: Du bist auf der 3 und musst Position auf die 4 spielen. Du könntest auf B spielen – aber die Weiße legt einen halben Tisch zurück, und wahrscheinlich landest du nicht dort, wo du denkst. Vermutlich hast du dann einen ungünstigen Winkel auf die 4. Spielst du dagegen auf die andere Seite der 4 (A), hast du zwei Taschen zur Auswahl.",note:""}]},
+ {id:"p16-3",p:16,page:21,name:"9-Ball: hoher Winkel auf die 3",balls:[[7,2.73,1.41],[4,2.95,1.66],[9,2.52,2.87],[2,3.50,2.60],[5,4.37,3.08],[6,4.78,1.19],[3,7.67,1.32]],shots:[
+  {tag:"hoher Winkel",cue:[2.13,1.47],obj:2,pk:"BM",path:[[7.97,2.7],[6.65,2.86]],tgt:{c:[6.5,2.88,0.32]},tgtLabel:"A",alts:[{tgt:[7.79,2.32,0.24],label:"B"}],spin:[0,0],spinNote:"Mitte",spd:2,
+   txt:"9-Ball: Du bist auf der 2 und musst einen Winkel auf die 3 schaffen, um auf die 4 zu kommen. Der ideale Winkel auf die 3 liegt nahe der kurzen Bande (B). Da die Weiße aber einen halben Tisch zurücklegt, landest du wahrscheinlich nicht dort, wo du denkst – und hast womöglich einen ungünstigen Winkel. Klüger ist es, auf einen hohen Winkel zu spielen (A). Das gibt dir ein viel größeres Positionsfenster.",note:""}]},
+ {id:"p17-1",p:17,page:22,name:"10-Ball: Rollwinkel auf die 6",balls:[[9,2.42,2.84],[8,2.76,1.30],[10,3.26,0.67],[6,4.08,2.09],[5,7.20,3.57],[7,7.58,2.67]],guides:[[[4,-0.14],[4,4.14]]],shots:[
+  {tag:"Rollwinkel",cue:[6.44,1.80],obj:5,pk:"BR",path:[[6.91,3.97],[5.48,0.02],[5.1,0.6]],tgt:{c:[4.98,0.78,0.3]},tgtLabel:"A",alts:[{tgt:[3.59,1.09,0.26],label:"B",ok:true}],spin:[0.1,-0.65],spd:2,
+   txt:"10-Ball: Du bist auf der 5 und musst einen Winkel auf die 6 schaffen, um auf die 7 zu kommen. Der ideale Winkel läge bei B – aber dort zu landen ist riskant. Stattdessen schaffst du einen Rollwinkel auf die 6 (A), mit dem du danach drei Banden für die 7 spielen kannst.",note:"Grün (B) = idealer Winkel, aber riskant."}]},
+ {id:"p17-2",p:17,page:22,name:"9-Ball: hoher Winkel auf die 4",balls:[[3,2.00,0.94],[5,2.38,3.82],[9,2.81,2.71],[6,2.89,3.52],[4,5.76,3.30],[7,6.27,3.03],[8,6.85,1.91]],shots:[
+  {tag:"hoher Winkel",cue:[1.30,0.37],obj:3,pk:"BM",path:[[2.63,0.02],[4.37,1.5]],tgt:{c:[4.49,1.66,0.3]},tgtLabel:"A",alts:[{tgt:[4.18,2.97,0.26],label:"B",ok:true}],spin:[0.15,0.55],spd:4,
+   txt:"9-Ball: Am liebsten würdest du die 3 lochen und nahe der Taschenlinie der 4 landen (B). Das Problem: Dein Winkel auf die 3 macht es schwer, diese ideale Position für die 4 zu erreichen. Stattdessen schaffst du einen hohen Winkel auf die 4 (A), mit dem du danach zwei Banden für die 5 spielen kannst.",note:"Grün (B) = ideale Position, aus diesem Winkel aber schwer zu erreichen."}]},
+ {id:"p17-3",p:17,page:22,name:"9-Ball: zwei Diamanten zurückziehen",balls:[[9,2.75,2.70],[6,2.82,1.81],[2,3.81,3.73],[3,3.89,0.14],[5,5.48,2.33],[7,6.37,2.47],[8,6.83,1.94],[4,7.74,2.03]],shots:[
+  {tag:"zurückziehen",cue:[4.78,3.55],obj:2,pk:"BL",path:[[4.42,3.97],[5.5,3.75]],tgt:{c:[5.72,3.68,0.3]},tgtLabel:"A",alts:[{tgt:[0.55,3.27,0.26],label:"B",ok:true}],spin:[0,0.6],spd:3,
+   txt:"9-Ball: Dein Winkel auf die 2 ist ungünstig – so ist es schwer, den Winkel auf die 3 zu bekommen (B), mit dem du auf die 4 kommst. Stattdessen lochst du die 2 und ziehst die Weiße zwei Diamanten zurück (A). So bekommst du einen schönen Rollwinkel auf die 3. Von dort rollst du die 3 mit laufendem Effet ein.",note:"Grün (B) = idealer Winkel auf die 3, aus dieser Lage aber schwer zu erreichen."}]},
+
+ {id:"p18-1",p:18,page:23,name:"Tangentenlinie: zur Bande statt in die Ecke",balls:[[6,0.61,2.53],[8,5.32,2.06],[9,6.12,0.96],[7,7.53,1.92]],shots:[
+  {tag:"Tangentenlinie",cue:[0.66,1.28],obj:6,pk:"BL",tangent:true,path:[[4.5,3.95],[5.5,3.65]],tgt:{c:[5.70,3.56,0.3]},tgtLabel:"A",alts:[{tgt:[7.65,3.77,0.24],label:"B"}],spin:[0,0.3],spd:3,
+   txt:"9-Ball: Du bist auf der 6 und musst die Weiße für die 7 den Tisch hinunterschicken. Ein Blick auf die Tangentenlinie zeigt: Sie schickt die Weiße Richtung dritter Diamant an der langen Bande (A) – das passt.",note:"Rot (B): Wer die Tangentenlinie nicht kennt, zieht womöglich zu stark und schickt die Weiße Richtung Ecktasche."}]},
+ {id:"p18-2",p:18,page:23,name:"Tangentenlinie: über die lange Bande",seq:true,balls:[[1,0.73,2.76],[6,2.94,3.33],[9,3.02,2.83],[5,4.22,0.27],[8,5.03,3.61],[3,6.72,1.73],[7,7.81,3.28],[4,7.83,2.26]],shots:[
+  {tag:"die 1",cue:[0.79,1.49],obj:1,pk:"BL",tangent:true,path:[[3.03,3.95],[4.65,3.1]],tgt:{c:[4.83,2.98,0.3]},tgtLabel:"A",spin:[0,0.15],spd:4,
+   txt:"9-Ball: Du bist auf der 1 und musst die Weiße für die 3 von der langen Bande abprallen lassen. Eine rutschende Weiße trifft die lange Bande gegenüber der 6 – das passt für die Position auf die 3 (A).",note:""},
+  {tag:"die 3",cue:[4.83,2.98],obj:3,pk:"TR",tangent:true,path:[[7.5,3.15]],tgt:{c:[7.6,3.1,0.28]},tgtLabel:"B",spin:[0,0.15],spinNote:"Stoppball (rutschend)",spd:null,
+   txt:"Die Tangentenlinie der 3 schickt eine rutschende Weiße zwischen die 4 und die 7 (B) – Position auf die 4.",note:""}]},
+ {id:"p18-3",p:18,page:23,name:"Tangentenlinie: mit etwas Lauf",seq:true,balls:[[7,0.12,0.78],[6,0.46,2.00],[9,1.95,2.01],[8,2.41,0.97],[5,5.35,2.51],[4,5.52,0.33]],shots:[
+  {tag:"die 4",cue:[4.47,0.31],obj:4,pk:"TR",path:[[7.98,1.47],[6.85,1.93]],tgt:{c:[6.69,1.99,0.3]},tgtLabel:"A",spin:[0,-0.6],spd:3,
+   txt:"9-Ball: Loche die 4 und lande hier (A) auf der 5, um auf die 6 zu kommen.",note:""},
+  {tag:"die 5",cue:[6.69,1.99],obj:5,pk:"BM",tangent:true,path:[[2.38,0.02],[1.4,0.72]],tgt:{c:[1.24,0.85,0.3]},tgtLabel:"B",spin:[0,-0.2],spinNote:"leichter Nachlauf",spd:null,
+   txt:"Die Tangentenlinie der 5 für die Mitteltasche zeigt: Eine rutschende Weiße läuft zum dritten Diamanten an der langen Bande. Hat die Weiße beim Treffen der 5 aber etwas Lauf, geht sie Richtung zweiter Diamant – Position auf die 6 (B).",note:"Gestrichelt dunkel = Tangentenlinie (rutschende Weiße)."}]},
+
+ {id:"p18-4",p:18,page:24,name:"Tangentenlinie: die 5 freispielen",seq:true,balls:[[3,3.20,3.50],[4,4.58,1.38],[8,4.74,2.46],[9,5.09,2.80],[5,5.10,0.44],[6,5.28,0.27],[7,7.81,3.34]],shots:[
+  {tag:"die 3",cue:[3.92,3.69],obj:3,pk:"BL",tangent:true,path:[[2.95,0.03],[2.85,0.7]],tgt:{c:[2.83,0.84,0.3]},tgtLabel:"A",spin:[0,0],spinNote:"Stoppball (Mitte)",spd:3,
+   txt:"9-Ball: Du bist auf der 3, aber die 5 liegt fest. Schaust du dir die Tangentenlinie der 3 an, sieht es so aus, als würde sie die Weiße genau in deine Position für die 4 bringen (A).",note:""},
+  {tag:"die 4",cue:[2.83,0.84],obj:4,pk:"BR",tangent:true,path:[[5.02,0.5]],tgt:null,spin:[0,0],spinNote:"Stoppball",spd:null,
+   txt:"Von A aus nutzt du die Tangentenlinie der 4, um die 5 freizuspielen.",note:"Erfolg = 4 gelocht und 5 aus der Klammer gelöst."}]},
+ {id:"p18-5",p:18,page:24,name:"Tangentenlinie: etwas über Mitte",balls:[[14,0.35,2.24],[9,2.16,0.19],[12,3.04,2.76],[5,3.40,3.45],[8,3.41,0.20],[13,3.80,3.87],[10,3.87,2.28],[15,7.07,2.21]],shots:[
+  {tag:"etwas über Mitte",cue:[3.96,3.59],obj:5,pk:"BL",tangent:true,path:[[2.75,0.03],[2.55,0.35]],tgt:{c:[2.52,0.37,0.28]},tgtLabel:"A",spin:[0,-0.25],spinNote:"etwas über Mitte",spd:4,
+   txt:"8-Ball: Du bist auf deiner letzten Vollen, der 5, und musst für die 8 hier landen (A). Die Tangentenlinie der 5 zeigt: Sie bringt die Weiße zu nah an die 8. Triffst du die Weiße aber etwas über der Mitte, bekommt sie etwas Lauf und geht ein Stück weiter an der Bande entlang.",note:""}]},
+
+ {id:"p19-1",p:19,page:25,name:"Winkel auf die 2 für die andere kurze Bande",seq:true,balls:[[3,0.33,1.10],[7,1.10,1.50],[4,3.73,0.16],[6,4.77,3.11],[5,5.11,0.89],[1,5.81,0.16],[8,6.08,0.89],[9,6.89,2.31],[2,7.77,1.83]],shots:[
+  {tag:"die 1",cue:[3.92,0.71],obj:1,pk:"TR",path:null,tgt:{c:[6.04,0.38,0.28]},tgtLabel:"A",alts:[{tgt:[7.03,0.5,0.24],label:"B"}],spin:[0,0],spinNote:"Mitte",spd:2,
+   txt:"9-Ball: Du bist auf der 1 und musst einen Winkel auf die 2 schaffen, um die Weiße an die andere kurze Bande zu schicken – Position auf die 3. Landest du hier (A), hast du einen guten Winkel dafür.",note:"Rot (B): Manche spielen auf einen leichteren Stoß auf die 2 – aus diesem Winkel ist die Position auf die 3 aber viel schwerer. Den Laufweg für Stoß 1 zeigt das Buch nicht."},
+  {tag:"die 2",cue:[6.04,0.38],obj:2,pk:"BR",path:[[0.02,2.91],[0.22,3.1]],tgt:{c:[0.27,3.15,0.3]},tgtLabel:"A",spin:null,spd:null,
+   txt:"Von A schickst du die Weiße an die andere kurze Bande – Position auf die 3.",note:"Diesen Laufweg zeigt das Buch nur als dünne Linie, ohne Effet-Angabe."}]},
+ {id:"p19-2",p:19,page:25,name:"Gerade auf die 6: Stoppball",seq:true,balls:[[6,0.12,1.94],[10,1.37,2.30],[8,2.90,3.72],[12,3.04,2.76],[7,3.45,0.95],[9,7.65,3.66]],shots:[
+  {tag:"die 6",cue:[0.20,2.82],obj:6,pk:"TL",path:[[0.16,2.2]],tgt:{c:[0.17,2.16,0.26]},tgtLabel:"A",alts:[{tgt:[0.71,3.39,0.26],label:"B"}],spin:[0,0],spinNote:"Stoppball",spd:3,
+   txt:"8-Ball: Du bist gerade auf die 6. Du könntest versuchen, die Weiße zurückzuziehen, um etwas mehr Abstand zur kurzen Bande zu bekommen (B). Stoppst du die Weiße aber einfach an der 6 (A), …",note:""},
+  {tag:"die 7",cue:[0.17,2.16],obj:7,pk:"TM",path:[[7.98,2.14],[4.95,2.82]],tgt:{c:[4.77,2.86,0.32]},spin:[0,-0.45],spd:null,
+   txt:"… hast du einen guten Winkel, um die Weiße über die kurze Bande Richtung 8 zu schicken.",note:"Die Effet-/Tempo-Angabe im Buch gehört zu Stoß 1. Den Laufweg zeigt das Buch nur als dünne Linie."}]},
+ {id:"p19-3",p:19,page:25,name:"Stoppball statt Risiko mit Links",seq:true,balls:[[5,1.55,2.29],[2,2.80,0.28],[10,3.20,3.25],[7,4.42,2.69],[9,5.29,2.51],[3,5.67,3.35],[4,7.75,2.60],[8,7.90,0.78]],shots:[
+  {tag:"die 2",cue:[1.84,0.24],obj:2,pk:"TR",path:[[3.3,0.92]],tgt:{c:[3.37,1.0,0.3]},tgtLabel:"A",alts:[{path:[[0.02,1.25],[2.4,3.97],[2.75,3.78]],tgt:[2.85,3.73,0.26],label:"B"}],spin:[0,0],spinNote:"Stoppball (Mitte)",spd:2,
+   txt:"9-Ball: Du bist auf der 2, und die Position auf die 3 ist etwas knifflig. Stoppst du die Weiße aber Richtung 3, hast du einen Winkel, mit dem du auf die 4 kommst (A).",note:"Rot (B): Manche versuchen, sich mit Rückläufer und Linkseffet einen leichteren Stoß auf die 3 zu verschaffen – dieser Positionsstoß ist aber riskant. Klüger ist oft, den langen Stoß auf die 3 von A zu nehmen."},
+  {tag:"die 3",cue:[3.37,1.0],obj:3,pk:"BR",path:[[5.48,3.97],[6.32,0.02],[6.52,0.72]],tgt:{c:[6.58,0.78,0.3]},spin:null,spd:null,
+   txt:"Der lange Stoß auf die 3: Loche sie rechts unten. Die Weiße geht über die untere und die obere lange Bande in Position auf die 4.",note:"Diesen Laufweg zeigt das Buch nur als dünne Linie, ohne Effet-Angabe."}]},
+
+ {id:"p20-1",p:20,page:26,name:"Über die Bande: größeres Fenster",balls:[[8,0.21,1.28],[3,0.21,2.10],[2,2.23,2.49]],shots:[
+  {tag:"die 2 über die Bande",cue:[2.69,3.08],obj:2,pk:"TL",path:[[1.42,0.02],[1.15,0.52]],tgt:{c:[1.11,0.58,0.3]},tgtLabel:"A",alts:[{path:[[0.85,1.27]],tgt:[0.59,1.11,0.26],label:"B"}],spin:null,spd:null,
+   txt:"Erstes Beispiel (links): Du lochst die 2 und schickst die Weiße an die lange Bande – Position auf die 3 (A). Du könntest die Bande auch umgehen und die Weiße direkt nach B schicken, aber über A hast du ein größeres Positionsfenster.",note:"Das Buch gibt für diese Seite keinen Anspielpunkt an."},
+  {tag:"die 1 mit hoch-rechts",balls:[[1,3.22,0.80],[2,5.64,1.86]],guides:[[[8.07,4.07],[3.63,0]]],cue:[2.71,1.33],obj:1,pk:"TM",path:[[3.63,0.02],[4.65,0.55]],tgt:{c:[4.77,0.61,0.3]},tgtLabel:"A",spin:[0.4,-0.4],spinNote:"hoch rechts",spd:null,
+   txt:"Zweites Beispiel: Du lochst die 1 und kommst mit hohem Rechtseffet von der langen Bande zurück – dabei kreuzt die Weiße die Taschenlinie der 2.",note:"Getrennte Lage: Die Kugeln aus dem ersten Beispiel spielen hier keine Rolle."}]},
+ {id:"p20-2",p:20,page:26,name:"9-Ball: zwei Banden zur 7",balls:[[10,2.66,3.68],[7,3.03,3.07],[6,3.85,0.36],[9,7.74,0.94],[8,7.75,2.23]],guides:[[[-0.07,-0.07],[4,4.14]]],shots:[
+  {tag:"zwei Banden",cue:[4.55,2.31],obj:6,pk:"TM",path:[[3.04,0.02],[0.02,1.0],[0.65,1.6]],tgt:{c:[0.73,1.68,0.3]},tgtLabel:"A",alts:[{path:[[3.29,0.02],[1.3,1.83]],tgt:[1.02,2.02,0.26],label:"B"}],spin:[-0.36,0.13],spd:3,
+   txt:"9-Ball: Du bist auf der 6 und musst einen Winkel auf die 7 schaffen, um auf die 8 zu kommen. Mit einer Bande nach B rollst du in eine offene Fläche – dann muss deine Tempokontrolle sehr gut sein. Besser ist es, über zwei Banden im richtigen Winkel Richtung 7 zu gehen (A). Das öffnet dein Positionsfenster.",note:"Dunkle Linie = Taschenlinie der 7."}]},
+ {id:"p20-3",p:20,page:26,name:"10-Ball: über die Bande statt Tempo",balls:[[3,0.21,1.08],[1,0.25,2.76],[6,0.89,1.58],[7,2.68,1.13],[5,3.41,3.23],[4,5.62,3.76],[2,5.67,1.88],[10,5.82,3.34],[9,7.32,1.48],[8,7.73,2.27]],shots:[
+  {tag:"über die Bande",cue:[1.75,1.30],obj:1,pk:"BL",path:[[0.02,2.71],[3.03,3.97],[4.6,3.45]],tgt:{c:[4.85,3.36,0.32]},tgtLabel:"A",alts:[{path:[[0.02,2.71],[5.0,2.69]],tgt:[5.28,2.69,0.26],label:"B"}],spin:[-0.36,-0.25],spd:2,
+   txt:"10-Ball: Du bist auf der 1 und musst einen Winkel auf die 2 schaffen, um auf die 3 zu kommen. Du könntest die 1 einrollen und direkt in diese Position gehen (B) – aber dieser Stoß verlangt präzise Tempokontrolle. Stattdessen gehst du über die lange Bande in diese Position (A). Auf diesem Weg brauchst du keine exakte Tempokontrolle.",note:""}]}
+];
+
+/* ---------- Helpers ---------- */
+const $=s=>document.querySelector(s);
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const pct=x=>x==null?"–":Math.round(x*100)+" %";
+const COLORS={1:"#f2c21b",2:"#1f4fbf",3:"#d4302b",4:"#5b2a8c",5:"#f07a1a",6:"#1b8a46",7:"#7a2222",8:"#111111"};
+const POCKETS={TL:[-0.07,-0.07],TM:[4,-0.14],TR:[8.07,-0.07],BL:[-0.07,4.07],BM:[4,4.14],BR:[8.07,4.07]};
+const BR=0.13; // dargestellter Kugelradius (vergrößert für Lesbarkeit)
+const shotKey=(e,s)=>e+":"+s;
+EX.sort((a,b)=>a.p-b.p);
+const shotLabel=(ex,i)=>ex.shots.length===1?ex.shots[i].tag:(ex.seq?"Stoß "+(i+1):"ABCDEF"[i])+" · "+ex.shots[i].tag;
+function todayStr(d=new Date()){const z=n=>String(n).padStart(2,"0");return d.getFullYear()+"-"+z(d.getMonth()+1)+"-"+z(d.getDate())}
+
+function spinText(s){
+  if(!s) return null;
+  const [x,y]=s; let v=y<-0.25?"hoch":y>0.25?"tief":"Mitte"; let h=x<-0.2?"links":x>0.2?"rechts":"";
+  if(v==="Mitte"&&!h) return "Mitte (Stoppball)";
+  if(v==="Mitte") return "Mitte, "+h;
+  return v+(h?" "+h:"")+(v==="hoch"?" (Nachläufer)":" (Rückläufer)");
+}
+function speedText(n){return ["","sehr weich","weich","weich–mittel","mittel","mittel–fest","fest","sehr fest","Break"][n]||""}
+
+/* ---------- Tisch zeichnen ---------- */
+function ballSVG(n,x,y){
+  if(n===0) return `<circle cx="${x}" cy="${y}" r="${BR}" fill="#f6f2e4" stroke="#0004" stroke-width=".012"/>`;
+  const col=COLORS[n>8?n-8:n]; let s="";
+  if(n>8){
+    s+=`<circle cx="${x}" cy="${y}" r="${BR}" fill="#f6f2e4"/>`;
+    s+=`<clipPath id="c${n}${Math.round(x*100)}"><circle cx="${x}" cy="${y}" r="${BR}"/></clipPath>`;
+    s+=`<rect x="${x-BR}" y="${y-BR*0.55}" width="${BR*2}" height="${BR*1.1}" fill="${col}" clip-path="url(#c${n}${Math.round(x*100)})"/>`;
+    s+=`<circle cx="${x}" cy="${y}" r="${BR}" fill="none" stroke="#0004" stroke-width=".012"/>`;
+  } else s+=`<circle cx="${x}" cy="${y}" r="${BR}" fill="${col}" stroke="#0004" stroke-width=".012"/>`;
+  s+=`<circle cx="${x}" cy="${y}" r="${BR*0.58}" fill="#fff"/>`;
+  s+=`<text x="${x}" y="${y+0.033}" font-size="${n>9?0.085:0.1}" text-anchor="middle" font-family="Barlow,Arial,sans-serif" font-weight="700" fill="#111">${n}</text>`;
+  return s;
+}
+function ghostOf(obj,pk){
+  const p=POCKETS[pk]; const dx=obj[0]-p[0], dy=obj[1]-p[1]; const L=Math.hypot(dx,dy)||1;
+  return [obj[0]+dx/L*BR*2, obj[1]+dy/L*BR*2];
+}
+function tableSVG(ex,si){
+  const sh=ex.shots[si]; const balls=sh.balls||ex.balls||[];
+  const objBall=balls.find(b=>b[0]===sh.obj);
+  let s=`<svg class="table" viewBox="-0.6 -0.6 9.2 5.2" role="img" aria-label="Tischgrafik: ${esc(ex.name)}, ${esc(shotLabel(ex,si))}">`;
+  s+=`<defs><marker id="arr" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#fff"/></marker><marker id="arrc" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#ffd36b"/></marker></defs>`;
+  s+=`<rect x="-0.6" y="-0.6" width="9.2" height="5.2" rx=".22" fill="var(--rail)"/>`;
+  s+=`<rect x="-0.16" y="-0.16" width="8.32" height="4.32" fill="var(--cloth-edge)"/>`;
+  s+=`<rect x="0" y="0" width="8" height="4" fill="var(--cloth)"/>`;
+  for(let i=1;i<16;i++) s+=`<line x1="${i/2}" y1="0" x2="${i/2}" y2="4" stroke="#fff" stroke-opacity="${i%2?0.07:0.13}" stroke-width=".012"/>`;
+  for(let j=1;j<8;j++) s+=`<line x1="0" y1="${j/2}" x2="8" y2="${j/2}" stroke="#fff" stroke-opacity="${j%2?0.07:0.13}" stroke-width=".012"/>`;
+  for(const x of [1,2,3,5,6,7]){s+=`<circle cx="${x}" cy="-0.38" r=".04" fill="var(--diamond)"/><circle cx="${x}" cy="4.38" r=".04" fill="var(--diamond)"/>`}
+  for(const y of [1,2,3]){s+=`<circle cx="-0.38" cy="${y}" r=".04" fill="var(--diamond)"/><circle cx="8.38" cy="${y}" r=".04" fill="var(--diamond)"/>`}
+  for(const [k,[x,y]] of Object.entries(POCKETS)) s+=`<circle cx="${x}" cy="${y}" r="${k[1]==="M"?0.17:0.21}" fill="var(--pocket)"/>`;
+  for(const lx of (ex.lines||[])) s+=`<line x1="${lx}" y1="0" x2="${lx}" y2="4" stroke="#0a1a26" stroke-opacity=".75" stroke-width=".025"/><text x="${lx+0.06}" y="0.2" font-size=".13" fill="#0a1a26" fill-opacity=".8" font-family="Barlow,Arial,sans-serif" font-weight="600">3. Diamant</text>`;
+  for(const [x,y,t] of (ex.marks||[])){const yy=y<=0?-0.38:4.38;s+=`<circle cx="${x}" cy="${yy}" r=".17" fill="#fff"/><text x="${x}" y="${yy+0.055}" font-size=".15" text-anchor="middle" font-family="Barlow,Arial,sans-serif" font-weight="700" fill="#111">${esc(t)}</text>`}
+  const DK="#08131c";
+  for(const [[x1,y1],[x2,y2]] of (sh.guides||ex.guides||[])) s+=`<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}" stroke="${DK}" stroke-opacity=".7" stroke-width=".022" stroke-dasharray=".1 .06"/>`;
+  for(const pl of (ex.polys||[])) s+=`<polyline points="${pl.map(p=>p.join(",")).join(" ")}" fill="none" stroke="#fff" stroke-opacity=".85" stroke-width=".026" stroke-dasharray=".07 .05" stroke-linejoin="round" marker-end="url(#arr)"/>`;
+  for(const [x,y,t] of (ex.ghosts||[])) s+=`<circle cx="${x}" cy="${y}" r="${BR}" fill="#f6f2e4" fill-opacity=".3" stroke="#fff" stroke-opacity=".55" stroke-width=".012"/><text x="${x}" y="${y+0.042}" font-size=".12" text-anchor="middle" font-family="Barlow,Arial,sans-serif" font-weight="700" fill="#fff">${esc(t)}</text>`;
+  for(const [x,y,t] of (ex.labels||[])) s+=`<circle cx="${x}" cy="${y}" r=".2" fill="#e9f6ff" fill-opacity=".9" stroke="${DK}" stroke-opacity=".5" stroke-width=".015"/><text x="${x}" y="${y+0.065}" font-size=".19" text-anchor="middle" font-family="Barlow,Arial,sans-serif" font-weight="700" fill="#111">${esc(t)}</text>`;
+  // Zielzonen
+  if(sh.zoneB){const [a,b,c,d]=sh.zoneB;s+=`<rect x="${a}" y="${b}" width="${c-a}" height="${d-b}" fill="#fff" fill-opacity=".14" stroke="#fff" stroke-opacity=".5" stroke-width=".015" stroke-dasharray=".05 .04"/><text x="${c-0.1}" y="${b+0.2}" font-size=".16" text-anchor="end" fill="#fff" fill-opacity=".8" font-family="Barlow,Arial,sans-serif" font-weight="700">B</text>`}
+  if(sh.tgt){
+    if(sh.tgt.c){const [x,y,r]=sh.tgt.c;s+=`<circle cx="${x}" cy="${y}" r="${r}" fill="#fff" fill-opacity=".28" stroke="#fff" stroke-width=".025" stroke-dasharray=".06 .04"/>`}
+    if(sh.tgt.r){const [a,b,c,d]=sh.tgt.r;s+=`<rect x="${a}" y="${b}" width="${c-a}" height="${d-b}" fill="#fff" fill-opacity=".3" stroke="#fff" stroke-width=".025" stroke-dasharray=".06 .04"/>`}
+    const lab=sh.tgtLabel||(sh.zoneB?"A":"Ziel"); const tc=sh.tgt.c?[sh.tgt.c[0],sh.tgt.c[1]]:[(sh.tgt.r[0]+sh.tgt.r[2])/2,(sh.tgt.r[1]+sh.tgt.r[3])/2];
+    s+=`<text x="${tc[0]}" y="${tc[1]+0.06}" font-size=".16" text-anchor="middle" fill="#fff" font-family="Barlow,Arial,sans-serif" font-weight="700">${lab}</text>`;
+  }
+  // Objektkugel → Tasche
+  if(objBall&&sh.cue){const p=POCKETS[sh.pk];s+=`<line x1="${objBall[1]}" y1="${objBall[2]}" x2="${p[0]}" y2="${p[1]}" stroke="#08131c" stroke-opacity=".7" stroke-width=".022"/>`}
+  // Stoßlinie + Laufweg
+  if(objBall&&sh.cue){
+    const g=ghostOf([objBall[1],objBall[2]],sh.pk);
+    s+=`<line x1="${sh.cue[0]}" y1="${sh.cue[1]}" x2="${g[0]}" y2="${g[1]}" stroke="#fff" stroke-opacity=".6" stroke-width=".016" stroke-dasharray=".03 .03"/>`;
+    s+=`<circle cx="${g[0]}" cy="${g[1]}" r="${BR}" fill="none" stroke="#fff" stroke-opacity=".6" stroke-width=".014" stroke-dasharray=".03 .02"/>`;
+    if(sh.path&&sh.path.length){
+      const pts=[g,...sh.path].map(p=>p[0].toFixed(3)+","+p[1].toFixed(3)).join(" ");
+      s+=`<polyline points="${pts}" fill="none" stroke="${sh.calc?"#ffd36b":"#fff"}" stroke-width=".032" stroke-dasharray="${sh.calc?".03 .05":".07 .05"}" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#${sh.calc?"arrc":"arr"})"/>`;
+      if(sh.calc) s+=`<text x="7.95" y="-0.02" font-size=".15" text-anchor="end" fill="#ffd36b" font-family="Barlow,Arial,sans-serif" font-weight="700" transform="translate(0,-0.08)">Laufweg berechnet</text>`;
+    }
+    for(const al of (sh.alts||[])){
+      const col=al.col||(al.ok?"#7ee69a":"#ff7a6e");
+      if(al.path&&al.path.length) s+=`<polyline points="${[g,...al.path].map(p=>p[0].toFixed(3)+","+p[1].toFixed(3)).join(" ")}" fill="none" stroke="${col}" stroke-width=".026" stroke-dasharray=".05 .06" stroke-linecap="round" stroke-linejoin="round"/>`;
+    }
+  }
+  for(const al of (sh.alts||[])){
+    if(!al.tgt) continue; const col=al.col||(al.ok?"#7ee69a":"#ff7a6e"); const [x,y,r]=al.tgt;
+    s+=`<circle cx="${x}" cy="${y}" r="${r}" fill="${col}" fill-opacity=".22" stroke="${col}" stroke-width=".025" stroke-dasharray=".05 .04"/><text x="${x}" y="${y+0.06}" font-size=".16" text-anchor="middle" fill="${col}" font-family="Barlow,Arial,sans-serif" font-weight="700">${esc(al.label||"")}</text>`;
+  }
+  for(const [n,x,y] of balls) s+=ballSVG(n,x,y);
+  if(sh.cue){
+    s+=ballSVG(0,sh.cue[0],sh.cue[1]);
+    s+=`<circle cx="${sh.cue[0]}" cy="${sh.cue[1]}" r="${BR+0.07}" fill="none" stroke="#fff" stroke-opacity=".75" stroke-width=".02"/>`;
+  }
+  s+=`</svg>`; return s;
+}
+function spinSVG(sp){
+  const r=22; let s=`<svg width="54" height="54" viewBox="-27 -27 54 54" aria-hidden="true"><circle r="${r}" fill="#f6f2e4" stroke="var(--line)" stroke-width="1.5"/><line x1="-${r}" y1="0" x2="${r}" y2="0" stroke="#0002"/><line x1="0" y1="-${r}" x2="0" y2="${r}" stroke="#0002"/><circle r="${r/2}" fill="none" stroke="#0002"/>`;
+  if(sp) s+=`<circle cx="${sp[0]*r*0.75}" cy="${sp[1]*r*0.75}" r="5" fill="#d4302b"/>`;
+  return s+`</svg>`;
+}
+
+/* ---------- Zustand ---------- */
+const state={days:{},ex:0,shot:0,view:"train",db:null,pending:[],writing:false,dirty:false,flags:{}};
+try{const v=JSON.parse(localStorage.getItem("pc-sel")||"{}");const i=EX.findIndex(e=>e.id===v.id);if(i>=0){state.ex=i;state.shot=Math.min(v.shot||0,EX[i].shots.length-1)}}catch(e){}
+try{state.pending=JSON.parse(localStorage.getItem("pc-pending")||"[]")}catch(e){state.pending=[]}
+try{state.dfilter=+(localStorage.getItem("pc-df")||0)}catch(e){state.dfilter=0}
+function saveSel(){try{localStorage.setItem("pc-sel",JSON.stringify({id:EX[state.ex].id,shot:state.shot}))}catch(e){}}
+function savePending(){try{localStorage.setItem("pc-pending",JSON.stringify(state.pending))}catch(e){}}
+
+function allAttempts(){
+  const seen=new Set(),out=[];
+  for(const d of Object.values(state.days)) for(const a of d){if(!seen.has(a.t)){seen.add(a.t);out.push(a)}}
+  for(const a of state.pending) if(!seen.has(a.t)){seen.add(a.t);out.push(a)}
+  return out.sort((a,b)=>a.t-b.t);
+}
+function dayAttempts(date){
+  const base=(state.days[date]||[]).slice(); const ts=new Set(base.map(a=>a.t));
+  for(const a of state.pending) if(todayStr(new Date(a.t))===date&&!ts.has(a.t)) base.push(a);
+  return base.sort((a,b)=>a.t-b.t);
+}
+function levelOf(list){
+  const last=list.slice(-20), n=list.length;
+  if(n<10) return {l:0,name:"Neu"};
+  const r=last.filter(a=>a.r==="ok").length/last.length;
+  if(r<0.5) return {l:1,name:"Aufbau",r};
+  if(r<0.8||n<20) return {l:2,name:"Solide",r};
+  return {l:3,name:"Sicher",r};
+}
+function byShot(all){const m={};for(const a of all){(m[shotKey(a.e,a.s)]=m[shotKey(a.e,a.s)]||[]).push(a)}return m}
+
+
+/* ---------- Schwierigkeit ---------- */
+const DIFF_NAME={1:"Grundlage",2:"Fortgeschritten",3:"Anspruchsvoll"};
+function diffScore(ex,si){
+  if(ex.pattern) return 9;
+  const sh=ex.shots[si]; if(!sh||!sh.cue) return 0;
+  let sc=0;
+  const objBall=(sh.balls||ex.balls||[]).find(b=>b[0]===sh.obj);
+  const g=objBall?ghostOf([objBall[1],objBall[2]],sh.pk):sh.cue;
+  const pts=[g,...(sh.path||[])];
+  const rails=(sh.path||[]).filter(p=>p[0]<0.12||p[0]>7.88||p[1]<0.12||p[1]>3.88).length;
+  sc+=rails>=3?2:rails>=2?1:0;
+  let len=0;for(let i=1;i<pts.length;i++)len+=Math.hypot(pts[i][0]-pts[i-1][0],pts[i][1]-pts[i-1][1]);
+  if(len>7) sc+=1;
+  if(sh.spin){const [x,y]=sh.spin; if(Math.abs(x)>=0.3) sc+=1; if(y>=0.4) sc+=1;}
+  if(sh.spd>=5) sc+=1;
+  const r=sh.tgt?(sh.tgt.c?sh.tgt.c[2]:Math.min(sh.tgt.r[2]-sh.tgt.r[0],sh.tgt.r[3]-sh.tgt.r[1])/2):0.5;
+  if(r<=0.3) sc+=1;
+  if(objBall){const d=Math.hypot(objBall[1]-sh.cue[0],objBall[2]-sh.cue[1]); if(d>4) sc+=1;
+    const p=POCKETS[sh.pk]; const u=[p[0]-objBall[1],p[1]-objBall[2]], v=[g[0]-sh.cue[0],g[1]-sh.cue[1]];
+    const c=(u[0]*v[0]+u[1]*v[1])/(Math.hypot(...u)*Math.hypot(...v)||1); if(Math.acos(Math.max(-1,Math.min(1,c)))*180/Math.PI>50) sc+=1;}
+  return sc;
+}
+const DIFF_OVR={"p1-1:1":2,"p1-5:1":2,"p1-6:1":2,"p14-1":3,"p14-2":3,"p14-3":3,"p16-3:0":2,"p19-1":2,"p19-3:0":2};
+function diffOf(ex,si){const o=DIFF_OVR[ex.id+":"+si]??(ex.seq?DIFF_OVR[ex.id]:undefined); if(o) return o; const s=diffScore(ex,si); return s<=1?1:s<=3?2:3}
+function diffBadge(d){return `<span class="diff d${d}" title="${DIFF_NAME[d]}">${"●".repeat(d)}${"○".repeat(3-d)}</span>`}
+
+/* ---------- Schwerpunkte ---------- */
+const FOCUS={
+  basis:{t:"Grundlagen Stellungsspiel",p:[1,4,5,6]},
+  winkel:{t:"Winkel & Taschenlinien",p:[2,7,10,17,19]},
+  risiko:{t:"Gefahrenzonen & Sicherheit",p:[3,11,16,20]},
+  plan:{t:"Taschenwahl & Planung",p:[8,9,13,14,15]},
+  tangente:{t:"Tangentenlinie",p:[18]}
+};
+function trainables(){const out=[];EX.forEach((e,ei)=>{if(e.study)return;
+  if(e.seq) out.push({ei,si:0,seq:true,d:Math.max(...e.shots.map((_,i)=>diffOf(e,i)))});
+  else e.shots.forEach((s,si)=>out.push({ei,si,d:diffOf(e,si)}))});return out}
+const uniqEx=l=>{const seen=new Set();return l.filter(c=>!seen.has(c.ei)&&seen.add(c.ei))};
+const shuffle=a=>{a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a};
+
+/* ---------- Warm-up ---------- */
+const WARM=[
+ {t:"Gerade Stoppbälle",sec:90,txt:"Lege eine Kugel einen Diamanten vor eine Ecktasche, die Weiße zwei Diamanten dahinter auf derselben Linie. Stoß ruhig und gerade: Die Weiße soll dort liegen bleiben, wo die Objektkugel lag. Nach jedem Treffer ein halbes Diamant weiter zurück.",why:"Weckt den geraden, ruhigen Stoß. Ein Stoppball zeigt sofort, ob du die Weiße mittig triffst."},
+ {t:"Stopp – Nachläufer – Rückläufer",sec:90,txt:"Aus der Tischmitte auf eine gerade Kugel: abwechselnd Stoppball, Nachläufer, Rückläufer. Je 2–3 Mal.",why:"Holt das Gefühl für Anspielpunkt und Weißen-Kontrolle zurück, bevor du Positionsstöße spielst."},
+ {t:"Tempo-Gefühl (Lag)",sec:60,txt:"Weiße von der kurzen Bande zur gegenüberliegenden kurzen Bande und zurück spielen. Sie soll so nah wie möglich an der Ausgangsbande liegen bleiben.",why:"Jeder Tisch läuft anders. Hier stellst du dein Tempo auf Tuch und Banden des heutigen Tisches ein."},
+ {t:"Einfache Schnitte 30–45°",sec:60,txt:"Drei bis vier Kugeln mit mittlerem Schnittwinkel lochen, weiches bis mittleres Tempo, ruhiger Rhythmus.",why:"Kalibriert das Zielen auf den Schnittwinkel – den brauchst du in fast jeder Positionsübung."}
+];
+const WFIG=[
+ {name:"Gerade Stoppbälle",balls:[[1,7.3,0.7]],labels:[[5.55,2.45,"+½"],[5.2,2.8,"+1"]],shots:[{tag:"Stoppball",cue:[5.9,2.1],obj:1,pk:"TR",path:null,tgt:{c:[7.3,0.7,0.24]},tgtLabel:" ",note:""}],cap:"Weiße bleibt stehen, wo die 1 lag (Kreis). Danach die Weiße ½ bzw. 1 Diamant weiter zurücklegen."},
+ {name:"Stopp – Nachläufer – Rückläufer",balls:[[2,6,3]],shots:[{tag:"",cue:[4,2],obj:2,pk:"BR",path:null,alts:[{path:[[6.75,3.38]],tgt:[6.85,3.43,0.2],label:"N",col:"#7ee69a"},{tgt:[5.82,2.91,0.2],label:"S",col:"#ffd36b"},{path:[[4.7,2.35]],tgt:[4.6,2.3,0.2],label:"R",col:"#ff9f6e"}]}],cap:"S = Stoppball (Weiße bleibt stehen) · N = Nachläufer (läuft hinterher) · R = Rückläufer (kommt zurück)."},
+ {name:"Tempo-Gefühl (Lag)",polys:[[[0.65,1.85],[7.9,1.85],[0.45,2.15]]],shots:[{tag:"",cue:[0.65,1.85],path:null,tgt:{c:[0.3,2.15,0.28]},tgtLabel:"Ziel"}],cap:"Einmal zur gegenüberliegenden kurzen Bande und zurück – so nah wie möglich an die Ausgangsbande."},
+ {name:"Einfache Schnitte 30–45°",balls:[[1,6.8,1.0],[2,6.3,1.35],[3,5.8,1.7]],labels:[[6.05,2.85,"W"],[5.45,3.15,"W"],[4.9,3.45,"W"]],guides:[[[6.8,1.0],[8.07,-0.07]],[[6.3,1.35],[8.07,-0.07]],[[5.8,1.7],[8.07,-0.07]]],polys:[[[6.05,2.85],[6.62,1.16]],[[5.45,3.15],[6.11,1.52]],[[4.9,3.45],[5.6,1.88]]],shots:[{tag:"",cue:null}],cap:"Drei Kugeln in die rechte obere Ecke, Weiße (W) jeweils so legen, dass ein Schnitt von 30–45° entsteht."}
+];
+function warmFigSVG(i){const f=WFIG[i];if(!f)return"";const ex={...f,id:"warm"+i};return tableSVG(ex,0)}
+function warmBlocks(min){const f=min/5;return WARM.map((w,i)=>({kind:"warm",...w,fig:i,sec:Math.round(w.sec*f)}))}
+
+/* ---------- Sessions ---------- */
+const SESS_TYPES={
+  quick:{t:"Quicky",min:10,desc:"Kein Warm-up · 5 zufällige Übungen · je 3 Versuche"},
+  s20:{t:"20 Minuten",min:20,desc:"5 Min Warm-up · 3 Übungen nach Schwerpunkt & Stufe · je 5 Versuche"},
+  fix:{t:"Fix Your Problems",min:40,desc:"5 Min Warm-up · deine 4 schwächsten Übungen · je 7 Versuche"},
+  s60:{t:"60 Minuten Allgemein",min:60,desc:"10 Min Warm-up · 8 Übungen aus allen Bereichen · je 5 Versuche"}
+};
+function buildSession(type,opt){
+  const all=trainables(); let ex=[], note="";
+  const exB=(c,n)=>({kind:"ex",ei:c.ei,si:c.si,n:EX[c.ei].pattern?Math.min(n,2):n});
+  if(type==="quick"){ex=uniqEx(shuffle(all)).slice(0,5).map(c=>exB(c,3))}
+  if(type==="s20"){
+    let pool=all.filter(c=>(!opt.focus||opt.focus==="all"||FOCUS[opt.focus].p.includes(EX[c.ei].p))&&(!opt.diff||opt.diff==="all"||c.d==+opt.diff));
+    if(pool.length<3){note="Zu wenige Übungen für diese Kombination – Stufe wurde ignoriert.";pool=all.filter(c=>!opt.focus||opt.focus==="all"||FOCUS[opt.focus].p.includes(EX[c.ei].p))}
+    ex=uniqEx(shuffle(pool)).slice(0,3).map(c=>exB(c,5));
+  }
+  if(type==="fix"){
+    const m=byShot(allAttempts());
+    const rated=all.map(c=>{const l=EX[c.ei].seq?EX[c.ei].shots.flatMap((_,i)=>m[shotKey(EX[c.ei].id,i)]||[]):(m[shotKey(EX[c.ei].id,c.si)]||[]);const last=l.slice(-20);return {...c,n:l.length,r:last.length?last.filter(a=>a.r==="ok").length/last.length:null}});
+    let weak=uniqEx(rated.filter(c=>c.n>=5).sort((a,b)=>a.r-b.r)).slice(0,4);
+    if(weak.length<4){note=weak.length?"Erst "+weak.length+" Übungen mit genug Daten (mind. 5 Versuche) – aufgefüllt mit noch nicht trainierten.":"Noch keine Übung mit mindestens 5 Versuchen – diese Session nimmt noch nicht trainierte Übungen der Stufen Grundlage und Fortgeschritten.";
+      weak=uniqEx(weak.concat(shuffle(rated.filter(c=>c.n<5&&c.d<=2)))).slice(0,4)}
+    ex=weak.map(c=>exB(c,7));
+  }
+  if(type==="s60"){
+    const picks=[];for(const k of Object.keys(FOCUS)){const p=shuffle(all.filter(c=>FOCUS[k].p.includes(EX[c.ei].p)));if(p[0])picks.push(p[0])}
+    const rest=shuffle(all.filter(c=>!picks.some(x=>x.ei===c.ei)));
+    for(const d of [1,2,3]){if(picks.length>=8)break;const c=rest.find(x=>x.d===d&&!picks.some(y=>y.ei===x.ei));if(c)picks.push(c)}
+    while(picks.length<8&&rest.length){const c=rest.shift();if(!picks.some(y=>y.ei===c.ei))picks.push(c)}
+    ex=shuffle(picks).map(c=>exB(c,5));
+  }
+  const warm=type==="quick"?[]:warmBlocks(type==="s60"?10:5);
+  return {id:"s"+Date.now(),type,start:Date.now(),blocks:[...warm,...ex],idx:0,cnt:0,note,opt:opt||{}};
+}
+function saveSess(){try{localStorage.setItem("pc-sess",JSON.stringify(state.sess||null))}catch(e){}}
+try{state.sess=JSON.parse(localStorage.getItem("pc-sess")||"null")}catch(e){state.sess=null}
+if(state.sess&&Date.now()-state.sess.start>4*3600e3) state.sess=null;
+function fmtDur(ms){const s=Math.max(0,Math.round(ms/1000));const m=Math.floor(s/60);return m+":"+String(s%60).padStart(2,"0")}
+function curBlock(){return state.sess?state.sess.blocks[state.sess.idx]:null}
+function exBlocks(){return state.sess?state.sess.blocks.filter(b=>b.kind==="ex"):[]}
+function startSession(type,opt){
+  state.sess=buildSession(type,opt); saveSess(); gotoBlock();
+  if(state.sess.note) setTimeout(()=>toast(state.sess.note),300);
+}
+function gotoBlock(){
+  const b=curBlock(); if(!b){finishSession();return}
+  if(b.kind==="warm"){state.view="warm";b.until=Date.now()+b.sec*1000}
+  else{state.ex=b.ei;state.shot=b.si;state.view="train";saveSel()}
+  saveSess(); render(); window.scrollTo(0,0);
+}
+function nextBlock(){if(!state.sess)return;state.sess.idx++;state.sess.cnt=0;gotoBlock()}
+function sessAfterRecord(){
+  const b=curBlock(); if(!b||b.kind!=="ex"||b.ei!==state.ex) return null;
+  state.sess.cnt++; saveSess();
+  if(state.sess.cnt>=b.n){const last=state.sess.idx>=state.sess.blocks.length-1; setTimeout(nextBlock,350); return last?"Letzte Übung geschafft":"Nächste Übung"}
+  return null;
+}
+function sessionStats(sess,end){
+  const att=allAttempts().filter(a=>a.t>=sess.start&&a.t<=end);
+  const before=allAttempts().filter(a=>a.t<sess.start).slice(-200);
+  const q=l=>{const n=l.length,pot=l.filter(a=>a.r!=="miss").length,ok=l.filter(a=>a.r==="ok").length;return {n,pot:n?pot/n:null,pos:pot?ok/pot:null,ok:n?ok/n:null}};
+  const per={};for(const a of att){const k=a.e+":"+a.s;(per[k]=per[k]||[]).push(a)}
+  return {att,cur:q(att),ref:q(before),per};
+}
+function finishSession(){
+  const s=state.sess; if(!s) return;
+  const end=Date.now(); const st=sessionStats(s,end);
+  state.summary={type:s.type,start:s.start,end,cur:st.cur,ref:st.ref,per:Object.entries(st.per).map(([k,l])=>({k,n:l.length,ok:l.filter(a=>a.r==="ok").length,pot:l.filter(a=>a.r!=="miss").length}))};
+  state.sess=null; saveSess(); state.view="sum"; render(); window.scrollTo(0,0);
+  if(state.db&&st.cur.n){state.db.doc("sessionlog/"+s.id).set({type:s.type,start:s.start,end,n:st.cur.n,pot:st.cur.pot,pos:st.cur.pos,ok:st.cur.ok}).catch(()=>{})}
+}
+function grade(cur,ref){
+  if(!cur.n) return {t:"Keine Versuche erfasst",c:"l0",txt:"In dieser Session wurde nichts erfasst."};
+  if(cur.n<8) return {t:"Zu wenig Versuche für eine Bewertung",c:"l0",txt:"Ab 8 Versuchen gibt es eine Bewertung."};
+  if(ref.n<20) return {t:"Erste Messung",c:"l2",txt:"Noch kein Vergleich möglich – ab 20 Versuchen aus früheren Sessions vergleiche ich mit deinem Schnitt."};
+  const d=Math.round((cur.ok-ref.ok)*100);
+  if(d>=8) return {t:"Starke Session",c:"l3",txt:`${d} Prozentpunkte über deinem Schnitt der letzten ${ref.n} Versuche.`};
+  if(d<=-8) return {t:"Unter deinem Schnitt",c:"l1",txt:`${-d} Prozentpunkte unter deinem Schnitt der letzten ${ref.n} Versuche. Einzelne Sessions schwanken stark – wichtig ist der Trend über Wochen.`};
+  return {t:"Im Rahmen deines Schnitts",c:"l2",txt:`${d>=0?"+":""}${d} Prozentpunkte gegenüber deinem Schnitt der letzten ${ref.n} Versuche.`};
+}
+function renderSessBar(){
+  const bar=$("#sessbar"), s=state.sess;
+  if(!s){bar.hidden=true;return}
+  bar.hidden=false; const T=SESS_TYPES[s.type]; const b=curBlock(); const exs=exBlocks();
+  let pos="";
+  if(b&&b.kind==="warm"){const wi=s.blocks.filter(x=>x.kind==="warm").indexOf(b);pos=`Warm-up ${wi+1}/${s.blocks.filter(x=>x.kind==="warm").length}`}
+  else if(b){pos=`Übung ${exs.indexOf(b)+1}/${exs.length} · Versuch ${Math.min(s.cnt+1,b.n)}/${b.n}`}
+  bar.innerHTML=`<div><b>${esc(T.t)}</b> <span class="num" id="sessclock">${fmtDur(Date.now()-s.start)}</span><span class="muted"> / ${T.min}:00</span><div class="small">${pos}</div></div><div class="sbtns">${b&&b.kind==="ex"?'<button class="linkbtn" id="skipblock">Überspringen</button>':""}<button class="linkbtn" id="endsess">Beenden</button></div>`;
+}
+function renderStart(){
+  $("#randex").hidden=!!state.sess;
+  const box=$("#sessstart"); if(state.sess){box.hidden=true;return} box.hidden=false;
+  if(box.dataset.built) return; box.dataset.built="1";
+  box.innerHTML=`<h3>Session starten</h3><div class="sgrid">${Object.entries(SESS_TYPES).map(([k,v])=>`<button class="sbtn" data-sess="${k}"><b>${esc(v.t)}</b><span>${esc(v.desc)}</span></button>`).join("")}</div>
+  <div class="sopts" id="s20opts" hidden><label for="s20focus">Schwerpunkt</label><select id="s20focus"><option value="all">Alle Bereiche</option>${Object.entries(FOCUS).map(([k,v])=>`<option value="${k}">${esc(v.t)}</option>`).join("")}</select>
+  <label for="s20diff">Stufe</label><select id="s20diff"><option value="all">Gemischt</option><option value="1">● Grundlage</option><option value="2">●● Fortgeschritten</option><option value="3">●●● Anspruchsvoll</option></select>
+  <button class="sgo" id="s20go">20-Minuten-Session starten</button></div>`;
+}
+function renderWarm(){
+  const b=curBlock(); if(!b||b.kind!=="warm"){$("#view-warm").innerHTML="";return}
+  const ws=state.sess.blocks.filter(x=>x.kind==="warm"); const i=ws.indexOf(b);
+  $("#view-warm").innerHTML=`<div class="plabel">Warm-up · Schritt ${i+1} von ${ws.length}</div><h1>${esc(b.t)}</h1>
+  <div class="wclock num" id="wclock">${fmtDur(b.until-Date.now())}</div>
+  ${b.fig!=null?`<div>${warmFigSVG(b.fig)}<p class="small muted" style="margin:6px 0 0">${esc(WFIG[b.fig].cap)}</p></div>`:""}
+  <div class="card"><p class="instr">${esc(b.txt)}</p><p class="instr-note">Warum: ${esc(b.why)}</p></div>
+  <button class="sgo" id="warmnext">${i===ws.length-1?"Warm-up fertig – los geht's":"Nächster Schritt"}</button>
+  <p class="small muted">Im Warm-up wird nichts erfasst. Es geht um Rhythmus und Tischgefühl, nicht ums Lochen.</p>`;
+}
+function renderSum(){
+  const S=state.summary; if(!S){$("#view-sum").innerHTML="";return}
+  const g=grade(S.cur,S.ref); const T=SESS_TYPES[S.type];
+  const cmp=(a,b)=>a==null||b==null?"":`<span class="small ${a>=b?"up":"down"}">${a>=b?"▲":"▼"} ${Math.abs(Math.round((a-b)*100))} Pp</span>`;
+  const rows=S.per.map(p=>{const [id,si]=p.k.split(":");const ei=EX.findIndex(e=>e.id===id);const e=EX[ei];if(!e)return"";return `<div class="row"><div class="t"><b>${e.p}. ${esc(e.name)}</b><span class="small muted">${esc(shotLabel(e,+si))}</span></div><span class="num">${p.ok}/${p.n}</span></div>`}).join("");
+  $("#view-sum").innerHTML=`<div class="plabel">Session beendet · ${esc(T.t)}</div><h1>Auswertung</h1>
+  <div class="card"><span class="level ${g.c}" style="align-self:flex-start">${esc(g.t)}</span><p class="instr" style="margin:0">${esc(g.txt)}</p></div>
+  <div class="card"><div class="stats">
+   <div class="stat"><span class="v num">${fmtDur(S.end-S.start)}</span><span class="k">Dauer</span></div>
+   <div class="stat"><span class="v num">${S.cur.n}</span><span class="k">Versuche</span></div>
+   <div class="stat"><span class="v num">${pct(S.cur.ok)}</span><span class="k">Erfolg</span>${cmp(S.cur.ok,S.ref.ok)}</div>
+   <div class="stat"><span class="v num">${pct(S.cur.pot)}</span><span class="k">Lochen</span>${cmp(S.cur.pot,S.ref.pot)}</div>
+   <div class="stat"><span class="v num">${pct(S.cur.pos)}</span><span class="k">Stellen (wenn gelocht)</span>${cmp(S.cur.pos,S.ref.pos)}</div>
+   <div class="stat"><span class="v num">${pct(S.ref.ok)}</span><span class="k">Dein Schnitt vorher</span></div>
+  </div>${S.ref.n?`<p class="small muted" style="margin:0">Pfeile: Vergleich mit deinen letzten ${S.ref.n} Versuchen vor dieser Session (Pp = Prozentpunkte).</p>`:""}</div>
+  ${rows?`<div class="card"><h3>Übungen dieser Session</h3>${rows}</div>`:""}
+  <button class="sgo" id="sumclose">Fertig</button>`;
+}
+setInterval(()=>{if(!state.sess)return;const c=$("#sessclock");if(c)c.textContent=fmtDur(Date.now()-state.sess.start);const b=curBlock();const w=$("#wclock");if(w&&b&&b.kind==="warm"){const left=b.until-Date.now();w.textContent=left>0?fmtDur(left):"Zeit um";w.classList.toggle("over",left<=0)}},1000);
+
+/* ---------- Training rendern ---------- */
+function renderTrain(){
+  const ex=EX[state.ex], sh=ex.shots[state.shot], P=PRINCIPLES[ex.p];
+  $("#pnum").textContent=ex.p; $("#plabel").textContent="Prinzip "+ex.p+" · "+P.t; $("#ptitle").textContent=ex.name; $("#pquote").textContent=P.q;
+  {const dd=ex.study?0:(ex.seq?Math.max(...ex.shots.map((_,k)=>diffOf(ex,k))):diffOf(ex,state.shot));$("#diffline").innerHTML=dd?`<span class="dchip d${dd}">${"●".repeat(dd)}${"○".repeat(3-dd)} Stufe ${dd} · ${DIFF_NAME[dd]}</span>`:"";}
+  $("#tablewrap").innerHTML=tableSVG(ex,state.shot);
+  const lg=['<span><i style="background:#fff"></i>Laufweg (Buch)</span>'];
+  if(sh.calc) lg.push('<span><i style="background:#ffd36b"></i>berechnet</span>');
+  if((sh.alts||[]).some(a=>!a.ok)) lg.push('<span><i style="background:#ff7a6e"></i>nicht empfohlen</span>');
+  if((sh.alts||[]).some(a=>a.ok)) lg.push('<span><i style="background:#7ee69a"></i>auch gut</span>');
+  if((sh.guides||ex.guides||[]).length) lg.push('<span><i style="background:#08131c"></i>Taschenlinie</span>');
+  if(sh.tangent) lg.push('<span>Weg ab Geisterkugel = Tangentenlinie</span>');
+  $("#legend").innerHTML=lg.join("");
+  const study=!!ex.study;
+  $("#resultsbox").hidden=study; $("#statscard").hidden=study;
+  $("#r-ok").innerHTML=ex.pattern?'Muster komplett<small>alle Kugeln mit Position</small>':'Gelocht + Position<small>Weiße in der Zielzone</small>';
+  $("#r-pot").innerHTML=ex.pattern?'Teilweise<small>Serie unterbrochen</small>':'Gelocht<small>Position verfehlt</small>';
+  $("#r-miss").innerHTML=ex.pattern?'Früh vorbei<small>erste Kugeln verfehlt</small>':'Nicht gelocht<small>Fehlschuss</small>';
+  const all=allAttempts(), m=byShot(all);
+  $("#shots").innerHTML=ex.shots.map((s,i)=>{const lv=levelOf(m[shotKey(ex.id,i)]||[]);return `<button class="shot" aria-pressed="${i===state.shot}" data-i="${i}"><span class="dot l${lv.l}"></span>${esc(shotLabel(ex,i))}${ex.study?"":" "+diffBadge(ex.seq?Math.max(...ex.shots.map((_,k)=>diffOf(ex,k))):diffOf(ex,i))}</button>`}).join("");
+  let h="";
+  h+=`<div>${spinSVG(sh.spin)}</div>`;
+  h+=`<div><div class="lbl">Effet</div><div class="val">${esc(sh.spinNote||spinText(sh.spin)||"nach Gefühl")}</div></div>`;
+  h+=`<div><div class="lbl">Tempo</div>${sh.spd?`<div class="speed" aria-label="Tempo ${sh.spd} von 8">${[1,2,3,4,5,6,7,8].map(i=>`<i class="${i<=sh.spd?"on":""}"></i>`).join("")}</div><div class="val">${sh.spd}/8 · ${speedText(sh.spd)}</div>`:`<div class="val">nach Gefühl</div>`}${sh.ang?`<div class="small muted">Schnittwinkel ${sh.ang}°</div>`:""}</div>`;
+  $("#howto").innerHTML=h;
+  $("#instr").textContent=sh.txt;
+  const nt=[(sh.spinNote||"").startsWith("Stoppball")?STUN_EXPL:"",sh.note||""].filter(Boolean).join(" ");
+  $("#instrnote").textContent=nt;
+  $("#instrnote").hidden=!nt;
+  // Stoß-Statistik
+  const list=m[shotKey(ex.id,state.shot)]||[]; const lv=levelOf(list); const last=list.slice(-20);
+  const okR=last.length?last.filter(a=>a.r==="ok").length/last.length:null;
+  const potR=last.length?last.filter(a=>a.r!=="miss").length/last.length:null;
+  let streak=0;for(let i=list.length-1;i>=0&&list[i].r==="ok";i--)streak++;
+  let best=0,c=0;for(const a of list){c=a.r==="ok"?c+1:0;best=Math.max(best,c)}
+  $("#lvl").className="level l"+lv.l; $("#lvl").textContent=lv.name;
+  $("#shotstats").innerHTML=`<div class="stat"><span class="v num">${pct(okR)}</span><span class="k">Erfolg (letzte 20)</span></div><div class="stat"><span class="v num">${pct(potR)}</span><span class="k">Gelocht</span></div><div class="stat"><span class="v num">${streak}<span class="small muted"> / ${best}</span></span><span class="k">Serie / Rekord</span></div>`;
+  $("#chips").innerHTML=list.slice(-30).map(a=>`<span class="chip ${a.r}" title="${a.r==="ok"?"Erfolg":a.r==="pot"?"Gelocht, Position verfehlt":"Nicht gelocht"}"></span>`).join("")||`<span class="small muted">Noch keine Versuche. Tippe nach jedem Stoß auf das Ergebnis.</span>`;
+  const td=dayAttempts(todayStr());
+  const tOk=td.filter(a=>a.r==="ok").length;
+  $("#todayline").textContent=`Heute gesamt: ${td.length} Versuche${td.length?" · "+Math.round(tOk/td.length*100)+" % Erfolg":""} · Insgesamt ${list.length} Versuche an ${ex.seq?"diesem Stoß":"dieser Variante"}`;
+  $("#shotstat-title").textContent=ex.seq?"Dieser Stoß":"Diese Variante";
+  $("#undo").disabled=!td.length;
+  const fl=state.flags[ex.id];
+  $("#source").innerHTML=`Quelle: Principles of Position, S. ${ex.page}. Grafik übertragen, nicht pixelgenau. <button class="linkbtn flag" id="flagbtn">${fl?"Als abweichend gemeldet ✓ (zurücknehmen)":"Weicht vom Original ab? Melden"}</button>`;
+  $("#exsel").value=String(state.ex);
+}
+function fillSelect(){
+  let h="",cur=null;
+  EX.forEach((e,i)=>{if(e.p!==cur){if(cur!==null)h+="</optgroup>";h+=`<optgroup label="${e.p} · ${esc(PRINCIPLES[e.p].t)}">`;cur=e.p}h+=`<option value="${i}">${e.p}.${EX.filter((x,j)=>x.p===e.p&&j<=i).length} ${esc(e.name)}</option>`});
+  $("#exsel").innerHTML=h+"</optgroup>";
+}
+
+/* ---------- Fortschritt ---------- */
+function weekStart(t){const d=new Date(t);d.setHours(0,0,0,0);const wd=(d.getDay()+6)%7;d.setDate(d.getDate()-wd);return d.getTime()}
+function renderProg(){
+  const all=allAttempts();
+  const n=all.length, ok=all.filter(a=>a.r==="ok").length;
+  const last50=all.slice(-50), prev50=all.slice(-100,-50);
+  const r50=last50.length?last50.filter(a=>a.r==="ok").length/last50.length:null;
+  const rp=prev50.length>=20?prev50.filter(a=>a.r==="ok").length/prev50.length:null;
+  const days=new Set(all.map(a=>todayStr(new Date(a.t)))).size;
+  const trend=(r50!=null&&rp!=null)?Math.round((r50-rp)*100):null;
+  $("#kpis").innerHTML=`<div class="stat"><span class="v num">${n}</span><span class="k">Versuche · ${days} Tage</span></div><div class="stat"><span class="v num">${pct(r50)}</span><span class="k">Erfolg letzte 50</span></div><div class="stat"><span class="v num" style="color:${trend==null?"inherit":trend>=0?"var(--good)":"var(--bad)"}">${trend==null?"–":(trend>0?"+":"")+trend+" Pp"}</span><span class="k">ggü. 50 davor</span></div>`;
+  $("#kpinote").textContent=n?"Erfolg = gelocht und Weiße in der Zielzone.":"Noch keine Daten. Sobald du im Training Versuche erfasst, erscheint hier deine Entwicklung.";
+  // Wochen-Chart
+  const wk={};for(const a of all){const w=weekStart(a.t);(wk[w]=wk[w]||[]).push(a)}
+  const weeks=Object.keys(wk).map(Number).sort((a,b)=>a-b).slice(-10);
+  if(weeks.length<1){$("#weekchart").innerHTML=`<p class="empty">Die Kurve erscheint nach der ersten Trainingswoche.</p>`}
+  else{
+    const W=640,H=200,pl=40,pr=16,pt=14,pb=34; const iw=W-pl-pr, ih=H-pt-pb;
+    const xs=i=>pl+(weeks.length===1?iw/2:i*iw/(weeks.length-1)); const ys=v=>pt+ih-v*ih;
+    let s=`<svg class="chart" viewBox="0 0 ${W} ${H}" role="img" aria-label="Erfolgsquote pro Woche">`;
+    for(const v of [0,0.25,0.5,0.75,1]) s+=`<line x1="${pl}" x2="${W-pr}" y1="${ys(v)}" y2="${ys(v)}" stroke="var(--line)"/><text x="${pl-6}" y="${ys(v)+4}" font-size="11" text-anchor="end" fill="var(--muted)" font-family="Barlow,sans-serif">${v*100}</text>`;
+    const pts=weeks.map((w,i)=>{const L=wk[w];return [xs(i),ys(L.filter(a=>a.r==="ok").length/L.length),L.length]});
+    if(pts.length>1){s+=`<path d="M${pts[0][0]},${ys(0)} ${pts.map(p=>"L"+p[0]+","+p[1]).join(" ")} L${pts[pts.length-1][0]},${ys(0)} Z" fill="var(--accent)" fill-opacity=".12"/>`;s+=`<polyline points="${pts.map(p=>p[0]+","+p[1]).join(" ")}" fill="none" stroke="var(--accent)" stroke-width="2.5" stroke-linejoin="round"/>`}
+    pts.forEach((p,i)=>{const d=new Date(weeks[i]);s+=`<circle cx="${p[0]}" cy="${p[1]}" r="${i===pts.length-1?5:3.5}" fill="var(--accent)"/><text x="${p[0]}" y="${H-16}" font-size="11" text-anchor="middle" fill="var(--muted)" font-family="Barlow,sans-serif">${d.getDate()}.${d.getMonth()+1}.</text><text x="${p[0]}" y="${H-3}" font-size="10" text-anchor="middle" fill="var(--muted)" font-family="Barlow,sans-serif">n=${p[2]}</text>`});
+    $("#weekchart").innerHTML=s+"</svg>";
+  }
+  // Diagnose
+  const L=all.slice(-100);
+  const potR=L.length?L.filter(a=>a.r!=="miss").length/L.length:null;
+  const pots=L.filter(a=>a.r!=="miss"); const posR=pots.length?pots.filter(a=>a.r==="ok").length/pots.length:null;
+  $("#diag").innerHTML=`<div class="stat"><span class="v num">${pct(potR)}</span><span class="k">Lochquote</span><div class="bar"><span style="width:${(potR||0)*100}%"></span></div></div><div class="stat"><span class="v num">${pct(posR)}</span><span class="k">Position, wenn gelocht</span><div class="bar"><span style="width:${(posR||0)*100}%"></span></div></div>`;
+  let dt="Basis: letzte 100 Versuche.";
+  if(L.length>=20){
+    if(potR<0.7&&posR>=0.6) dt+=" Engpass ist das Lochen: Die Weiße kommt meist richtig, aber zu viele Kugeln fallen nicht. Spiel die Übungen eine Zeit lang mit Fokus auf die Objektkugel.";
+    else if(posR<potR-0.15) dt+=" Engpass ist das Stellungsspiel: Du lochst sicher, aber die Weiße verfehlt oft die Zone. Vor jedem Stoß Tempo und Laufweg festlegen.";
+    else dt+=" Lochen und Stellungsspiel sind ausgeglichen.";
+  } else dt+=" Für eine Diagnose brauchst du mindestens 20 Versuche.";
+  $("#diagtext").textContent=dt;
+  // Empfehlung
+  const m=byShot(all); const cands=[];
+  EX.forEach((e,ei)=>{if(e.study)return;e.shots.forEach((s,si)=>{const l=m[shotKey(e.id,si)]||[];const lv=levelOf(l);cands.push({ei,si,e,s,n:l.length,lv,r:lv.r})})});
+  const weak=cands.filter(c=>c.n>=10&&c.lv.l<3).sort((a,b)=>a.r-b.r).slice(0,2);
+  const fresh=cands.filter(c=>c.n<10).slice(0,3-weak.length);
+  const pick=[...weak,...fresh];
+  $("#reco").innerHTML=pick.length?pick.map(c=>`<div class="row"><div class="t"><b>${c.e.p}. ${esc(c.e.name)} · ${esc(shotLabel(c.e,c.si))}</b><span class="small muted">${c.n>=10?"Schwach: "+pct(c.r)+" in den letzten 20":c.n?"Erst "+c.n+" Versuche":"Noch nicht trainiert"}</span></div><button class="linkbtn" data-go="${c.ei}:${c.si}">Trainieren</button></div>`).join(""):`<p class="empty">Alle Teile sind auf „Sicher“. Zeit für das nächste Buch.</p>`;
+  // Prinzipien
+  $("#byprinciple").innerHTML=Object.entries(PRINCIPLES).map(([p,P])=>{const l=all.filter(a=>EX.find(e=>e.id===a.e)?.p==p).slice(-40);const r=l.length?l.filter(a=>a.r==="ok").length/l.length:null;return `<div class="row"><div class="t" style="flex:1"><b>${p}. ${esc(P.t)}</b><div class="bar"><span style="width:${(r||0)*100}%"></span></div></div><span class="num" style="min-width:4.5ch;text-align:right">${pct(r)}</span></div>`}).join("")+`<p class="small muted" style="margin:6px 0 0">Erfolg der letzten 40 Versuche je Prinzip.</p>`;
+  $("#lochprog").innerHTML=lochProgCard();
+}
+
+/* ---------- Übungsliste ---------- */
+function exDiffs(e){return e.study?[]:e.seq?[Math.max(...e.shots.map((_,k)=>diffOf(e,k)))]:e.shots.map((_,k)=>diffOf(e,k))}
+function renderList(){
+  const m=byShot(allAttempts());
+  const f=state.dfilter||0;
+  const cnt=d=>EX.filter(e=>d?exDiffs(e).includes(d):true).length;
+  $("#dfilter").innerHTML=[0,1,2,3].map(d=>`<button class="shot dfbtn" data-df="${d}" aria-pressed="${f===d}">${d?`<span class="diff d${d}">${"●".repeat(d)}${"○".repeat(3-d)}</span> ${DIFF_NAME[d]}`:"Alle"} <span class="small">(${cnt(d)})</span></button>`).join("");
+  const list=EX.map((e,ei)=>({e,ei})).filter(({e})=>!f||exDiffs(e).includes(f));
+  $("#exlist").innerHTML=list.length?list.map(({e,ei})=>{const first=f&&!e.seq?Math.max(0,e.shots.findIndex((_,k)=>diffOf(e,k)===f)):0;return `<div class="row" data-go="${ei}:${first}">`+renderListRow(e,ei,m)}).join(""):`<p class="empty">Keine Übungen in dieser Stufe.</p>`;
+}
+function renderListRow(e,ei,m){return `<div class="t"><b>${e.p}. ${esc(e.name)}</b><span class="small muted">${esc(PRINCIPLES[e.p].t)} · S. ${e.page}${e.study?"":" · "+diffBadge(Math.max(...e.shots.map((_,k)=>diffOf(e,k))))}</span></div><div style="display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end">${e.study?`<span class="level l0">Anschauung</span>`:e.shots.map((s,si)=>{const lv=levelOf(m[shotKey(e.id,si)]||[]);return `<span class="level l${lv.l}" title="${esc(shotLabel(e,si))}: ${lv.name}">${e.shots.length===1?lv.name:e.seq?"S"+(si+1):"ABCDEF"[si]}</span>`}).join("")}</div></div>`}
+
+function render(){
+  for(const v of ["train","prog","list","warm","sum","loch"]){const el=$("#view-"+v);el.hidden=state.view!==v;el.style.display=state.view===v?"flex":"none";const t=$("#tab-"+v);if(t)t.setAttribute("aria-selected",state.view===v||(v==="train"&&(state.view==="warm"||state.view==="sum")))}
+  renderSessBar();
+  if(state.view==="train"){renderStart();renderTrain()} else if(state.view==="prog") renderProg(); else if(state.view==="list") renderList(); else if(state.view==="warm") renderWarm(); else if(state.view==="loch") renderLoch(); else renderSum();
+}
+
+/* ---------- Speichern ---------- */
+function setSync(text,off){const el=$("#sync");el.textContent=text;el.classList.toggle("off",!!off)}
+function toast(t){const d=document.createElement("div");d.className="toast";d.textContent=t;document.body.appendChild(d);setTimeout(()=>d.remove(),1400)}
+async function flush(){
+  if(!state.db) return;
+  if(state.writing){state.dirty=true;return}
+  const dates=[...new Set(state.pending.map(a=>todayStr(new Date(a.t))))];
+  if(!dates.length) return;
+  state.writing=true;
+  try{
+    for(const date of dates){
+      const merged=dayAttempts(date);
+      await state.db.doc("sessions/"+date).set({date,a:merged});
+      state.days[date]=merged;
+      const ts=new Set(merged.map(a=>a.t));
+      state.pending=state.pending.filter(a=>!(todayStr(new Date(a.t))===date&&ts.has(a.t)));
+    }
+    savePending(); setSync("Gespeichert");
+  }catch(e){
+    setSync(e&&e.code==="quota_exceeded"?"Speicher voll – bitte Claude Bescheid geben":"Nicht gespeichert – wird erneut versucht",true);
+    setTimeout(flush,4000);
+  }finally{
+    state.writing=false;
+    if(state.dirty){state.dirty=false;flush()}
+  }
+}
+function record(r){
+  const ex=EX[state.ex];
+  state.pending.push({e:ex.id,s:state.shot,r,t:Date.now()});
+  savePending();
+  let msg=null;
+  if(ex.seq){
+    if(r==="ok"&&state.shot<ex.shots.length-1){state.shot++;msg="Weiter mit Stoß "+(state.shot+1)}
+    else if(state.shot===ex.shots.length-1){state.shot=0;msg="Folge beendet – neu aufbauen: Stoß 1"}
+    saveSel();
+  }
+  const sm=state.sess?sessAfterRecord():null;
+  render(); if(sm) toast(sm); else if(msg) toast(msg);
+  if(navigator.vibrate) try{navigator.vibrate(r==="ok"?15:[10,40,10])}catch(e){}
+  if(state.db) flush(); else setSync("Offline – lokal zwischengespeichert",true);
+}
+async function undo(){
+  const date=todayStr(); const list=dayAttempts(date); if(!list.length) return;
+  const lastT=list[list.length-1].t;
+  state.pending=state.pending.filter(a=>a.t!==lastT); savePending();
+  if(state.days[date]) state.days[date]=state.days[date].filter(a=>a.t!==lastT);
+  render(); toast("Letzter Versuch gelöscht");
+  if(state.db){
+    try{state.writing=true;await state.db.doc("sessions/"+date).set({date,a:dayAttempts(date)});setSync("Gespeichert")}
+    catch(e){setSync("Löschen nicht gespeichert",true)}
+    finally{state.writing=false;if(state.dirty){state.dirty=false;flush()}}
+  }
+}
+async function toggleFlag(){
+  const ex=EX[state.ex]; if(!state.db){toast("Melden geht nur mit Verbindung");return}
+  try{
+    if(state.flags[ex.id]){await state.db.doc("flags/"+ex.id).delete();delete state.flags[ex.id]}
+    else{await state.db.doc("flags/"+ex.id).set({ex:ex.id,shot:state.shot,t:Date.now()});state.flags[ex.id]=true;toast("Gemeldet – Claude sieht das beim nächsten Mal")}
+    render();
+  }catch(e){toast("Melden fehlgeschlagen")}
+}
+
+const LOCH=[
+ {n:1,ob:[1.01,0.99],book:"1.1,2.1,3.1,4.1,5.1",d:[
+  {t:"A",c:[1.44,2.01],lv:[4,5],st:1,src:"4.1,5.1"},
+  {t:"B",c:[1.62,2.01],lv:[1],st:1,src:"1.1"},
+  {t:"C",c:[2.0,2.01],lv:[1,2,4,5],st:1,src:"1.1,2.1,4.1,5.1"},
+  {t:"D",c:[1.0,2.01],lv:[2],st:1,src:"2.1"},
+  {t:"E",c:[2.0,2.53],lv:[1,4],st:1,src:"1.1,4.1"},
+  {t:"F",c:[1.4,2.56],lv:[2],st:1,src:"2.1"},
+  {t:"G",c:[1.19,2.48],lv:[5],st:1,src:"5.1"},
+  {t:"H",c:[2.55,2.56],lv:[2,4],st:1,src:"2.1,4.1"},
+  {t:"I",c:[1.0,2.56],lv:[2,5],st:1,src:"2.1,5.1"},
+  {t:"J",c:[2.0,3.0],lv:[1,4],st:1,src:"1.1,4.1"},
+  {t:"K",c:[1.59,3.01],lv:[2],st:1,src:"2.1"},
+  {t:"L",c:[1.19,3.01],lv:[5],st:1,src:"5.1"},
+  {t:"M",c:[1.0,3.01],lv:[2,5],st:2,src:"2.1,5.1"},
+  {t:"N",c:[4.0,1.0],lv:[3],st:2,src:"3.1"},
+  {t:"O",c:[4.0,0.67],lv:[3],st:2,src:"3.1"},
+  {t:"P",c:[5.01,1.0],lv:[3],st:3,src:"3.1"},
+  {t:"Q",c:[6.0,0.84],lv:[3],st:3,src:"3.1"}]},
+ {n:2,ob:[1.02,1.45],book:"1.2,2.2,3.2,4.2,5.2",d:[
+  {t:"A",c:[1.34,2.46],lv:[1,2],st:1,src:"1.2,2.2"},
+  {t:"B",c:[1.72,2.46],lv:[1,2,4],st:1,src:"1.2,2.2,4.2"},
+  {t:"C",c:[1.01,2.46],lv:[2,4,5],st:1,src:"2.2,4.2,4.4,5.4"},
+  {t:"D",c:[1.52,3.01],lv:[1,2],st:1,src:"1.2,2.2"},
+  {t:"E",c:[2.08,3.01],lv:[1,2],st:1,src:"1.2,2.2"},
+  {t:"F",c:[1.01,3.01],lv:[2,4],st:1,src:"2.2,4.2"},
+  {t:"G",c:[1.46,3.45],lv:[1],st:2,src:"1.2"},
+  {t:"H",c:[2.37,3.45],lv:[4],st:2,src:"4.2"},
+  {t:"I",c:[1.0,3.46],lv:[2,4],st:2,src:"2.2,4.2"},
+  {t:"J",c:[4.0,2.45],lv:[5],st:2,src:"5.2"},
+  {t:"K",c:[3.99,1.81],lv:[3],st:3,src:"3.2"},
+  {t:"L",c:[4.56,2.45],lv:[5],st:3,src:"5.2"},
+  {t:"M",c:[3.99,1.63],lv:[3],st:3,src:"3.2"},
+  {t:"N",c:[3.99,1.46],lv:[3],st:3,src:"3.2"},
+  {t:"O",c:[5.01,3.0],lv:[5],st:3,src:"5.2"},
+  {t:"P",c:[4.63,1.98],lv:[3],st:3,src:"3.2"},
+  {t:"Q",c:[5.38,3.0],lv:[5],st:3,src:"5.2"},
+  {t:"R",c:[5.51,3.46],lv:[5],st:3,src:"5.2"},
+  {t:"S",c:[5.89,3.47],lv:[5],st:3,src:"5.2"}]},
+ {n:3,ob:[1.03,2.03],book:"1.3,2.3,3.3,4.3,5.3",d:[
+  {t:"A",c:[1.11,2.99],lv:[1,2,3,4],st:1,src:"1.3,2.3,3.3,3.5,4.3"},
+  {t:"B",c:[1.5,2.99],lv:[1,2,3,4],st:1,src:"1.3,2.3,3.3,4.3"},
+  {t:"C",c:[1.33,3.44],lv:[1,2,3],st:1,src:"1.3,2.3,3.7"},
+  {t:"D",c:[1.7,3.44],lv:[1,2,3,4],st:1,src:"1.3,1.5,2.3,2.5,3.3,3.5,4.3"},
+  {t:"E",c:[3.42,2.99],lv:[5],st:3,src:"5.3"},
+  {t:"F",c:[3.79,2.99],lv:[5],st:3,src:"5.3"},
+  {t:"G",c:[4.0,3.44],lv:[5],st:3,src:"5.3"},
+  {t:"H",c:[4.55,3.44],lv:[5],st:3,src:"5.3"}]},
+ {n:4,ob:[1.5,1.02],book:"1.4,2.4,3.4,4.4,5.4",d:[
+  {t:"A",c:[2.02,2.0],lv:[1,2,3,4,5],st:1,src:"1.4,2.4,3.4,4.4,5.4"},
+  {t:"B",c:[2.37,2.01],lv:[3,5],st:1,src:"3.4,5.4"},
+  {t:"C",c:[2.47,2.0],lv:[1,2],st:1,src:"1.4,2.4"},
+  {t:"D",c:[2.29,2.56],lv:[4,5],st:1,src:"4.4,5.4"},
+  {t:"E",c:[2.48,2.56],lv:[1,2,3,4,5],st:1,src:"1.4,2.4,3.4,4.4,5.4"},
+  {t:"F",c:[2.98,2.56],lv:[1,2,3],st:2,src:"1.4,2.4,3.4"},
+  {t:"G",c:[2.48,3.0],lv:[1],st:2,src:"1.4"},
+  {t:"H",c:[2.81,3.0],lv:[4],st:2,src:"4.4"},
+  {t:"I",c:[2.98,3.0],lv:[1,2,3,4],st:2,src:"1.4,2.4,3.4,4.4"},
+  {t:"J",c:[3.17,3.0],lv:[3],st:2,src:"3.4"},
+  {t:"K",c:[3.37,3.0],lv:[1,2],st:2,src:"1.4,2.4"},
+  {t:"L",c:[5.0,1.5],lv:[5],st:2,src:"5.4"},
+  {t:"M",c:[5.01,0.97],lv:[5],st:3,src:"5.4"}]},
+ {n:5,ob:[1.5,1.51],book:"1.5,2.5,3.5,4.5,5.5",d:[
+  {t:"A",c:[2.0,2.54],lv:[2],st:1,src:"2.5"},
+  {t:"B",c:[1.49,2.56],lv:[1],st:1,src:"1.5"},
+  {t:"C",c:[2.0,3.0],lv:[1,2,3,4],st:1,src:"1.5,2.5,3.5,4.3"},
+  {t:"D",c:[2.87,2.98],lv:[1,2],st:2,src:"1.5,2.5"},
+  {t:"E",c:[5.01,2.06],lv:[4],st:3,src:"4.5"},
+  {t:"F",c:[5.01,1.69],lv:[4,5],st:3,src:"4.5,5.3"},
+  {t:"G",c:[6.0,1.87],lv:[5],st:3,src:"5.5"},
+  {t:"H",c:[6.0,1.52],lv:[5],st:3,src:"5.5"}]},
+ {n:6,ob:[1.51,2.0],book:"1.6,2.6,3.6,4.6,5.6",d:[
+  {t:"A",c:[1.85,3.01],lv:[1,3],st:1,src:"1.6,3.6"},
+  {t:"B",c:[1.67,3.01],lv:[2],st:1,src:"2.6"},
+  {t:"C",c:[2.23,3.02],lv:[1,2,3],st:1,src:"1.6,2.6,3.6"},
+  {t:"D",c:[2.14,3.44],lv:[3],st:2,src:"3.6"},
+  {t:"E",c:[1.77,3.44],lv:[1,2],st:2,src:"1.6,2.6"},
+  {t:"F",c:[2.53,3.44],lv:[1,2,3],st:2,src:"1.6,1.8,2.6,2.8,3.6"},
+  {t:"G",c:[2.98,3.02],lv:[4],st:2,src:"4.6"},
+  {t:"H",c:[3.4,3.02],lv:[4],st:2,src:"4.6"},
+  {t:"I",c:[4.01,3.02],lv:[5],st:3,src:"5.6"},
+  {t:"J",c:[4.02,3.44],lv:[4],st:3,src:"4.6"},
+  {t:"K",c:[4.42,3.44],lv:[4],st:3,src:"4.6"},
+  {t:"L",c:[4.39,3.02],lv:[5],st:3,src:"5.6"},
+  {t:"M",c:[5.0,3.44],lv:[5],st:3,src:"5.6"},
+  {t:"N",c:[5.4,3.44],lv:[5],st:3,src:"5.6"}]},
+ {n:7,ob:[2.0,1.02],book:"1.7,2.7,3.7,4.7,5.7",d:[
+  {t:"A",c:[2.6,2.01],lv:[2],st:1,src:"2.7"},
+  {t:"B",c:[2.98,2.01],lv:[1,2,3],st:1,src:"1.7,2.7,3.7"},
+  {t:"C",c:[3.36,2.01],lv:[1,3],st:2,src:"1.7,3.3,3.7"},
+  {t:"D",c:[3.36,3.0],lv:[1,2,3],st:2,src:"1.7,2.7,3.7"},
+  {t:"E",c:[2.98,3.0],lv:[1,2],st:2,src:"1.7,2.7"},
+  {t:"F",c:[3.83,3.0],lv:[3],st:2,src:"3.7"},
+  {t:"G",c:[5.01,1.0],lv:[4,5],st:3,src:"4.7,5.7"},
+  {t:"H",c:[5.01,0.82],lv:[5],st:3,src:"5.7"},
+  {t:"I",c:[5.01,0.66],lv:[4],st:3,src:"4.7"},
+  {t:"J",c:[5.01,0.49],lv:[4,5],st:3,src:"4.7,5.7"}]},
+ {n:8,ob:[2.0,1.49],book:"1.8,2.8,3.8,4.8,5.8",d:[
+  {t:"A",c:[2.79,2.53],lv:[1],st:1,src:"1.8"},
+  {t:"B",c:[3.01,2.53],lv:[2],st:1,src:"2.8"},
+  {t:"C",c:[2.48,2.99],lv:[1],st:2,src:"1.8"},
+  {t:"D",c:[3.62,2.99],lv:[2],st:2,src:"2.8"},
+  {t:"E",c:[4.02,2.99],lv:[2],st:2,src:"2.8"},
+  {t:"F",c:[5.02,1.85],lv:[3,4,5],st:3,src:"3.8,4.8,5.6,5.8"},
+  {t:"G",c:[5.02,1.49],lv:[3,4,5],st:3,src:"3.8,4.8,5.8"},
+  {t:"H",c:[5.01,1.3],lv:[4,5],st:3,src:"4.8,5.8"}]},
+ {n:9,ob:[2.0,2.03],book:"1.9,2.9,3.9,4.9,5.9",d:[
+  {t:"A",c:[2.52,3.0],lv:[1,2],st:1,src:"1.9,2.9"},
+  {t:"B",c:[2.92,3.0],lv:[1,2],st:1,src:"1.9,2.9"},
+  {t:"C",c:[2.92,3.41],lv:[1,2,4,5],st:2,src:"1.9,2.9,4.11,5.11"},
+  {t:"D",c:[3.31,3.41],lv:[1,2],st:2,src:"1.9,2.9"},
+  {t:"E",c:[4.0,2.51],lv:[3,4,5],st:2,src:"3.9,4.9,5.9"},
+  {t:"F",c:[4.39,2.51],lv:[3,5],st:3,src:"3.9,5.9"},
+  {t:"G",c:[4.59,2.59],lv:[4],st:3,src:"4.9"},
+  {t:"H",c:[4.99,3.0],lv:[3,4,5],st:3,src:"3.9,4.9,5.9"},
+  {t:"I",c:[5.39,3.0],lv:[3,4,5],st:3,src:"3.9,4.9,5.9"},
+  {t:"J",c:[5.6,3.01],lv:[4],st:3,src:"4.9"}]},
+ {n:10,ob:[0.2,1.0],book:"2.10",d:[
+  {t:"A",c:[0.61,2.0],lv:[2],st:1,src:"2.10"},
+  {t:"B",c:[1.0,2.0],lv:[2],st:1,src:"2.10"},
+  {t:"C",c:[0.61,2.52],lv:[2],st:1,src:"2.10"},
+  {t:"D",c:[1.01,2.52],lv:[2],st:1,src:"2.10"},
+  {t:"E",c:[0.61,2.99],lv:[2],st:1,src:"2.10"},
+  {t:"F",c:[1.0,2.98],lv:[2],st:1,src:"2.10"}]},
+ {n:11,ob:[0.21,1.52],book:"3.10,4.13",d:[
+  {t:"A",c:[0.6,2.51],lv:[4],st:1,src:"4.13"},
+  {t:"B",c:[1.01,2.49],lv:[3,4],st:1,src:"3.10,4.13"},
+  {t:"C",c:[0.6,3.02],lv:[4],st:1,src:"4.13"},
+  {t:"D",c:[1.21,2.49],lv:[3,4],st:1,src:"3.10,4.13"},
+  {t:"E",c:[1.01,2.99],lv:[3,4],st:1,src:"3.10,4.13"},
+  {t:"F",c:[1.18,3.02],lv:[4],st:1,src:"4.13"},
+  {t:"G",c:[1.4,2.49],lv:[3],st:1,src:"3.10"},
+  {t:"H",c:[1.4,2.99],lv:[3],st:1,src:"3.10"}]},
+ {n:12,ob:[1.02,0.11],book:"3.11",d:[
+  {t:"A",c:[2.7,2.02],lv:[3],st:1,src:"3.11"},
+  {t:"B",c:[2.9,2.02],lv:[3],st:1,src:"3.11"},
+  {t:"C",c:[2.51,2.02],lv:[3],st:1,src:"3.11"},
+  {t:"D",c:[3.4,2.49],lv:[3],st:2,src:"3.11"},
+  {t:"E",c:[3.78,2.49],lv:[3],st:2,src:"3.11"}]},
+ {n:13,ob:[2.51,0.96],book:"4.10,5.10",d:[
+  {t:"A",c:[3.4,2.01],lv:[4,5],st:2,src:"4.10,5.10"},
+  {t:"B",c:[3.6,2.01],lv:[4,5],st:2,src:"4.10,5.10"},
+  {t:"C",c:[4.0,2.0],lv:[4,5],st:2,src:"4.10,5.10"},
+  {t:"D",c:[3.95,2.52],lv:[4,5],st:2,src:"4.10,5.10"},
+  {t:"E",c:[4.16,2.52],lv:[4,5],st:2,src:"4.10,5.10"},
+  {t:"F",c:[4.55,2.52],lv:[4,5],st:2,src:"4.10,5.10"},
+  {t:"G",c:[5.01,3.0],lv:[4,5],st:3,src:"4.10,5.10"},
+  {t:"H",c:[5.42,3.0],lv:[4,5],st:3,src:"4.10,5.10"}]},
+ {n:14,ob:[2.5,1.46],book:"4.11,5.11",d:[
+  {t:"A",c:[3.44,2.51],lv:[4,5],st:2,src:"4.11,5.11"},
+  {t:"B",c:[4.03,2.51],lv:[4],st:2,src:"4.11"},
+  {t:"C",c:[3.44,3.02],lv:[4,5],st:2,src:"4.11,5.11"},
+  {t:"D",c:[3.2,3.01],lv:[5],st:2,src:"5.11"},
+  {t:"E",c:[3.84,3.02],lv:[4],st:2,src:"4.11"},
+  {t:"F",c:[3.01,3.02],lv:[5],st:2,src:"5.11"},
+  {t:"G",c:[4.05,3.02],lv:[4],st:2,src:"4.11,4.16"}]},
+ {n:15,ob:[2.51,2.0],book:"4.12,5.12",d:[
+  {t:"A",c:[3.18,3.4],lv:[5],st:2,src:"5.12"},
+  {t:"B",c:[2.99,3.4],lv:[5],st:2,src:"5.12"},
+  {t:"C",c:[3.41,3.4],lv:[4,5],st:2,src:"4.12,5.12"},
+  {t:"D",c:[3.81,3.4],lv:[4],st:2,src:"4.12"},
+  {t:"E",c:[4.01,3.4],lv:[4],st:2,src:"4.12"},
+  {t:"F",c:[5.0,2.52],lv:[4,5],st:3,src:"4.12,5.12"},
+  {t:"G",c:[5.4,2.52],lv:[4,5],st:3,src:"4.12,5.12"}]},
+ {n:16,ob:[2.0,0.09],book:"4.14",d:[
+  {t:"A",c:[4.0,1.51],lv:[4],st:2,src:"4.14,4.15"},
+  {t:"B",c:[4.38,1.51],lv:[4],st:2,src:"4.14,4.15"},
+  {t:"C",c:[4.63,2.0],lv:[4],st:3,src:"4.14,4.15"},
+  {t:"D",c:[5.01,1.99],lv:[4],st:3,src:"4.14"}]},
+ {n:17,ob:[2.01,0.26],book:"4.15",d:[
+  {t:"A",c:[4.61,2.0],lv:[4],st:2,src:"4.15"},
+  {t:"B",c:[4.02,2.36],lv:[4],st:2,src:"4.15"}]},
+ {n:18,ob:[3.0,0.27],book:"4.16,5.15",d:[
+  {t:"A",c:[5.41,1.01],lv:[4],st:3,src:"4.16"},
+  {t:"B",c:[5.62,1.01],lv:[4],st:3,src:"4.16"},
+  {t:"C",c:[6.0,1.52],lv:[4],st:3,src:"4.16"},
+  {t:"D",c:[5.52,2.04],lv:[5],st:3,src:"5.15"},
+  {t:"E",c:[6.4,1.52],lv:[4],st:3,src:"4.16"},
+  {t:"F",c:[5.92,2.04],lv:[5],st:3,src:"5.15"},
+  {t:"G",c:[6.0,2.52],lv:[5],st:3,src:"5.15"},
+  {t:"H",c:[6.4,2.52],lv:[5],st:3,src:"5.15"}]},
+ {n:19,ob:[3.0,0.98],book:"5.13",d:[
+  {t:"A",c:[6.0,1.44],lv:[5],st:3,src:"5.13"},
+  {t:"B",c:[6.0,1.97],lv:[5],st:3,src:"5.13"}]},
+ {n:20,ob:[4.01,1.01],book:"5.14",d:[
+  {t:"A",c:[6.51,1.0],lv:[5],st:3,src:"5.14"},
+  {t:"B",c:[6.51,0.65],lv:[5],st:3,src:"5.14"},
+  {t:"C",c:[6.51,0.48],lv:[5],st:3,src:"5.14"}]},
+ {n:21,ob:[5.03,0.3],book:"5.16",d:[
+  {t:"A",c:[6.0,0.57],lv:[5],st:2,src:"5.16"},
+  {t:"B",c:[6.4,0.57],lv:[5],st:2,src:"5.16"}]}
+];
+
+/* ---------- Lochen (Ball Pocketing, Zerox Billiards) ---------- */
+const LV_RULE={1:{n:5,reset:false,txt:"5 Treffer je Anspielpunkt – Fehler setzen nichts zurück"},2:{n:5,reset:true,txt:"5 Treffer in Folge je Anspielpunkt – ein Fehler setzt die Serie auf 0"},3:{n:7,reset:true,txt:"7 Treffer in Folge je Anspielpunkt – ein Fehler setzt die Serie auf 0"},4:{n:10,reset:true,txt:"10 Treffer in Folge je Anspielpunkt – ein Fehler setzt die Serie auf 0"},5:{n:20,reset:true,txt:"20 Treffer in Folge je Anspielpunkt – ein Fehler setzt die Serie auf 0"}};
+const TIPS_CUT=[["hoch",[0,-0.8]],["hoch rechts",[0.57,-0.57]],["rechts",[0.8,0]],["tief rechts",[0.57,0.57]],["tief",[0,0.8]],["tief links",[-0.57,0.57]],["links",[-0.8,0]],["hoch links",[-0.57,-0.57]],["Mitte",[0,0]],["knapp unter Mitte",[0,0.3]]];
+const TIPS_STRAIGHT=[["hoch",[0,-0.8]],["Mitte",[0,0]],["tief",[0,0.8]]];
+const LOCH_PAGE={1:3,2:9,3:15,4:22,5:31};
+const fmt1=x=>String(Math.round(x*10)/10).replace(".",",");
+function lochGeo(ob,c){
+  const v1=[ob[0]-c[0],ob[1]-c[1]], v2=[-0.07-ob[0],-0.07-ob[1]];
+  const a=Math.atan2(v1[0]*v2[1]-v1[1]*v2[0],v1[0]*v2[0]+v1[1]*v2[1])*180/Math.PI;
+  const d1=Math.hypot(...v1), d2=Math.hypot(...v2), cut=Math.abs(a);
+  return {cut,d1,d2,straight:cut<3,idx:d1*d2/Math.max(0.2,Math.cos(cut*Math.PI/180))};
+}
+const LD=[];
+LOCH.forEach((g,gi)=>g.d.forEach(d=>{d.id=`b${g.n}-${Math.round(d.c[0]*100)}-${Math.round(d.c[1]*100)}`;d.g=gi;Object.assign(d,lochGeo(g.ob,d.c));LD.push(d)}));
+const LDI=Object.fromEntries(LD.map(d=>[d.id,d]));
+const srcText=s=>s.split(",").map(x=>{const [l,n]=x.split(".");return `L${l} Nr. ${n}`}).join(", ");
+
+const L_ST={lv:1,g:0,id:null,m:0,st:0};
+try{Object.assign(L_ST,JSON.parse(localStorage.getItem("pc-loch")||"{}"))}catch(e){}
+state.pdays={}; state.ppending=[]; state.tipSel={}; state.pwriting=false; state.pdirty=false;
+try{state.ppending=JSON.parse(localStorage.getItem("pc-lpending")||"[]")}catch(e){state.ppending=[]}
+function saveLSel(){try{localStorage.setItem("pc-loch",JSON.stringify(L_ST))}catch(e){}}
+function saveLP(){try{localStorage.setItem("pc-lpending",JSON.stringify(state.ppending))}catch(e){}}
+
+function lochList(gi,lv=L_ST.lv,st=L_ST.st){return LOCH[gi].d.filter(d=>d.lv.includes(lv)&&(!st||d.st===st)).sort((a,b)=>a.idx-b.idx)}
+function lochLagen(lv=L_ST.lv,st=L_ST.st){return LOCH.map((g,gi)=>gi).filter(gi=>lochList(gi,lv,st).length)}
+function lochEnsure(){
+  let lagen=lochLagen(); if(!lagen.length){L_ST.st=0;lagen=lochLagen()}
+  if(!lagen.includes(L_ST.g)) L_ST.g=lagen[0];
+  const list=lochList(L_ST.g); if(!list.some(d=>d.id===L_ST.id)) L_ST.id=list[0].id;
+}
+function curDrill(){lochEnsure();return LDI[L_ST.id]}
+function tipsOf(d){return d.straight?TIPS_STRAIGHT:TIPS_CUT}
+function pAll(){
+  const seen=new Set(),out=[];
+  for(const l of Object.values(state.pdays)) for(const a of l){if(!seen.has(a.t)){seen.add(a.t);out.push(a)}}
+  for(const a of state.ppending) if(!seen.has(a.t)){seen.add(a.t);out.push(a)}
+  return out.sort((a,b)=>a.t-b.t);
+}
+function pDay(date){
+  const base=(state.pdays[date]||[]).slice(); const ts=new Set(base.map(a=>a.t));
+  for(const a of state.ppending) if(todayStr(new Date(a.t))===date&&!ts.has(a.t)) base.push(a);
+  return base.sort((a,b)=>a.t-b.t);
+}
+const pKey=(id,lv,m)=>id+"|"+lv+"|"+m;
+function lochProg(d,lv,m,att){
+  const R=LV_RULE[lv], T=tipsOf(d).length;
+  let tip=0,cnt=0,done=0,n=0;
+  for(const a of (att||pAll())){
+    if(a.d!==d.id||a.lv!==lv||(a.m||0)!==m) continue;
+    n++;
+    if(a.tp!==tip){tip=Math.min(a.tp,T-1);cnt=0}
+    if(a.r==="in") cnt++; else if(R.reset) cnt=0;
+    if(cnt>=R.n){if(tip===T-1) done++; tip=(tip+1)%T; cnt=0}
+  }
+  const ov=state.tipSel[pKey(d.id,lv,m)];
+  if(ov!=null&&ov!==tip){tip=ov;cnt=0}
+  return {tip,cnt,done,n};
+}
+function nextUndone(){
+  const att=pAll(); const lagen=lochLagen(); const lv=L_ST.lv,m=L_ST.m;
+  const order=[]; const gi0=lagen.indexOf(L_ST.g);
+  for(let k=0;k<lagen.length;k++){const gi=lagen[(gi0+k)%lagen.length];for(const d of lochList(gi)) order.push(d)}
+  const cur=order.findIndex(d=>d.id===L_ST.id);
+  for(let k=1;k<=order.length;k++){const d=order[(cur+k)%order.length]; if(!lochProg(d,lv,m,att).done) return d}
+  return null;
+}
+function recordLoch(r){
+  const d=curDrill(), lv=L_ST.lv, m=L_ST.m, k=pKey(d.id,lv,m);
+  const before=lochProg(d,lv,m);
+  state.ppending.push({d:d.id,lv,tp:before.tip,m,r,t:Date.now()}); saveLP(); delete state.tipSel[k];
+  const after=lochProg(d,lv,m);
+  let msg=null;
+  if(after.done>before.done){
+    const nx=nextUndone();
+    if(nx){const sameG=nx.g===L_ST.g;L_ST.g=nx.g;L_ST.id=nx.id;saveLSel();msg=sameG?"Drill geschafft ✓":"Lage geschafft ✓ – weiter mit Lage "+LOCH[nx.g].n}
+    else msg="Alle Drills dieses Levels geschafft ✓";
+  } else if(after.tip!==before.tip) msg="Nächster Anspielpunkt: "+tipsOf(d)[after.tip][0];
+  render(); if(msg) toast(msg);
+  if(navigator.vibrate) try{navigator.vibrate(r==="in"?15:[10,40,10])}catch(e){}
+  if(state.db) flushLoch(); else setSync("Offline – lokal zwischengespeichert",true);
+}
+async function flushLoch(){
+  if(!state.db) return;
+  if(state.pwriting){state.pdirty=true;return}
+  const dates=[...new Set(state.ppending.map(a=>todayStr(new Date(a.t))))];
+  if(!dates.length) return;
+  state.pwriting=true;
+  try{
+    for(const date of dates){
+      const merged=pDay(date);
+      await state.db.doc("pocket/"+date).set({date,a:merged});
+      state.pdays[date]=merged;
+      const ts=new Set(merged.map(a=>a.t));
+      state.ppending=state.ppending.filter(a=>!(todayStr(new Date(a.t))===date&&ts.has(a.t)));
+    }
+    saveLP(); setSync("Gespeichert");
+  }catch(e){
+    setSync(e&&e.code==="quota_exceeded"?"Speicher voll – bitte Claude Bescheid geben":"Nicht gespeichert – wird erneut versucht",true);
+    setTimeout(flushLoch,4000);
+  }finally{
+    state.pwriting=false;
+    if(state.pdirty){state.pdirty=false;flushLoch()}
+  }
+}
+async function undoLoch(){
+  const date=todayStr(); const list=pDay(date); if(!list.length) return;
+  const lastT=list[list.length-1].t;
+  state.ppending=state.ppending.filter(a=>a.t!==lastT); saveLP();
+  if(state.pdays[date]) state.pdays[date]=state.pdays[date].filter(a=>a.t!==lastT);
+  render(); toast("Letzter Versuch gelöscht");
+  if(state.db){
+    try{state.pwriting=true;await state.db.doc("pocket/"+date).set({date,a:pDay(date)});setSync("Gespeichert")}
+    catch(e){setSync("Löschen nicht gespeichert",true)}
+    finally{state.pwriting=false;if(state.pdirty){state.pdirty=false;flushLoch()}}
+  }
+}
+async function toggleLochFlag(){
+  const d=curDrill(); const fid="loch-"+d.id; if(!state.db){toast("Melden geht nur mit Verbindung");return}
+  try{
+    if(state.flags[fid]){await state.db.doc("flags/"+fid).delete();delete state.flags[fid]}
+    else{await state.db.doc("flags/"+fid).set({ex:fid,lv:L_ST.lv,t:Date.now()});state.flags[fid]=true;toast("Gemeldet – Claude sieht das beim nächsten Mal")}
+    render();
+  }catch(e){toast("Melden fehlgeschlagen")}
+}
+function lochTable(d,list){
+  const g=LOCH[d.g], X=x=>L_ST.m?+(8-x).toFixed(2):x;
+  const ex={id:"loch",name:"Lage "+g.n,balls:[[1,X(g.ob[0]),g.ob[1]]],
+    ghosts:list.filter(o=>o.id!==d.id).map(o=>[X(o.c[0]),o.c[1],"ABCDEFGHIJKLMNOPQRSTUVWXYZ"[list.indexOf(o)]]),
+    shots:[{tag:"",cue:[X(d.c[0]),d.c[1]],obj:1,pk:L_ST.m?"TR":"TL",path:null,tgt:null}]};
+  return tableSVG(ex,0);
+}
+function renderLoch(){
+  const d=curDrill(), g=LOCH[d.g], lv=L_ST.lv, m=L_ST.m, R=LV_RULE[lv];
+  const list=lochList(d.g), lagen=lochLagen(), att=pAll();
+  const pr=lochProg(d,lv,m,att), tips=tipsOf(d), tip=tips[pr.tip];
+  const L="ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  const mine=att.filter(a=>a.d===d.id), last=mine.slice(-20);
+  const q=last.length?last.filter(a=>a.r==="in").length/last.length:null;
+  const td=pDay(todayStr()), tdIn=td.filter(a=>a.r==="in").length;
+  const lvDone=lv=>LD.filter(x=>x.lv.includes(lv)&&lochProg(x,lv,m,att).done).length;
+  const lvTot=lv=>LD.filter(x=>x.lv.includes(lv)).length;
+  const lageRows=lagen.map(gi=>{const ds=lochList(gi);const dn=ds.filter(x=>lochProg(x,lv,m,att).done).length;const ob=LOCH[gi].ob;
+    return `<div class="row" data-lgo="${gi}"><div class="t" style="flex:1"><b>Lage ${LOCH[gi].n}${gi===d.g?" ·  aktuell":""}</b><span class="small muted">${ds.length} Drill${ds.length>1?"s":""} · Kugel ${fmt1(L_ST.m?8-ob[0]:ob[0])} / ${fmt1(ob[1])} Diamanten · ${[1,2,3].map(s=>{const c=ds.filter(x=>x.st===s).length;return c?`<span class="diff d${s}">${"●".repeat(s)}</span>&nbsp;${c}`:""}).filter(Boolean).join(" · ")}</span><div class="bar"><span style="width:${ds.length?dn/ds.length*100:0}%"></span></div></div><span class="num">${dn}/${ds.length}</span></div>`}).join("");
+  const stTxt=L_ST.st?` · Filter: ${"●".repeat(L_ST.st)} ${DIFF_NAME[L_ST.st]}`:"";
+  $("#view-loch").innerHTML=`
+  <div><h1>Lochen</h1><p class="small muted" style="margin:2px 0 0">Hier zählt nur, ob die Kugel fällt – wo die Weiße liegen bleibt, ist egal. Je Anspielpunkt brauchst du die geforderten Treffer, dann geht es automatisch zum nächsten Punkt.</p></div>
+  <div class="lvgrid" role="group" aria-label="Level">${[1,2,3,4,5].map(l=>`<button class="shot lvbtn" data-llv="${l}" aria-pressed="${l===lv}"><b>Level ${l}</b><span class="small">${lvDone(l)}/${lvTot(l)}</span></button>`).join("")}</div>
+  <div class="card lrule"><div><b>Level ${lv}:</b> ${esc(R.txt)}.</div>
+   <label class="ltoggle"><input type="checkbox" id="lmirror" ${m?"checked":""}> Gespiegelt (rechte Ecke)</label>
+   <div class="small muted">Das Buch empfiehlt: Wenn ein Level sitzt, alle Lagen gespiegelt noch einmal spielen.${stTxt}</div></div>
+  <div class="picker">
+    <button class="iconbtn" id="lprev" aria-label="Vorherige Lage">‹</button>
+    <select id="lsel" aria-label="Lage wählen">${lagen.map(gi=>`<option value="${gi}" ${gi===d.g?"selected":""}>Lage ${LOCH[gi].n} · ${lochList(gi).length} Drill${lochList(gi).length>1?"s":""}</option>`).join("")}</select>
+    <button class="iconbtn" id="lnext" aria-label="Nächste Lage">›</button>
+  </div>
+  <div>${lochTable(d,list)}<div class="legend"><span><i style="background:#f6f2e4"></i>Weiße für ${L[list.indexOf(d)]}</span><span><i style="background:#f6f2e480"></i>weitere Positionen dieser Lage</span><span><i style="background:#08131c"></i>Kugel → Tasche</span></div></div>
+  <div class="shots" role="group" aria-label="Positionen">${list.map((x,i)=>{const p=lochProg(x,lv,m,att);return `<button class="shot" data-ld="${x.id}" aria-pressed="${x.id===d.id}"><span class="dot ${p.done?"l3":p.n?"l2":""}"></span>${L[i]}${p.done?" ✓":""} ${diffBadge(x.st)}</button>`}).join("")}</div>
+  <div class="card">
+    <div class="lhow">
+      <div>${spinSVG(tip[1])}</div>
+      <div style="min-width:0"><div class="lbl">Anspielpunkt ${pr.tip+1}/${tips.length}</div><div class="val">${esc(tip[0])}</div></div>
+      <div style="text-align:right"><div class="lbl">${R.reset?"Serie":"Treffer"}</div><div class="lbig num">${pr.cnt}<span class="small muted"> / ${R.n}</span></div></div>
+    </div>
+    <div class="tipnav"><button class="linkbtn" id="ltipprev" ${pr.tip?"":"disabled"}>‹ Punkt zurück</button><button class="linkbtn" id="ltipnext" ${pr.tip<tips.length-1?"":"disabled"}>Punkt weiter ›</button></div>
+    <p class="instr-note">${d.straight?"Gerader Stoß":"Schnittwinkel "+Math.round(d.cut)+"°"} · Weiße → Kugel ${fmt1(d.d1)} · Kugel → Tasche ${fmt1(d.d2)} Diamanten · ${diffBadge(d.st)} ${DIFF_NAME[d.st]}${pr.done?` · geschafft${pr.done>1?" ("+pr.done+"×)":""} ✓`:""}</p>
+  </div>
+  <div class="results lres">
+    <button class="res ok" data-lr="in">Gelocht</button>
+    <button class="res miss" data-lr="miss">Nicht gelocht</button>
+  </div>
+  <div class="card">
+    <div class="today"><div><b>Dieser Drill</b></div><button class="linkbtn" id="lundo" ${td.length?"":"disabled"}>Letzten Versuch löschen</button></div>
+    <div class="stats"><div class="stat"><span class="v num">${pct(q)}</span><span class="k">Lochquote (letzte 20)</span></div><div class="stat"><span class="v num">${mine.length}</span><span class="k">Versuche</span></div><div class="stat"><span class="v num">${td.length?Math.round(tdIn/td.length*100)+" %":"–"}</span><span class="k">Heute · ${td.length} Stöße</span></div></div>
+    <div class="chips">${mine.slice(-30).map(a=>`<span class="chip ${a.r==="in"?"ok":"miss"}"></span>`).join("")||`<span class="small muted">Noch keine Versuche an diesem Drill.</span>`}</div>
+  </div>
+  <div class="card">
+    <h3>Übersicht Level ${lv}${m?" · gespiegelt":""}</h3>
+    <div class="dfilter" role="group" aria-label="Nach Schwierigkeit filtern">${[0,1,2,3].map(s=>`<button class="shot dfbtn" data-lst="${s}" aria-pressed="${L_ST.st===s}">${s?`<span class="diff d${s}">${"●".repeat(s)}${"○".repeat(3-s)}</span> ${DIFF_NAME[s]}`:"Alle"}</button>`).join("")}</div>
+    <div class="ex-list">${lageRows||`<p class="empty">Keine Drills in dieser Stufe.</p>`}</div>
+    <p class="small muted" style="margin:0">Schwierigkeit aus Schnittwinkel und den beiden Distanzen. Grün = geschafft (alle Anspielpunkte), gelb = angefangen.</p>
+  </div>
+  <div class="small muted">Quelle: Ball Pocketing (Zerox Billiards), Lage ${g.n} = Buch ${esc(srcText(g.book))}. Dieser Drill: ${esc(srcText(d.src))}${d.src.includes(",")?" – zusammengefasst, weil Schnittwinkel und Distanzen praktisch gleich sind":""}. Lagen aus dem PDF vermessen, auf etwa eine halbe Kugelbreite genau. <button class="linkbtn flag" id="lflag">${state.flags["loch-"+d.id]?"Als abweichend gemeldet ✓ (zurücknehmen)":"Weicht vom Original ab? Melden"}</button></div>`;
+}
+function lochProgCard(){
+  const att=pAll(); if(!att.length) return `<p class="empty">Noch keine Lochen-Versuche.</p>`;
+  const l100=att.slice(-100), q=l100.filter(a=>a.r==="in").length/l100.length;
+  const rows=[1,2,3,4,5].map(lv=>{const tot=LD.filter(x=>x.lv.includes(lv));const dn=tot.filter(x=>lochProg(x,lv,0,att).done).length;const dm=tot.filter(x=>lochProg(x,lv,1,att).done).length;
+    return `<div class="row"><div class="t" style="flex:1"><b>Level ${lv}</b><div class="bar"><span style="width:${dn/tot.length*100}%"></span></div></div><span class="num small">${dn}/${tot.length}${dm?" · gesp. "+dm:""}</span></div>`}).join("");
+  return `<div class="stats"><div class="stat"><span class="v num">${att.length}</span><span class="k">Stöße gesamt</span></div><div class="stat"><span class="v num">${pct(q)}</span><span class="k">Lochquote letzte ${l100.length}</span></div><div class="stat"><span class="v num">${new Set(att.map(a=>todayStr(new Date(a.t)))).size}</span><span class="k">Tage</span></div></div>${rows}<p class="small muted" style="margin:6px 0 0">Geschaffte Drills je Level (alle Anspielpunkte erfüllt).</p>`;
+}
+
+/* ---------- Events ---------- */
+document.addEventListener("click",e=>{
+  const b=e.target.closest("button,[data-go],[data-lgo]"); if(!b) return;
+  if(b.dataset.lr){recordLoch(b.dataset.lr);return}
+  if(b.dataset.llv){L_ST.lv=+b.dataset.llv;saveLSel();render();return}
+  if(b.dataset.ld){L_ST.id=b.dataset.ld;saveLSel();render();return}
+  if(b.dataset.lst!=null){L_ST.st=+b.dataset.lst;saveLSel();render();return}
+  if(b.dataset.lgo!=null){L_ST.g=+b.dataset.lgo;L_ST.id=null;saveLSel();render();window.scrollTo(0,0);return}
+  if(b.id==="lprev"||b.id==="lnext"){const lg=lochLagen();const i=lg.indexOf(L_ST.g);L_ST.g=lg[(i+(b.id==="lnext"?1:-1)+lg.length)%lg.length];L_ST.id=null;saveLSel();render();return}
+  if(b.id==="ltipprev"||b.id==="ltipnext"){const d=curDrill();const pr=lochProg(d,L_ST.lv,L_ST.m);const t=pr.tip+(b.id==="ltipnext"?1:-1);state.tipSel[pKey(d.id,L_ST.lv,L_ST.m)]=Math.max(0,Math.min(tipsOf(d).length-1,t));render();return}
+  if(b.id==="lundo"){undoLoch();return}
+  if(b.id==="lflag"){toggleLochFlag();return}
+  if(b.dataset.r){record(b.dataset.r);return}
+  if(b.classList.contains("shot")&&b.dataset.i!=null){state.shot=+b.dataset.i;saveSel();render();return}
+  if(b.dataset.v){state.view=b.dataset.v;if(state.view==="train"&&curBlock()&&curBlock().kind==="warm")state.view="warm";render();window.scrollTo(0,0);return}
+  if(b.dataset.go){const [ei,si]=b.dataset.go.split(":").map(Number);state.ex=ei;state.shot=si;state.view="train";saveSel();render();window.scrollTo(0,0);return}
+  if(b.id==="prev"){state.ex=(state.ex-1+EX.length)%EX.length;state.shot=0;saveSel();render();return}
+  if(b.id==="next"){state.ex=(state.ex+1)%EX.length;state.shot=0;saveSel();render();return}
+  if(b.dataset.df!=null){state.dfilter=+b.dataset.df;try{localStorage.setItem("pc-df",String(state.dfilter))}catch(e){}renderList();return}
+  if(b.id==="randex"){const t=trainables().filter(c=>!(c.ei===state.ex&&c.si===state.shot));const c=t[Math.floor(Math.random()*t.length)];state.ex=c.ei;state.shot=c.si;saveSel();render();return}
+  if(b.id==="undo"){undo();return}
+  if(b.dataset.sess){const k=b.dataset.sess;if(k==="s20"){const o=$("#s20opts");o.hidden=!o.hidden;return}startSession(k);return}
+  if(b.id==="s20go"){startSession("s20",{focus:$("#s20focus").value,diff:$("#s20diff").value});return}
+  if(b.id==="warmnext"){nextBlock();return}
+  if(b.id==="skipblock"){nextBlock();toast("Übung übersprungen");return}
+  if(b.id==="endsess"){finishSession();return}
+  if(b.id==="sumclose"){state.summary=null;state.view="train";render();window.scrollTo(0,0);return}
+  if(b.id==="flagbtn"){toggleFlag();return}
+});
+$("#exsel").addEventListener("change",e=>{state.ex=+e.target.value;state.shot=0;saveSel();render()});
+document.addEventListener("change",e=>{
+  if(e.target.id==="lmirror"){L_ST.m=e.target.checked?1:0;saveLSel();render();return}
+  if(e.target.id==="lsel"){L_ST.g=+e.target.value;L_ST.id=null;saveLSel();render();return}
+});
+
+fillSelect(); render();
+
+/* ---------- Datenbank verbinden ---------- */
+(async()=>{
+  let db=null;
+  try{db=window.claude&&window.claude.use?await window.claude.use("db"):null}catch(e){db=null}
+  if(!db){setSync(state.pending.length?"Offline – "+state.pending.length+" Versuche lokal":"Offline – lokal zwischengespeichert",true);return}
+  state.db=db; setSync("Verbunden");
+  db.collection("sessions").onSnapshot(snap=>{
+    const days={};for(const d of snap.docs){const v=d.data();if(v&&Array.isArray(v.a))days[d.id]=v.a.slice()}
+    state.days=days;
+    const known=new Set(Object.values(days).flat().map(a=>a.t));
+    const before=state.pending.length; state.pending=state.pending.filter(a=>!known.has(a.t));
+    if(state.pending.length!==before) savePending();
+    render();
+    if(state.pending.length) flush();
+  },err=>setSync("Verbindung unterbrochen – lade die Seite neu",true));
+  db.collection("pocket").onSnapshot(snap=>{
+    const days={};for(const d of snap.docs){const v=d.data();if(v&&Array.isArray(v.a))days[d.id]=v.a.slice()}
+    state.pdays=days;
+    const known=new Set(Object.values(days).flat().map(a=>a.t));
+    const before=state.ppending.length; state.ppending=state.ppending.filter(a=>!known.has(a.t));
+    if(state.ppending.length!==before) saveLP();
+    render();
+    if(state.ppending.length) flushLoch();
+  },()=>{});
+  db.collection("flags").onSnapshot(snap=>{const f={};for(const d of snap.docs)f[d.id]=true;state.flags=f;render()},()=>{});
+})();
+</script>
+
+</body></html>
